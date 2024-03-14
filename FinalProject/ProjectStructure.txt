@@ -1,0 +1,33 @@
+FinalProject
+├───pom.xml
+├───output.json
+├───ProjectStructure.txt
+│
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   ├───crawler
+│	│	│	│	└───WebCrawler.java
+│	│	│	│
+│	│	│	└───Uwindsor.FinalProject
+│	│	│		└───Main.java
+│	│	│
+│	│	└───resources
+│	│ 		└───chromedriver.exe
+│	│
+│   │   
+│   └───test
+│       └───java
+│           └───Uwindsor.FinalProject
+│
+├───Maven Dependencies
+│
+├───JRE System Library
+│       
+└───target
+    ├───generated-sources
+    │   └───annotations
+    │   
+    └───generated-test-sources
+        └───test-annotations
+                
