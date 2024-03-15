@@ -23,6 +23,16 @@ public class WebCrawler {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         try {
+        	// Click the "Load More" button until it's not found
+            while (true) {
+            	try {
+                    WebElement showMoreButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("paginationShowMoreBtn")));
+                    showMoreButton.click();
+                } catch (Exception e) {
+                    break; // Exit the loop if no more button found
+                }
+            }
+                
             List<WebElement> carOfferCards = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='offer-cards-list']//li[@class='offer-card-desktop']")));
 
             if (carOfferCards.isEmpty()) {
@@ -68,7 +78,6 @@ public class WebCrawler {
                     } catch (NoSuchElementException e) {
                         ratingText = "No ratings";
                     }
-                    System.out.println(ratingText);
 
 
                     jsonObject.put("Car Type", carType);
@@ -85,7 +94,7 @@ public class WebCrawler {
                 }
 
                 // Write JSON array to file
-                try (FileWriter file = new FileWriter("output.json")) {
+                try (FileWriter file = new FileWriter("src/main/resources/output.json")) {
                     file.write(jsonArray.toString());
                     System.out.println("Successfully wrote JSON object to file");
                 } catch (IOException e) {
