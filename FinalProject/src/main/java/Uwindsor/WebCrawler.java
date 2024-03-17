@@ -1,38 +1,53 @@
-package crawler;
+package Uwindsor;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.List;
-import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.NoSuchElementException;
+
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.List;
 
 public class WebCrawler {
-    public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.carrentals.com/carsearch?aarpcr=off&date1=3%2F28%2F2024&date2=3%2F29%2F2024&dlat=&dlon=&dpln=6127335&drid1=&loc2=&locn=Windsor%2C%20Ontario%2C%20Canada&olat=&olon=&rfrr=Homepage&selPageIndex=50&time1=1030AM&time2=1030AM");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    private WebDriver driver;
+    private WebDriverWait wait;
 
+    public WebCrawler(String location, LocalDate startDate, LocalDate endDate) {
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        startCrawling(location, startDate, endDate);
+    }
+
+    private void startCrawling(String location, LocalDate startDate, LocalDate endDate) {
         try {
-        	// Click the "Load More" button until it's not found
+            // Construct the URL based on input parameters
+            String url = constructURL(location, startDate, endDate);
+            driver.get(url);
+
+            // Click the "Load More" button until it's not found
             while (true) {
-            	try {
+                try {
                     WebElement showMoreButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("paginationShowMoreBtn")));
                     showMoreButton.click();
                 } catch (Exception e) {
                     break; // Exit the loop if no more button found
                 }
             }
-                
+
             List<WebElement> carOfferCards = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='offer-cards-list']//li[@class='offer-card-desktop']")));
 
             if (carOfferCards.isEmpty()) {
@@ -105,5 +120,13 @@ public class WebCrawler {
             driver.quit();
         }
     }
-}
 
+    private String constructURL(String location, LocalDate startDate, LocalDate endDate) {
+        // Format LocalDate to String
+        String startDateStr = startDate.format(DateTimeFormatter.ofPattern("M/dd/yyyy"));
+        String endDateStr = endDate.format(DateTimeFormatter.ofPattern("M/dd/yyyy"));
+
+        // Construct the URL with dynamic parameters
+        return "https://www.carrentals.com/carsearch?date1=" + startDateStr + "&date2=" + endDateStr + "&locn=" + location + "&rfrr=Homepage";
+    }
+}
