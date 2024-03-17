@@ -13,7 +13,8 @@ FinalProject
 │	│	│		└───Main.java
 │	│	│
 │	│	└───resources
-│	│ 		└───chromedriver.exe
+│	│ 		├───chromedriver.exe
+│	│		└───output.json
 │	│
 │   │   
 │   └───test
