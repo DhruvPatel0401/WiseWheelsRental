@@ -6,14 +6,16 @@ FinalProject
 ├───src
 │   ├───main
 │   │   ├───java
-│   │   │   ├───crawler
-│	│	│	│	└───WebCrawler.java
-│	│	│	│
+│	│	│	│	
 │	│	│	└───Uwindsor.FinalProject
-│	│	│		└───Main.java
+│	│	│		├───Main.java
+│	│	│		├───WebCrawler.java
+│	│	│		├───WordCompletion.java
+│	│	│		└───EditDistance.java
 │	│	│
 │	│	└───resources
 │	│ 		├───chromedriver.exe
+│	│ 		├───location.txt
 │	│		└───output.json
 │	│
 │   │   
