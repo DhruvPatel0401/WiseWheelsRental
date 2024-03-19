@@ -10,11 +10,44 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Wise Wheels Rentals!");
+        
+        while (true) {
+            displayMenu();
+            String choice = scanner.nextLine().toLowerCase();
+            
+            switch (choice) {
+	            case "1":
+	                performWebCrawler();
+	                break;
+	            case "2":
+	                performTop10CheapestDeals();
+	                break;
+	            case "3":
+	                searchForCar();
+	                break;
+	            case "exit":
+	                System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
+	                return;
+	            default:
+	                System.out.println("Invalid choice. Please select a valid option or type 'exit' to quit.");
+            }
+        }
+    }
+    
+    private static void displayMenu() {
+        System.out.println("\nSelect an option:");
+        System.out.println("1. Web Crawler");
+        System.out.println("2. Find Top 10 Cheapest Deals");
+        System.out.println("3. Search for Car in Location");
+        System.out.println("Type 'exit' to quit");
+        System.out.print("Enter your choice: ");
+    }
 
-        // Get location from user
+    private static void performWebCrawler() {
+    	// Get location from user
         String location = getLocation();
 
-        // Get start date from user
+        // Get start date from user20
         LocalDate startDate = getStartDate();
 
         // Get end date from user
@@ -22,12 +55,23 @@ public class Main {
 
         // Call web crawler class to fetch data based on inputs
         WebCrawler crawler = new WebCrawler(location, startDate, endDate);
+        crawler.startCrawling(location, startDate, endDate);
     }
 
+    private static void performTop10CheapestDeals() {
+        // Implement finding top 10 cheapest deals functionality
+        System.out.println("Finding Top 10 Cheapest Deals...");
+    }
+
+    private static void searchForCar() {
+        // Implement searching for car in location functionality
+        System.out.println("Searching for Car in Location...");
+    }
+    
     private static String getLocation() {
         String location;
         while (true) {
-            System.out.print("Enter a pick-up location: ");
+            System.out.print("\nEnter a pick-up location: ");
             location = scanner.nextLine();
 
             // Check if the location contains any special characters
@@ -42,7 +86,7 @@ public class Main {
         List<String> nearestWords = WordCompletion.findNearestWords(location);
 
         if (!nearestWords.isEmpty()) {
-            System.out.println("Did you mean one of the following?");
+            System.out.println("\nDid you mean one of the following?");
             for (String word : nearestWords) {
                 System.out.println("- " + word);
             }
@@ -67,7 +111,7 @@ public class Main {
         while (true) {
             startDate = LocalDate.now().plusDays(1); // Set default start date as tomorrow
 
-            System.out.print("Enter start date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
+            System.out.print("\nEnter start date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
             String input = scanner.nextLine().trim();
 
             if (input.isEmpty()) {
@@ -95,7 +139,7 @@ public class Main {
         while (true) {
             endDate = startDate.plusDays(1); // Set default end date as day after tomorrow
 
-            System.out.print("Enter end date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
+            System.out.print("\nEnter end date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
             String input = scanner.nextLine().trim();
 
             if (input.isEmpty()) {
