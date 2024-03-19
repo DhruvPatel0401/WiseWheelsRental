@@ -1,0 +1,9 @@
+Car Name: Dodge Grand Caravan
+Car Type: Automatic
+Max Passengers: 7
+Car Size: Mini Van
+Car Price per Day: $33
+Car Total Price: $37
+Vendor Name: Enterprise
+Ratings: 100%
+Available at: expedia.com

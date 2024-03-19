@@ -1,0 +1,9 @@
+Car Name: Nissan Maxima
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Premium
+Car Price per Day: $36
+Car Total Price: $41
+Vendor Name: Enterprise Rental Company
+Ratings: 100%
+Available at: carrental.com

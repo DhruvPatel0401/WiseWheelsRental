@@ -1,0 +1,9 @@
+Car Name: Toyota Rav4
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Midsize SUV
+Car Price per Day: $33
+Car Total Price: $37
+Vendor Name: Enterprise
+Ratings: 76%
+Available at: expedia.com

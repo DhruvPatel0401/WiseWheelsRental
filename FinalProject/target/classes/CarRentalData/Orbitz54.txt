@@ -1,0 +1,9 @@
+Car Name: Vw Jetta
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Standard
+Car Price per Day: $31
+Car Total Price: $39
+Vendor Name: Enterprise Rental Company
+Ratings: 89%
+Available at: carrental.com

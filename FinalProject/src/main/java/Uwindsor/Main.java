@@ -59,8 +59,6 @@ public class Main {
     }
 
     private static void performTop10CheapestDeals() {
-        // Implement finding top 10 cheapest deals functionality
-        System.out.println("Finding Top 10 Cheapest Deals...");
     }
 
     private static void searchForCar() {

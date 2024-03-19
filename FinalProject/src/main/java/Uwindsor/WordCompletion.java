@@ -121,6 +121,8 @@ public class WordCompletion {
             return new ArrayList<>();
         }
         
+        // spelling checking
+        
         return result;
     }
 

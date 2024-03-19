@@ -1,9 +1,9 @@
-Car Name: Vw Jetta
+Car Name: Chevrolet Colorado
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard
+Max Passengers: 4
+Car Size: Standard Pickup Regular Cab
 Car Price per Day: $31
 Car Total Price: $35
 Vendor Name: Enterprise
-Ratings: 100%
-Available at: carrental.com
+Ratings: 76%
+Available at: expedia.com

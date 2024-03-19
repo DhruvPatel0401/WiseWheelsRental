@@ -1,0 +1,9 @@
+Car Name: Hyundai Sonata
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Fullsize
+Car Price per Day: $33
+Car Total Price: $38
+Vendor Name: Hertz Rental Company
+Ratings: No ratings
+Available at: carrental.com

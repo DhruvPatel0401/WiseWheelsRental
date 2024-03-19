@@ -1,0 +1,9 @@
+Car Name: Chevrolet Malibu
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Fullsize
+Car Price per Day: $31
+Car Total Price: $41
+Vendor Name: Avis
+Ratings: No ratings
+Available at: expedia.com

@@ -1,0 +1,9 @@
+Car Name: Dodge Durango
+Car Type: Automatic
+Max Passengers: 7
+Car Size: Premium Crossover
+Car Price per Day: $34
+Car Total Price: $39
+Vendor Name: Enterprise
+Ratings: 100%
+Available at: expedia.com
