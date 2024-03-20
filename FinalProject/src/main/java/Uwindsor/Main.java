@@ -24,6 +24,8 @@ public class Main {
 	                break;
 	            case "3":
 	                searchForCar();
+	            case "4":
+	            	searchHistory();
 	                break;
 	            case "exit":
 	                System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
@@ -161,4 +163,24 @@ public class Main {
         }
         return endDate;
     }
+    
+    private static void searchHistory() {
+        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap();
+        Scanner scanner = new Scanner(System.in);
+        String keyword;
+
+        System.out.println("Enter a keyword (or type 'quit' to exit):");
+        while (true) {
+            keyword = scanner.nextLine();
+            if (keyword.equalsIgnoreCase("quit")) {
+                break;
+            } else {
+                searchFrequencyMap.updateSearchFrequency(keyword);
+            }
+        }
+        scanner.close();
+        
+        searchFrequencyMap.displaySearchFrequency();
+    }
+    
 }
