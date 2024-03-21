@@ -46,7 +46,7 @@ public class Main {
         System.out.println("2. Find Top 10 Cheapest Deals");
         System.out.println("3. Search for Car in Location");
         System.out.println("4. Add a keyWord into the History");
-        System.out.println("5. Add a keyWord into the Inverted Indexing");
+        System.out.println("5. Search for keyWord into the Inverted Indexing");
         System.out.println("Type 'exit' to quit");
         System.out.print("Enter your choice: ");
     }
