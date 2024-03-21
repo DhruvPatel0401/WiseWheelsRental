@@ -6,9 +6,9 @@ import java.util.TreeMap;
 public class SearchFrequencyMap {
 	  private Map<String, Integer> searchFrequencyMap;
 	    private File frequencyFile;
-	    public SearchFrequencyMap() {
+	    public SearchFrequencyMap(String filepath) {
 	        searchFrequencyMap = new TreeMap<>(); // Change to TreeMap for ordered storage
-	        frequencyFile = new File("rc/main/resources/CarRentalData/SearchFrequency.txt");
+	        frequencyFile = new File(filepath);
 	        if (!frequencyFile.exists()) {
 	            try {
 	                frequencyFile.createNewFile();
