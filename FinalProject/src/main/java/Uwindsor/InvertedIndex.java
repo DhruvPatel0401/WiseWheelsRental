@@ -10,6 +10,7 @@ public class InvertedIndex {
 	    ));
 	 
 	 private static final String outputFilePath= "src/main/resources/CarRentalData/InvertedIndexTable.txt";
+	 private static final String outputFilePathData = "src/main/resources/CarRentalData";
 
     public void indexFiles(File directory) {
         if (!directory.isDirectory()) {
@@ -94,7 +95,7 @@ public class InvertedIndex {
         }
     }
 
-    private Map<String, Set<String>> readIndexFromFile(String inputFilePath) {
+    public static Map<String, Set<String>> readIndexFromFile(String inputFilePath) {
         Map<String, Set<String>> invertedIndex = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath))) {
             String line;
@@ -109,6 +110,34 @@ public class InvertedIndex {
             e.printStackTrace();
         }
         return invertedIndex;
+    }
+    public static void searchAndPrintMultipleKeywords(String[] keywords) {
+        Map<String, Set<String>> invertedIndex = readIndexFromFile(outputFilePath);
+
+        for (String keyword : keywords) {
+            String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Convert keyword to lowercase
+            for (Map.Entry<String, Set<String>> entry : invertedIndex.entrySet()) {
+                if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Case-insensitive comparison
+                    Set<String> files = entry.getValue();
+                    for (String file : files) {
+                        printFileContent(outputFilePathData + "/" + file); // Add file path before printing
+                    }
+                    break;
+                }
+            }
+        }
+    }
+    public static void printFileContent(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String line;
+            System.out.println("Content of file: " + fileName);
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            System.out.println("----------------------------------");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
  

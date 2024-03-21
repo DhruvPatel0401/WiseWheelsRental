@@ -44,7 +44,7 @@ public class Main {
         System.out.println("\nSelect an option:");
         System.out.println("1. Web Crawler");
         System.out.println("2. Find Top 10 Cheapest Deals");
-        System.out.println("3. Search for Car in Location");
+        System.out.println("3. Search for Car ");
         System.out.println("4. Add a keyWord into the History");
         System.out.println("5. Search for keyWord into the Inverted Indexing");
         System.out.println("Type 'exit' to quit");
@@ -64,6 +64,7 @@ public class Main {
         // Call web crawler class to fetch data based on inputs
         WebCrawler crawler = new WebCrawler(location, startDate, endDate);
         crawler.startCrawling(location, startDate, endDate);
+        CreateInvertedIndexTable();
     }
 
     private static void performTop10CheapestDeals() {
@@ -71,8 +72,17 @@ public class Main {
     }
 
     private static void searchForCar() {
-        // Implement searching for car in location functionality
-        System.out.println("Searching for Car in Location...");
+//        // Implement searching for car in location functionality
+//        System.out.println("Searching for Car...");
+    	 InvertedIndex invertedIndex = new InvertedIndex();
+    	   System.out.print("\nEnter a Car name: ");
+    	   String searchData = scanner.nextLine();
+    	   String[] keywords = searchData.split("\\s+");
+    	   
+    	  invertedIndex.searchAndPrintMultipleKeywords(keywords);
+    	   
+    	 
+        
     }
     
     private static String getLocation() {
@@ -191,12 +201,7 @@ public class Main {
     }
     
     private static void invertedIndex() {
-        InvertedIndex invertedIndex = new InvertedIndex();
-        File directory = new File("src/main/resources/CarRentalData");
-        String outputFilePath = "src/main/resources/CarRentalData/InvertedIndexTable.txt";
-
-        invertedIndex.indexFiles(directory);
-
+    	  InvertedIndex invertedIndex = new InvertedIndex();
         System.out.print("Enter keywords to search (separated by spaces): ");
         String inputKeywords = scanner.nextLine();
 
@@ -213,4 +218,14 @@ public class Main {
         }
     }
     
+
+
+private static void CreateInvertedIndexTable() {
+	   InvertedIndex invertedIndex = new InvertedIndex();
+       File directory = new File("src/main/resources/CarRentalData");
+
+       invertedIndex.indexFiles(directory);
+	
 }
+}
+
