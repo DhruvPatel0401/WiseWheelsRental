@@ -1,9 +1,0 @@
-Car Name: Ford Edge
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $35
-Car Total Price: $40
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
-Available at: carrental.com

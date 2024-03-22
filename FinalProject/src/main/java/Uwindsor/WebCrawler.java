@@ -238,15 +238,15 @@ public class WebCrawler {
             
 	            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/Expedia" + carCount + ".txt")) {
 	            	// Write car details to the file
-	                file.write("Car Name: " + carName + "\n");
-	                file.write("Car Type: " + carType + "\n");
-	                file.write("Max Passengers: " + carCapacity + "\n");
-	                file.write("Car Size: " + carSize + "\n");
-	                file.write("Car Price per Day: " + carPrice + "\n");
-	                file.write("Car Total Price: " + carTotalPrice + "\n");
-	                file.write("Vendor Name: " + vendor + "\n");
-	                file.write("Ratings: " + ratingText + "\n");
-	                file.write("Available at: expedia.com" + "\n");
+	                file.write("Car Name : " + carName + "\n");
+	                file.write("Car Type : " + carType + "\n");
+	                file.write("Max Passengers : " + carCapacity + "\n");
+	                file.write("Car Size : " + carSize + "\n");
+	                file.write("Car Price per Day : " + carPrice + "\n");
+	                file.write("Car Total Price : " + carTotalPrice + "\n");
+	                file.write("Vendor Name : " + vendor + "\n");
+	                file.write("Ratings : " + ratingText + "\n");
+	                file.write("Available at : expedia.com" + "\n");
 
 	            } catch (IOException e) {
 	                e.printStackTrace();
