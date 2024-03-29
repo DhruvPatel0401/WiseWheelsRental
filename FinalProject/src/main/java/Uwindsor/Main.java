@@ -79,7 +79,7 @@ public class Main {
     	   String searchData = scanner.nextLine();
     	   String[] keywords = searchData.split("\\s+");
     	   
-    	  invertedIndex.searchAndPrintMultipleKeywords(keywords);
+    	  invertedIndex.printBeforeSearchingData(keywords);
     	   
     	 
         
@@ -195,9 +195,9 @@ public class Main {
 //            }
 //        }
         keyword = scanner.nextLine();
-        searchFrequencyMap.updateSearchFrequency(keyword);
+        searchFrequencyMap.dataUpdateInTheFile(keyword);
         
-        searchFrequencyMap.displaySearchFrequency();
+        searchFrequencyMap.filedataDisplaying();
     }
     
     private static void invertedIndex() {
@@ -207,7 +207,7 @@ public class Main {
 
         String[] keywords = inputKeywords.split("\\s+");
 
-        Set<String> filesWithKeywords = invertedIndex.searchMultipleKeywords(keywords);
+        Set<String> filesWithKeywords = invertedIndex.multipledatasearch(keywords);
         if (!filesWithKeywords.isEmpty()) {
             System.out.println("Files containing the keywords:");
             for (String fileName : filesWithKeywords) {
@@ -224,7 +224,7 @@ private static void CreateInvertedIndexTable() {
 	   InvertedIndex invertedIndex = new InvertedIndex();
        File directory = new File("src/main/resources/CarRentalData");
 
-       invertedIndex.indexFiles(directory);
+       invertedIndex.DataIndexFile(directory);
 	
 }
 }

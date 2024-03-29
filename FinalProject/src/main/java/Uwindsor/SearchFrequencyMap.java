@@ -3,64 +3,72 @@ import java.io.*;
 import java.util.Map;
 import java.util.TreeMap;
 
+// class for organising and filing search frequency data
 public class SearchFrequencyMap {
-	  private Map<String, Integer> searchFrequencyMap;
-	    private File frequencyFile;
-	    public SearchFrequencyMap(String filepath) {
-	        searchFrequencyMap = new TreeMap<>(); // Change to TreeMap for ordered storage
-	        frequencyFile = new File(filepath);
-	        if (!frequencyFile.exists()) {
-	            try {
-	                frequencyFile.createNewFile();
-	            } catch (IOException e) {
-	                e.printStackTrace();
-	            }
-	        }
-	        loadFrequencyData();
-	    }
+    private Map<String, Integer> HistroyDataMap; // Map to keep track of search terms and their frequency
+    private File dataReadToBeFile; // A file containing search history information
 
-	    private void loadFrequencyData() {
-	        try (BufferedReader reader = new BufferedReader(new FileReader(frequencyFile))) {
-	            String line;
-	            while ((line = reader.readLine()) != null) {
-	                String[] parts = line.split(":");
-	                searchFrequencyMap.put(parts[0], Integer.parseInt(parts[1]));
-	            }
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    }
+    // Constructor to import current data from file and initialise the map and file
+    public SearchFrequencyMap(String pathToFile) {
+        HistroyDataMap = new TreeMap<>(); // Switch to a TreeMap to have organised storage
+        
+        dataReadToBeFile = new File(pathToFile); //Set up the file object first.
+        if (!dataReadToBeFile.exists()) { // If the file isn't there, create it.
+            try {
+                dataReadToBeFile.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        AddDataToTheFile(); // Import current data from the file.
+    }
 
-	    public void updateSearchFrequency(String keyword) {
-	        if (searchFrequencyMap.containsKey(keyword)) {
-	            searchFrequencyMap.put(keyword, searchFrequencyMap.get(keyword) + 1);
-	        } else {
-	            searchFrequencyMap.put(keyword, 1);
-	        }
-	        saveFrequencyData();
-	    }
+    // to use the file to import current data into the map
+    private void AddDataToTheFile() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(dataReadToBeFile))) {
+            String EachLineInFile;
+            while ((EachLineInFile = reader.readLine()) != null) { // Go over each line in the file.
+                String[] SingleWord = EachLineInFile.split(":"); // Divide every line by ":"
+                HistroyDataMap.put(SingleWord[0], Integer.parseInt(SingleWord[1])); // Keep track of a keyword's frequency in the map.
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 
-	    public void deleteSearchFrequency(String keyword) {
-	        searchFrequencyMap.remove(keyword);
-	        saveFrequencyData();
-	    }
+    // to modify a keyword's frequency in a map and save it to a file
+    public void dataUpdateInTheFile(String searchingKeyword) {
+        if (HistroyDataMap.containsKey(searchingKeyword)) { // If the search term is already present on the map
+            HistroyDataMap.put(searchingKeyword, HistroyDataMap.get(searchingKeyword) + 1); // Increase the frequency of it
+        } else { 
+            HistroyDataMap.put(searchingKeyword, 1); // Include it with frequency 1 on the map.
+        }
+        SaveDataToFile(); //Update the file with the most recent data.
+    }
 
-	    private void saveFrequencyData() {
-	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(frequencyFile))) {
-	            for (Map.Entry<String, Integer> entry : searchFrequencyMap.entrySet()) {
-	                writer.write(entry.getKey() + ":" + entry.getValue());
-	                writer.newLine();
-	            }
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    }
+    //save updated data to the file and remove a term from the map
+    public void datadeleteinfile(String keyworddata) {
+        HistroyDataMap.remove(keyworddata); //Take the term off of the map.
+        SaveDataToFile(); // Update the file with the most recent data.
+    }
 
-	    public void displaySearchFrequency() {
-	        System.out.println("Current Search Frequency:");
-	        for (Map.Entry<String, Integer> entry : searchFrequencyMap.entrySet()) {
-	            System.out.println(entry.getKey() + ": " + entry.getValue());
-	        }
-	    }
+    // Technique for mapping data to be saved in a file
+    private void SaveDataToFile() {
+        try (BufferedWriter newfiledataText = new BufferedWriter(new FileWriter(dataReadToBeFile))) {
+            for (Map.Entry<String, Integer> entry : HistroyDataMap.entrySet()) { // Go over the map entries one by one.
+                newfiledataText.write(entry.getKey() + ":" + entry.getValue()); // Add the term and its occurrences to the document.
+                newfiledataText.newLine(); 
+            }
+        } catch (IOException ev) {
+            ev.printStackTrace();
+        }
+    }
 
+    // to present search history information
+    public void filedataDisplaying() {
+        System.out.println("Search History:");
+        for (Map.Entry<String, Integer> entry : HistroyDataMap.entrySet()) { // Go over the map entries one by one.
+            System.out.println(entry.getKey() + ": " + entry.getValue()); // Print keyword frequency
+        }
+    }
 }

@@ -4,48 +4,53 @@ import java.io.*;
 import java.util.*;
 
 public class InvertedIndex {
-	 private static final Set<String> EXCLUDED_KEYWORDS = new HashSet<>(Arrays.asList(
-	            "is", "an", "the", "Car", "Name", "Type", "Max", "Passengers", "Size", "Price", 
-	            "per", "Day", "Total", "Vendor", "Rating", "No", "no", "ratings", "Available", "at"
-	    ));
-	 
-	 private static final String outputFilePath= "src/main/resources/CarRentalData/InvertedIndexTable.txt";
-	 private static final String outputFilePathData = "src/main/resources/CarRentalData";
+    // a list of terms that won't be indexed
+    private static final Set<String> EXCLUDED_WORDS = new HashSet<>(Arrays.asList(
+            "is", "an", "the", "Car", "Name", "Type", "Max", "Passengers", "Size", "Price", 
+            "per", "Day", "Total", "Vendor", "Rating", "No", "no", "ratings", "Available", "at"
+    ));
+    
+    // Paths for the output files
+    private static final String outputFilePath = "src/main/resources/CarRentalData/InvertedIndexTable.txt";
+    private static final String outputFilePathData = "src/main/resources/CarRentalData";
 
-    public void indexFiles(File directory) {
+    // Recursive data file indexing technique in a directory
+    public void DataIndexFile(File directory) {
         if (!directory.isDirectory()) {
             return;
         }
 
-        Map<String, Set<String>> invertedIndex = new HashMap<>();
+        Map<String, Set<String>> invertedTableData = new HashMap<>();
 
-        for (File file : directory.listFiles()) {
-            if (file.isDirectory()) {
-                indexFiles(file);
+        for (File infoData : directory.listFiles()) {
+            if (infoData.isDirectory()) {
+                DataIndexFile(infoData);
             } else {
-                // Skip files with specific names
-                if (shouldSkipFile(file)) {
+                // Ignore files with particular names.
+                if (skiptheFileinthefolder(infoData)) {
                     continue;
                 }
-                indexFile(file, invertedIndex);
+                dataindexfileInfo(infoData, invertedTableData);
             }
         }
 
-        writeIndexToFile(invertedIndex, outputFilePath);
+        refenceindexfile(invertedTableData, outputFilePath);
     }
 
-    private boolean shouldSkipFile(File file) {
-        String fileName = file.getName();
-        return fileName.equals("InvertedIndexTable.txt") || fileName.equals("SearchKeywordHistory.txt");
+    // Ignore files with particular names.
+    private boolean skiptheFileinthefolder(File file) {
+        String fileInfoNameData = file.getName();
+        return fileInfoNameData.equals("InvertedIndexTable.txt") || fileInfoNameData.equals("SearchKeywordHistory.txt");
     }
 
-    private void indexFile(File file, Map<String, Set<String>> invertedIndex) {
+    // to index information from a file
+    private void dataindexfileInfo(File file, Map<String, Set<String>> invertedIndex) {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] words = line.split("\\s+");
                 for (String word : words) {
-                    if (!EXCLUDED_KEYWORDS.contains(word)) {
+                    if (!EXCLUDED_WORDS.contains(word)) {
                         invertedIndex.computeIfAbsent(word, k -> new HashSet<>()).add(file.getName());
                     }
                 }
@@ -55,91 +60,95 @@ public class InvertedIndex {
         }
     }
 
-    public Set<String> search(String keyword, String inputFilePath) {
-    	
-        Map<String, Set<String>> invertedIndex = readIndexFromFile(inputFilePath);
-        String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Convert keyword to lowercase
-        for (Map.Entry<String, Set<String>> entry : invertedIndex.entrySet()) {
-            if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Case-insensitive comparison
+    // Technique for doing a keyword-based information search
+    public Set<String> seachInformationData(String keyword, String inputFilePath) {
+        Map<String, Set<String>> invertedtableInfo = datareadfromFileData(inputFilePath);
+        String datatolowercase = keyword.toLowerCase(Locale.ENGLISH); // Convert keyword to lowercase
+        for (Map.Entry<String, Set<String>> entry : invertedtableInfo.entrySet()) {
+            if (entry.getKey().equalsIgnoreCase(datatolowercase)) { // Case-insensitive comparison
                 return entry.getValue(); // Return files corresponding to matched keyword
             }
         }
         return Collections.emptySet();
     }
 
-    public Set<String> searchMultipleKeywords(String[] keywords) {
-        Map<String, Set<String>> invertedIndex = readIndexFromFile(outputFilePath);
-        Set<String> resultFiles = new HashSet<>();
+    // A technique for carrying out several searches using a variety of keywords
+    public Set<String> multipledatasearch(String[] keywords) {
+        Map<String, Set<String>> invtdata = datareadfromFileData(outputFilePath);
+        Set<String> finaldataresultfile = new HashSet<>();
 
-        for (String keyword : keywords) {
-            String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Convert keyword to lowercase
-            for (Map.Entry<String, Set<String>> entry : invertedIndex.entrySet()) {
-                if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Case-insensitive comparison
-                    resultFiles.addAll(entry.getValue()); // Add files corresponding to matched keyword
+        for (String dataiteration : keywords) {
+            String datatolowercase = dataiteration.toLowerCase(Locale.ENGLISH); 
+            for (Map.Entry<String, Set<String>> entry : invtdata.entrySet()) {
+                if (entry.getKey().equalsIgnoreCase(datatolowercase)) { 
+                    finaldataresultfile.addAll(entry.getValue()); // Add the files that match the entered keyword.
                     break;
                 }
             }
         }
-        return resultFiles;
+        return finaldataresultfile;
     }
 
-    private void writeIndexToFile(Map<String, Set<String>> invertedIndex, String outputFilePath) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter(outputFilePath))) {
+    //indexed data is written to a file
+    private void refenceindexfile(Map<String, Set<String>> invertedIndex, String filePath) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(filePath))) {
             for (Map.Entry<String, Set<String>> entry : invertedIndex.entrySet()) {
                 String keyword = entry.getKey();
-                String files = String.join(",", entry.getValue()); // Join filenames with commas
-                writer.println(keyword + ":" + files); // Separate keyword and filenames with a colon
+                String files = String.join(",", entry.getValue()); // Integrate filenames using commas
+                writer.println(keyword + ":" + files); // Use a colon to divide the filename and the keyword.
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException eu) {
+            eu.printStackTrace();
         }
     }
 
-    public static Map<String, Set<String>> readIndexFromFile(String inputFilePath) {
-        Map<String, Set<String>> invertedIndex = new HashMap<>();
+    // open a file with indexed data
+    public static Map<String, Set<String>> datareadfromFileData(String inputFilePath) {
+        Map<String, Set<String>> invertedTableData = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] parts = line.split(":"); // Split by colon
-                String keyword = parts[0];
-                String[] files = parts[1].split(","); // Split filenames by comma
-                Set<String> fileSet = new HashSet<>(Arrays.asList(files));
-                invertedIndex.put(keyword, fileSet);
+                String[] eachDataInfile = line.split(":"); 
+                String eachWordInfile = eachDataInfile[0];
+                String[] allthefilesInfolder = eachDataInfile[1].split(","); // filenames with commas
+                Set<String> filesData = new HashSet<>(Arrays.asList(allthefilesInfolder));
+                invertedTableData.put(eachWordInfile, filesData);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException eb) {
+            eb.printStackTrace();
         }
-        return invertedIndex;
+        return invertedTableData;
     }
-    public static void searchAndPrintMultipleKeywords(String[] keywords) {
-        Map<String, Set<String>> invertedIndex = readIndexFromFile(outputFilePath);
+
+    // print content before conducting a search
+    public static void printBeforeSearchingData(String[] keywords) {
+        Map<String, Set<String>> invertedData = datareadfromFileData(outputFilePath);
 
         for (String keyword : keywords) {
-            String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Convert keyword to lowercase
-            for (Map.Entry<String, Set<String>> entry : invertedIndex.entrySet()) {
-                if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Case-insensitive comparison
-                    Set<String> files = entry.getValue();
-                    for (String file : files) {
-                        printFileContent(outputFilePathData + "/" + file); // Add file path before printing
+            String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Lowercase the keyword
+            for (Map.Entry<String, Set<String>> entry : invertedData.entrySet()) {
+                if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { //Comparison without regard to case
+                    Set<String> filesData = entry.getValue();
+                    for (String fileName : filesData) {
+                        dataShowByPrinting(outputFilePathData + "/" + fileName); // Before printing, add the file path.
                     }
                     break;
                 }
             }
         }
     }
-    public static void printFileContent(String fileName) {
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+
+    // read data from a file and print it
+    public static void dataShowByPrinting(String filePath) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            System.out.println("Content of file: " + fileName);
-            while ((line = br.readLine()) != null) {
+            System.out.println("Content of file: " + filePath);
+            while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
             System.out.println("----------------------------------");
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ey) {
+            ey.printStackTrace();
         }
     }
-
- 
- 
 }
