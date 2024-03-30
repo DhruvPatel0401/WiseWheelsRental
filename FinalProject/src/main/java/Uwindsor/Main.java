@@ -76,7 +76,6 @@ public class Main {
             if (!location.matches("^[a-zA-Z]+$")) {
                 System.out.println("Special characters and Numbers are not allowed. Please enter a valid location.");
             } else {
-                System.out.println("Valid location. Proceeding...");
                 break;
             }
         }
@@ -84,23 +83,36 @@ public class Main {
         List<String> nearestWords = WordCompletion.findNearestWords(location);
 
         if (!nearestWords.isEmpty()) {
+        	nearestWords.remove(location.toLowerCase());
+        	if (nearestWords.isEmpty()) {
+        		System.out.println("Location set to: " + location);
+        		return location;
+        	}
+        	
             System.out.println("\nDid you mean one of the following?");
             for (String word : nearestWords) {
                 System.out.println("- " + word);
             }
 
-            System.out.print("(Type the correct word or 'no' to enter a new one): ");
+            System.out.print("Type the correct word or 'no' to enter a new one: ");
             String userResponse = scanner.nextLine();
 
             if (!userResponse.equalsIgnoreCase("no") && nearestWords.contains(userResponse)) {
                 System.out.println("Location set to: " + userResponse);
                 return userResponse;
             } else {
-                System.out.println("Please enter the correct spelling of the location.");
+                System.out.println("Please enter the location.");
                 return getLocation();
             }
         } else {
-            return location;
+        	String correctedLocation = SpellChecking.correctedWord(location);
+            if (!correctedLocation.equals(location)) {
+                System.out.println("Location corrected to: " + correctedLocation);
+                return correctedLocation;
+            } else {
+                System.out.println("Incorrect location. Please try again.");
+                return getLocation();
+            }
         }
     }
 

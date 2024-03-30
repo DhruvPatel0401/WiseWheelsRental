@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Kia Forte
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $36
-Car Total Price: $47
-Vendor Name: Budget
+Car Size: Midsize
+Car Price per Day: $124
+Car Total Price: $156
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

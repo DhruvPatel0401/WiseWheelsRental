@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV AWD
-Car Price per Day: $33
-Car Total Price: $37
+Car Size: Premium Special
+Car Price per Day: $34
+Car Total Price: $43
 Vendor Name: Enterprise
-Ratings: 76%
+Ratings: No ratings
 Available at: expedia.com

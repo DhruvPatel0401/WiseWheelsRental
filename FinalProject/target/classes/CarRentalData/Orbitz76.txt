@@ -1,0 +1,9 @@
+Car Name: Nissan Maxima
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Premium
+Car Price per Day: $153
+Car Total Price: $192
+Vendor Name: National Car Rental Rental Company
+Ratings: 100%
+Available at: orbitz.com

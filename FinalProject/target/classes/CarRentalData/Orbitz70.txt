@@ -2,8 +2,8 @@ Car Name: Ford Escape
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Midsize SUV
-Car Price per Day: $31
-Car Total Price: $41
+Car Price per Day: $32
+Car Total Price: $42
 Vendor Name: Budget Rental Company
 Ratings: 80%
-Available at: carrental.com
+Available at: orbitz.com

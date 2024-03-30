@@ -1,0 +1,9 @@
+Car Name: Dodge Durango
+Car Type: Automatic
+Max Passengers: 7
+Car Size: Premium Crossover
+Car Price per Day: $210
+Car Total Price: $264
+Vendor Name: National Car Rental Rental Company
+Ratings: 100%
+Available at: orbitz.com

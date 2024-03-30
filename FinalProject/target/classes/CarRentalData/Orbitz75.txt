@@ -1,9 +1,9 @@
-Car Name: Nissan Maxima
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $36
-Car Total Price: $41
+Car Size: Premium Special
+Car Price per Day: $34
+Car Total Price: $43
 Vendor Name: Enterprise Rental Company
-Ratings: 100%
-Available at: carrental.com
+Ratings: 89%
+Available at: orbitz.com

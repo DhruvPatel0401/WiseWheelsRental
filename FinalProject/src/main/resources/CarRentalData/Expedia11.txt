@@ -1,9 +1,0 @@
-Car Name: Cadillac Xt5
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Premium Elite SUV
-Car Price per Day: $42
-Car Total Price: $53
-Vendor Name: Enterprise
-Ratings: No ratings
-Available at: expedia.com

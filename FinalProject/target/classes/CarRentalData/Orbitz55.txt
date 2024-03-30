@@ -1,9 +1,9 @@
-Car Name: Toyota Camry
+Car Name: Hyundai Elantra
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $31
-Car Total Price: $39
-Vendor Name: Enterprise Rental Company
-Ratings: 89%
-Available at: carrental.com
+Car Size: Midsize
+Car Price per Day: $30
+Car Total Price: $40
+Vendor Name: Budget Rental Company
+Ratings: 80%
+Available at: orbitz.com

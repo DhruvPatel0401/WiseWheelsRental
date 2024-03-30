@@ -2,8 +2,8 @@ Car Name: Toyota Rav4
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Midsize SUV
-Car Price per Day: $33
-Car Total Price: $37
+Car Price per Day: $32
+Car Total Price: $41
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
-Available at: carrental.com
+Ratings: 89%
+Available at: orbitz.com

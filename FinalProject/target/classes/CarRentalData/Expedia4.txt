@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Toyota Rav4
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $35
-Car Total Price: $46
-Vendor Name: Budget
+Car Size: Midsize SUV
+Car Price per Day: $33
+Car Total Price: $42
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

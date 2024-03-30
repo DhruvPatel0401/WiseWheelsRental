@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Hyundai Elantra
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV
+Car Size: Midsize
 Car Price per Day: $33
-Car Total Price: $37
-Vendor Name: Enterprise
-Ratings: 100%
+Car Total Price: $42
+Vendor Name: Avis
+Ratings: No ratings
 Available at: expedia.com

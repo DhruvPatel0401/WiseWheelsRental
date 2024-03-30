@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Jeep Wrangler Unlimited
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Budget
+Car Size: Fullsize Open Air All-Terrain
+Car Price per Day: $48
+Car Total Price: $54
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

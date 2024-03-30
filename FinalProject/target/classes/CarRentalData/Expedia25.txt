@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Vw Jetta
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $32
-Car Total Price: $42
-Vendor Name: Avis
+Car Size: Standard
+Car Price per Day: $134
+Car Total Price: $168
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

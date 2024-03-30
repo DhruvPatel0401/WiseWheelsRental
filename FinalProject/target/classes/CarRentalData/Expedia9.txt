@@ -1,9 +1,9 @@
-Car Name: Ford Escape
+Car Name: Jeep Wrangler Unlimited
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $35
-Car Total Price: $45
-Vendor Name: Budget
+Car Size: Fullsize Open Air All-Terrain
+Car Price per Day: $49
+Car Total Price: $62
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

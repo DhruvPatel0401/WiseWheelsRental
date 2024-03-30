@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Audi A4 or BMW 3 Series
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $31
-Car Total Price: $41
-Vendor Name: Avis
+Car Size: Luxury
+Car Price per Day: $35
+Car Total Price: $44
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

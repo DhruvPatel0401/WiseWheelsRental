@@ -1,9 +1,9 @@
-Car Name: Dodge Durango
+Car Name: Nissan Versa
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Premium Crossover
-Car Price per Day: $34
-Car Total Price: $39
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
-Available at: carrental.com
+Max Passengers: 5
+Car Size: Compact
+Car Price per Day: $32
+Car Total Price: $42
+Vendor Name: Avis Rental Company
+Ratings: 95%
+Available at: orbitz.com

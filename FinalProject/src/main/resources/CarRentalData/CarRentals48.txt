@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Audi Q3
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Budget
-Ratings: 80%
+Car Size: Standard Elite SUV
+Car Price per Day: $42
+Car Total Price: $53
+Vendor Name: Enterprise
+Ratings: No ratings
 Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Chevrolet Malibu
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
+Max Passengers: 5
+Car Size: Standard
 Car Price per Day: $31
-Car Total Price: $39
-Vendor Name: Enterprise Rental Company
-Ratings: 89%
-Available at: carrental.com
+Car Total Price: $40
+Vendor Name: Budget Rental Company
+Ratings: 80%
+Available at: orbitz.com

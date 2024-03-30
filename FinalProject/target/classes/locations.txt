@@ -1,1738 +1,203 @@
-city_ascii
-Toronto
-Montreal
-Vancouver
-Calgary
-Edmonton
-Ottawa
-Winnipeg
-Quebec City
-Hamilton
-Mississauga
-Brampton
-Surrey
-Kitchener
-Halifax
-Laval
-London
-Victoria
-Markham
-Oshawa
-Vaughan
-Windsor
-Gatineau
-Saskatoon
-Longueuil
-Burnaby
-St. Catharines
-Regina
-Oakville
-Richmond
-Richmond Hill
-Burlington
-St. John's
-Kelowna
-Sherbrooke
-Sudbury
-Barrie
-Abbotsford
-Levis
-Coquitlam
-Saguenay
-Guelph
-Trois-Rivieres
-Whitby
-Cambridge
-Milton
-Ajax
-Waterloo
-Terrebonne
-Moncton
-Saanich
-White Rock
-Thunder Bay
-Delta
-Nanaimo
-Brantford
-Chatham
-Clarington
-Saint-Jerome
-Red Deer
-Pickering
-Lethbridge
-Kamloops
-Saint-Jean-sur-Richelieu
-Niagara Falls
-Cape Breton
-Chilliwack
-Brossard
-Maple Ridge
-Newmarket
-Repentigny
-Peterborough
-Drummondville
-Kawartha Lakes
-New Westminster
-Prince George
-Caledon
-Chateauguay
-Belleville
-Airdrie
-Sarnia
-Wood Buffalo
-Sault Ste. Marie
-Saint John
-Welland
-Granby
-St. Albert
-Fredericton
-Grande Prairie
-Medicine Hat
-Halton Hills
-Aurora
-Port Coquitlam
-Mirabel
-Blainville
-Lac-Brome
-North Vancouver
-Saint-Hyacinthe
-Beloeil
-North Bay
-Charlottetown
-Vernon
-Brandon
-Mascouche
-Stouffville
-Shawinigan
-Joliette
-Rimouski
-Courtenay
-Dollard-des-Ormeaux
-Cornwall
-Victoriaville
-Georgina
-Woodstock
-Langford Station
-Quinte West
-St. Thomas
-Saint-Eustache
-West Vancouver
-New Tecumseth
-Innisfil
-Vaudreuil-Dorion
-Bradford West Gwillimbury
-Salaberry-de-Valleyfield
-Rouyn-Noranda
-Boucherville
-Mission
-Timmins
-Lakeshore
-Brant
-Spruce Grove
-Campbell River
-Prince Albert
-Penticton
-Sorel-Tracy
-East Kelowna
-Leamington
-East Gwillimbury
-Cote-Saint-Luc
-Orangeville
-Leduc
-Moose Jaw
-Port Moody
-Pointe-Claire
-Orillia
-Stratford
-Fort Erie
-Val-d'Or
-LaSalle
-Cochrane
-North Cowichan
-Lloydminster
-Chambly
-Centre Wellington
-Okotoks
-Alma
-Sainte-Julie
-Saint-Constant
-Langley
-Grimsby
-Magog
-Boisbriand
-Whitehorse
-Dieppe
-King
-Parksville
-Conception Bay South
-Fort Saskatchewan
-Woolwich
-Sainte-Therese
-Clarence-Rockland
-La Prairie
-Saint-Bruno-de-Montarville
-Midland
-Thetford Mines
-Lincoln
-Quispamsis
-Wasaga Beach
-Collingwood
-Sept-Iles
-Duncan
-Hudson
-Saint-Lin--Laurentides
-Strathroy-Caradoc
-Squamish
-Thorold
-Truro
-Amherstburg
-L'Assomption
-Tecumseh
-Candiac
-Essa
-Paradise
-Saint-Lambert
-Mount Pearl Park
-Saint-Lazare
-Owen Sound
-Brockville
-Chestermere
-Kingsville
-Port Alberni
-Springwater
-Scugog
-Uxbridge
-Fort St. John
-Wilmot
-Essex
-Varennes
-Oro-Medonte
-Mont-Royal
-Beaumont
-Baie-Comeau
-Riverview
-Cobourg
-Cranbrook
-Yellowknife
-South Frontenac
-Riviere-du-Loup
-Port Colborne
-Saint-Augustin-de-Desmaures
-Huntsville
-Sainte-Marthe-sur-le-Lac
-Lloydminster
-Westmount
-Russell
-Les Coteaux
-Salmon Arm
-Kirkland
-Corner Brook
-New Glasgow
-Dorval
-Beaconsfield
-Pitt Meadows
-Niagara-on-the-Lake
-Colwood
-Middlesex Centre
-Mont-Saint-Hilaire
-Camrose
-Selwyn
-Tillsonburg
-Pelham
-Petawawa
-Stony Plain
-Oak Bay
-North Grenville
-Loyalist
-Deux-Montagnes
-Steinbach
-Saint-Colomban
-Miramichi
-Esquimalt
-Central Saanich
-Sainte-Catherine
-Port Hope
-Inverness
-Saint-Basile-le-Grand
-L'Ancienne-Lorette
-Swift Current
-Pembroke
-Edmundston
-Yorkton
-Springfield
-Sylvan Lake
-Bracebridge
-Summerside
-Canmore
-Bathurst
-Greater Napanee
-Lake Country
-Hanover
-Winkler
-Saint-Charles-Borromee
-Cowansville
-Sainte-Anne-des-Plaines
-Gaspe
-Sooke
-Kenora
-Cold Lake
-Brooks
-Kentville
-Comox
-Pincourt
-Mississippi Mills
-St. Clair
-Terrace
-Mercier
-West Lincoln
-Lavaltrie
-West Nipissing / Nipissing Ouest
-Strathmore
-High River
-Clearview
-Lachute
-Rosemere
-Matane
-Thames Centre
-Powell River
-Carleton Place
-Guelph/Eramosa
-Grand Falls
-North Battleford
-Mont-Laurier
-Central Elgin
-Mistassini
-Saugeen Shores
-Ingersoll
-Beauharnois
-South Stormont
-Becancour
-Severn
-Lacombe
-Sainte-Sophie
-Val-des-Monts
-Saint-Amable
-Portage La Prairie
-South Glengarry
-Sainte-Marie
-North Perth
-Thompson
-Trent Hills
-Trail
-The Nation / La Nation
-Amos
-Wetaskiwin
-West Grey
-Warman
-Dawson Creek
-Sidney
-Gravenhurst
-Prince Rupert
-Perth East
-North Saanich
-Prevost
-Sainte-Adele
-Sainte-Agathe-des-Monts
-Quesnel
-Les Iles-de-la-Madeleine
-Tache
-Wellington North
-St. Andrews
-Williams Lake
-Gander
-Whistler
-Brighton
-Tiny
-Hawkesbury
-Carignan
-Brock
-L'Ile-Perrot
-Summerland
-St. Clements
-View Royal
-Montmagny
-Cantley
-Erin
-Notre-Dame-de-l'Ile-Perrot
-Kincardine
-Elliot Lake
-Bromont
-Arnprior
-North Dundas
-Wellesley
-Nelson
-Ladysmith
-Coldstream
-Georgian Bluffs
-Weyburn
-La Tuque
-Norwich
-Meaford
-Adjala-Tosorontio
-Hamilton Township
-Stratford
-Estevan
-South Dundas
-Lambton Shores
-North Dumfries
-Martensville
-Mapleton
-Rawdon
-Morinville
-Blackfalds
-Chester
-Queens
-Selkirk
-Saint-Felicien
-Roberval
-Rideau Lakes
-Sechelt
-Bois-des-Filion
-North Glengarry
-South Huron
-Marieville
-Penetanguishene
-Tay
-Castlegar
-Cavan Monaghan
-Morden
-Temiskaming Shores
-Hinton
-Saint-Sauveur
-Grey Highlands
-East St. Paul
-Stoneham-et-Tewkesbury
-Alfred and Plantagenet
-Mont-Tremblant
-Saint-Zotique
-Saint-Raymond
-Gibsons
-Amherst
-Elizabethtown-Kitley
-Smiths Falls
-Lorraine
-Ramara
-Notre-Dame-des-Prairies
-Leeds and the Thousand Islands
-Brockton
-Laurentian Valley
-Mono
-Sainte-Julienne
-Qualicum Beach
-Malahide
-Oromocto
-Whitecourt
-Olds
-Huron East
-Beckwith
-Labrador City
-Shelburne
-Stanley
-Taber
-Donnacona
-Corman Park No. 344
-L'Epiphanie
-West Perth
-Campbellton
-Bridgewater
-Coaldale
-Pont-Rouge
-Champlain
-Coaticook
-Minto
-La Peche
-Shediac
-Otterburn Park
-Sainte-Brigitte-de-Laval
-Sainte-Catherine-de-la-Jacques-Cartier
-South Bruce Peninsula
-Portugal Cove-St. Philip's
-Edson
-Renfrew
-Farnham
-Delson
-Plympton-Wyoming
-Banff
-Kapuskasing
-La Malbaie
-Boischatel
-Beauport
-Zorra
-Kitimat
-Macdonald
-Happy Valley
-Saint-Hippolyte
-Dauphin
-Church Point
-Old Chelsea
-Drumheller
-Kirkland Lake
-Aylmer
-Saint-Apollinaire
-Puslinch
-Argyle
-Torbay
-Yarmouth
-Innisfail
-Nicolet
-Rockwood
-Drummond/North Elmsley
-Contrecoeur
-Hanover
-Dryden
-Iqaluit
-Fort Frances
-Goderich
-La Sarre
-Chandler
-Stone Mills
-South-West Oxford
-Acton Vale
-Douro-Dummer
-Saint-Philippe
-McNab/Braeside
-Central Huron
-Rigaud
-Louiseville
-Chibougamau
-Coteau-du-Lac
-Ritchot
-Kimberley
-Blandford-Blenheim
-Bayham
-Augusta
-Stephenville
-The Pas
-St. Marys
-Saint-Remi
-Drayton Valley
-Ponoka
-Southgate
-Les Cedres
-Baie-Saint-Paul
-Merritt
-Bluewater
-East Zorra-Tavistock
-Brownsburg
+Alberta
+Argentia
 Asbestos
-Otonabee-South Monaghan
-Huron-Kinloss
-Hampstead
-Saint-Joseph-du-Lac
-Plessisville
-The Blue Mountains
-Whitewater Region
-Edwardsburgh/Cardinal
-Sainte-Anne-des-Monts
-Bay Roberts
-Wainfleet
-North Stormont
-Alnwick/Haldimand
-Peace River
-Saint-Lambert-de-Lauzon
-Arran-Elderslie
-Parry Sound
-Val-Shefford
-West St. Paul
-Slave Lake
-Port-Cartier
-Barrington
-Rocky Mountain House
-Muskoka Falls
-Cornwall
-Saint-Paul
-Devon
-Perth
-Wainwright
-Shannon
-Saint-Honore
-Beaubassin East / Beaubassin-est
-Bonnyville
-Cramahe
-Beauceville
-North Middlesex
-Beaupre
-Charlemagne
-Kent
-Clarenville
-Mont-Joli
-Pointe-Calumet
-Dysart et al
-Carbonear
-Hope
-Pontiac
-L'Ange-Gardien
-Hindon Hill
-La Broquerie
-Tweed
-Oliver Paipoonge
-Saint-Felix-de-Valois
-Melfort
-Stettler
-Niverville
-McMasterville
-Douglas
-Saint-Calixte
-Lac-Megantic
-Humboldt
-St. Paul
-Saint-Henri
-Peachland
-Vercheres
-Richelieu
-Petrolia
-Southwest Middlesex
-Front of Yonge
-Oliver
-Vegreville
-Princeville
-Saint-Cesaire
-Tay Valley
-South Bruce
-Antigonish
-Crowsnest Pass
-Redcliff
-Val-David
-Fernie
-Windsor
-Notre-Dame-du-Mont-Carmel
-Sainte-Martine
-Creston
-Saint-Roch-de-l'Achigan
-Sussex
-Saint-Pie
-Ashfield-Colborne-Wawanosh
-Trent Lakes
-Northern Rockies
-Gananoque
-Windsor
-Smithers
-Tracadie
-Meadow Lake
-Lanark Highlands
-Sackville
-Grand Falls
-Armstrong
-Cochrane
-La Ronge
-Marystown
-Sioux Lookout
-Didsbury
-Deer Lake
-Woodstock
-Flin Flon
-Brokenhead
-Burton
-Montreal-Ouest
-Spallumcheen
-Westlock
-Temiscouata-sur-le-Lac
-Osoyoos
-Saint Marys
-Hearst
-Metchosin
-Wolfville
-Breslau
-Stonewall
-Memramcook
-Sainte-Anne-de-Bellevue
-Stirling-Rawdon
-Mont-Orford
-Ste. Anne
-Espanola
-West Elgin
-Flin Flon (Part)
-Grand Bay-Westfield
-East Ferris
-Neepawa
-North Huron
-Saint-Germain-de-Grantham
-Saint-Cyrille-de-Wendover
-Chisasibi
-Southwold
-Chertsey
-Shippagan
-Lanoraie
-Centre Hastings
-Coverdale
-Warwick
-Hanwell
-Napierville
-Waterloo
-Saint-Joseph-de-Beauce
-White City
-Lucan Biddulph
-Berthierville
-Riviere-Rouge
-Greenstone
-Kindersley
-Saint-Denis-de-Brompton
-Jasper
-Barrhead
-Melville
-Amqui
-Saint-Mathias-sur-Richelieu
-Tyendinaga
-Iroquois Falls
-Havelock-Belmont-Methuen
-Cornwallis
-Saint-Boniface
-Westbank
-Edenwold No. 158
-Cumberland
-Goulds
-Vanderhoof
-Chateau-Richer
-Saint Stephen
-Nipawin
-Battleford
-Hampton
-Montreal-Est
-Central Frontenac
-Saint-Antonin
-Saint-Jean-de-Matha
-Headingley
-Seguin
-Beresford
-La Pocatiere
-Bowen Island
-Caraquet
-Altona
-Roxton Pond
-Saint-Etienne-des-Gres
-Grand Forks
-New Maryland
-Port Hardy
-Saint-Donat
-Madawaska Valley
-Deep River
-Asphodel-Norwood
-Red Lake
-Metabetchouan-Lac-a-la-Croix
-Maniwaki
-Vermilion
-Hastings Highlands
-Prescott
-Carstairs
-Danville
-Channel-Port aux Basques
-Lac-Etchemin
-Saint-Jacques
-Swan River
-Stellarton
-Northern Bruce Peninsula
-L'Islet-sur-Mer
-Carleton-sur-Mer
-Sparwood
-Casselman
-Oka
-Callander
-Amaranth
-Marmora and Lake
-Raymond
-Morin-Heights
-Dundas
-Simonds
-Crabtree
+Baddeck
 Bancroft
-Saint-Tite
-Howick
-Dutton/Dunwich
-New Richmond
-Perth South
-Claresholm
-Baie-d'Urfe
-Montague
-Saint-Andre-Avellin
-Saint-Ambroise-de-Kildare
-East Angus
-Rossland
-Mackenzie
-Golden
-Saint-Adolphe-d'Howard
-Warwick
-Bonnechere Valley
-Pincher Creek
-Alnwick
-Saint-Prosper
-Crossfield
-Ormstown
-Cardston
-De Salaberry
-Grande Cache
-Saint-Agapit
-Fruitvale
-Saint-Ambroise
-Westville
-Hay River
-Pasadena
-Mistissini
-Studholm
-Lorette
-Saint-Faustin--Lac-Carre
-Morris-Turnberry
-Placentia
-Saint-Pascal
-Mulmur
-Blind River
-Dunham
-High Level
-Havre-Saint-Pierre
-Saint-Anselme
-Trois-Pistoles
-Grande-Riviere
-Malartic
-Bonavista
-Prince Albert No. 461
-Saint-Maurice
-Killarney - Turtle Mountain
-Woodlands
-Lewisporte
-Invermere
-Bifrost-Riverton
-Ascot Corner
-Cartier
-Fossambault-sur-le-Lac
-Sainte-Anne-des-Lacs
-Saint-Sulpice
-Penhold
-Powassan
-Highlands East
-Saint-Alphonse-de-Granby
-Sainte-Claire
-Bright
-Ellison
-Perce
-Saint-Jean-Port-Joli
-East Hawkesbury
-Buckland No. 491
-Saint-Andre-d'Argenteuil
-Saint-Come--Liniere
-Marathon
-Forestville
-Compton
-Shuniah
-Inuvik
-Richmond
-Lake Cowichan
-Saint-Gabriel-de-Valcartier
-Gibbons
-Sables-Spanish Rivers
-Hillsburg-Roblin-Shell River
-Port Hawkesbury
-Three Hills
-Kingston
-Paspebiac
-Saint-Thomas
-Saint-Jean-Baptiste
-Portneuf
-Pictou
-Tisdale
-Lake of Bays
-Bishops Falls
-WestLake-Gladstone
-Normandin
-Mitchell
-Saint-Alphonse-Rodriguez
-Beausejour
+Banff
+Barrie
+Bathurst
+Baie Comeau
+Belleville
+Beloeil
+Borden
+Brampton
+Brandon
+Brockville
+Brooks
+Burlington
+Burnaby
+Caraquet
+Campbell River
+Calgary
+Cambridge
+Cavendish
+Channel Port aux Basques
+Charlottetown
+Chambly
+Charlesbourg
+Chateauguay
+Chatham
+Chatham Kent
+Chibougamau
+Chilliwack
+Churchill
+Cote Saint Luc
+Corner Brook
+Cornwall
+Cranbrook
+Cumberland House
 Dalhousie
-Val-Morin
-Lac du Bonnet
-Clermont
-Virden
-Saint-Christophe-d'Arthabaska
-Mont-Saint-Gregoire
-Thurso
-Wellington
-Cedar
-Saint-Gabriel
-Merrickville
-Saint-Liboire
-Degelis
-Morris
-Saint-Alexis-des-Monts
-Cap-Saint-Ignace
-Fort Macleod
-Enderby
-Carman
-Saint-Anaclet-de-Lessard
-Stoke
-Adelaide-Metcalfe
-Melancthon
-Cap Sante
-Saint-David-de-Falardeau
-Harbour Grace
-Houston
-Springdale
-Pemberton
-Athabasca
-Saint-Ferreol-les-Neiges
-Laurentian Hills
-Grand Valley
-Senneterre
-Saint-Mathieu-de-Beloeil
-Sainte-Marie-Madeleine
-Admaston/Bromley
-North Algona Wilberforce
-Errington
-Wawa
-Sainte-Melanie
-Horton
-Saint-Paul-d'Abbotsford
-Saint-Michel
-Botwood
-Coalhurst
-Saint-Marc-des-Carrieres
-Stanstead
-Sainte-Anne-de-Beaupre
-Sainte-Luce
-Saint-Joseph-de-Sorel
-Rankin Inlet
-Kingsclear
-Princeton
-La Loche
-Ferme-Neuve
-Yamachiche
-Adstock
-Cowichan Bay
-Vanscoy No. 345
-Enniskillen
-Royston
-Bonaventure
-Pohenegamook
-Saint-Isidore
-Wakefield
-Arviat
-Sainte-Marguerite-du-Lac-Masson
-Saint-Prime
-Kuujjuaq
-Atikokan
-Grenville-sur-la-Rouge
-North Cypress-Langford
-Saint-Dominique
-Macamic
-Sainte-Anne-de-Sorel
-Sundre
-Rougemont
-Piedmont
-Grimshaw
-Lac-des-Ecorces
-Markstay
-Northeastern Manitoulin and the Islands
-Pelican Narrows
-McDougall
-Black Diamond
-Saint-Pamphile
-Bedford
-Weedon-Centre
-Lacolle
-Saint-Gabriel-de-Brandon
-Huntingdon
-French River / Riviere des Francais
-Spaniards Bay
-Cocagne
-Pilot Butte
-Saint-Bruno
-Laurier-Station
-Saint-Anicet
-Cap-Chat
-Sexsmith
-Notre-Dame-de-Lourdes
-Ville-Marie
-Wickham
-Shippegan
-East Garafraxa
-Unity
-Rimbey
-High Prairie
-Turner Valley
-Hanna
-Neuville
-Fort Smith
-Maria
-Saint-Chrysostome
-Greater Madawaska
-Berwick
-Saint-Damase
-Disraeli
-Meadow Lake No. 588
-Elkford
-Georgian Bay
-Saint-Alexandre
-Herbertville
-Moosomin
-Highlands
-North Kawartha
-Sainte-Thecle
-Fermont
-Esterhazy
-Holyrood
-La Presentation
-Beaverlodge
-Sainte-Catherine-de-Hatley
-Saint-Basile
-Saint-Raphael
-Saint-Martin
-Causapscal
-Brigham
-Sainte-Victoire-de-Sorel
-Perry
-Port-Daniel--Gascons
-Rosetown
-Minnedosa
-Labelle
-Lincoln
-Black River-Matheson
-Saint-Michel-des-Saints
-Dufferin
-Saint-Victor
-Sicamous
-Cap Pele
-Kelsey
-Killaloe, Hagarty and Richards
-Alvinston
-Trenton
-Lunenburg
-Saint-Ephrem-de-Beauce
-Chase
-Lery
-Assiniboia
-Tumbler Ridge
-Salisbury
-Temiscaming
-Magrath
-Sainte-Genevieve-de-Berthier
-Logy Bay-Middle Cove-Outer Cove
-Buctouche
-Grand Manan
-Sainte-Madeleine
-Anmore
-Sainte-Croix
-Algonquin Highlands
-Valcourt
-Gimli
-Saint George
-Saint-Mathieu
-Paquetville
-Clearwater
-Addington Highlands
-Lillooet
-Burin
-Grand Bank
-Waterville
-Minto
-Rosthern No. 403
-Mansfield-et-Pontefract
-Saint-Denis
-Gore
-Outlook
-Saint-Gedeon-de-Beauce
-Saint-Leonard-d'Aston
-Fort-Coulonge
-Albanel
-St. Anthony
-Pessamit
-Logan Lake
-Maskinonge
-Saint-Charles-de-Bellechasse
-Fogo Island
-Neebing
-Port McNeill
-Hatley
-East Broughton
-Saint-Polycarpe
-Deschambault
-Canora
-Upper Miramichi
-Tofino
-Hardwicke
-Wendake
-Saint-Come
-Waskaganish
-Twillingate
-Saint-Quentin
-Lebel-sur-Quevillon
-Calmar
-Nanton
-Pierreville
-New-Wes-Valley
-Pennfield Ridge
-Northesk
-West Interlake
-Biggar
-Kent
-Maple Creek
-Wabana
-Bonfield
-Saint-Gilles
-Saint-Bernard
-Sainte-Cecile-de-Milton
-Saint-Roch-de-Richelieu
-Burns Lake
-Redwater
-Saint-Nazaire
-Westfield Beach
-Saltair
-Saint-Elzear
-Hinchinbrooke
-Dundurn No. 314
-Saint-Francois-Xavier-de-Brompton
-Papineauville
-Prairie View
-Saint-Ignace-de-Loyola
-Central Manitoulin
-Glovertown
-Tofield
-Madoc
-Sainte-Anne-de-Sabrevois
-Sainte-Anne-de-la-Perade
-Saint-Damien-de-Buckland
-Baker Lake
-Saint-Ferdinand
-Pouch Cove
-Britannia No. 502
-Saint-Fulgence
-Digby
-Manouane
-Saint-Gervais
-Saint-Alexandre-de-Kamouraska
-Saint-Marc-sur-Richelieu
-Mandeville
-Caplan
-Allardville
-Saint-Damien
-Lac-Nominingue
-Obedjiwan
-Rama
-Deloraine-Winchester
-Oakland-Wawanesa
-Brenda-Waskada
-Russell-Binscarth
-Ellice-Archie
-Souris-Glenwood
-Riverdale
-Pembina
-Wallace-Woodworth
-Lorne
-Yellowhead
-Swan Valley West
-Grey
-Gilbert Plains
-Norfolk-Treherne
-Emerson-Franklin
-Sifton
-Grassland
-Louise
-Ste. Rose
-Cartwright-Roblin
-Mossey River
-Lakeshore
-Riding Mountain West
-Clanwilliam-Erickson
-Glenboro-South Cypress
-North Norfolk
-Reinland
-Minitonas-Bowsman
-Kippens
-Saint-Gedeon
-Lumby
-Kingsey Falls
-Provost
-Saint-Charles
-Swift Current No. 137
-Mattawa
-Blucher
-L'Ascension-de-Notre-Seigneur
-Bow Island
-Barraute
-One Hundred Mile House
-Saint-Liguori
-Saint Mary
-Saint-Patrice-de-Sherrington
-Fox Creek
-Lumsden No. 189
-Dawn-Euphemia
-Chapleau
-Saint-Esprit
-Montague
-Mashteuiatsh
-Saint-Francois-du-Lac
-Petit Rocher
-Eel River Crossing
-Millet
-Ucluelet
-Vallee-Jonction
-Manitouwadge
-Wellington
-Frontenac Islands
-Point Edward
-Picture Butte
-Manners Sutton
-Fort Qu'Appelle
-Vulcan
-Chetwynd
-Indian Head
-Wabush
-Saint-Fabien
-Harrison Hot Springs
-Watrous
-North Frontenac
-Lac-Superieur
-Les Escoumins
-Richibucto
-Terrasse-Vaudreuil
-Riviere-Beaudette
-Orkney No. 244
-Saint-Barthelemy
-Komoka
-Nisga'a
-Austin
-Saint-Paul-de-l'Ile-aux-Noix
-Behchoko
-Saint-Cyprien-de-Napierville
-Valleyview
-Deleage
-Potton
-Sainte-Beatrix
-Saint-Georges-de-Cacouna
-Lakeview
-Sainte-Justine
-Saint-Valerien-de-Milton
-Saint-Cuthbert
-Saint-Blaise-sur-Richelieu
-Middleton
-Kamsack
-Carberry
-Saint-Joseph-de-Coleraine
-Trinity Bay North
-Pointe-Lebel
-Grenville
-Saint-Michel-de-Bellechasse
-Sainte-Angele-de-Monnoir
-Champlain
-Sacre-Coeur-Saguenay
-Saint-Louis
-Saint-Lucien
-Victoria
-Lumsden
-Saint-Robert
-Armstrong
-Keremeos
-Regina Beach
-La Guadeloupe
-Sutton
-Saint Andrews
-Saint-Placide
-Grunthal
-Povungnituk
-Pointe-des-Cascades
-Deseronto
-Lamont
-Chambord
-Maugerville
-Dudswell
-Nipissing
-Shaunavon
-Wynyard
-Cambridge Bay
-Dalmeny
-Saint-Narcisse
-Waswanipi
-Inukjuak
-Balgonie
-Piney
-Warfield
-Saint-Zacharie
-Hemmingford
-Saint-Pierre-de-l'Ile-d'Orleans
-Kensington
-Shelburne
-Saint-Clet
-Blumenort
-Brighton
-Saint-Antoine
-Northampton
-Flat Rock
-Saint-Ours
-Stephenville Crossing
-Sainte-Anne-de-la-Pocatiere
-Popkum
-Notre-Dame-du-Bon-Conseil
-Fisher
-Sainte-Clotilde
-Lantz
-Wicklow
-Nouvelle
-Wasagamack
-Rosthern
-Yamaska
-Neguac
-Saint-Antoine-de-Tilly
-Igloolik
-Whitehead
-Saint-Elie-de-Caxton
-Balmoral
-Price
-Rosedale
-Saint-Jacques-le-Mineur
-Coombs
-Val-Joli
-Southesk
-Huron Shores
-Saint-Antoine-sur-Richelieu
-Saint-Pacome
-Saint-Stanislas-de-Kostka
-Saint-Jacques
-Frontenac
-Stuartburn
-Sainte-Emelie-de-l'Energie
-Saint-Charles-sur-Richelieu
-Nipigon
-Witless Bay
-Sainte-Helene-de-Bagot
-Franklin Centre
-Harbour Breton
-Mille-Isles
-Naramata
-Lyster
-Oakview
-Harrison Park
-Pond Inlet
-Sainte-Clotilde-de-Horton
-Burford
-Saint-Benoit-Labre
-Terrace Bay
-Maliotenam
-Chapais
-Saint-Honore-de-Shenley
-Cleveland
-Messines
-Saint-Laurent-de-l'Ile-d'Orleans
-Saint-Jean-de-Dieu
-Massey Drive
-Nakusp
-Florenceville
-Larouche
-Fort St. James
-Saint-Francois-de-la-Riviere-du-Sud
-Wabasca
-Hilliers
-Perth
-Eeyou Istchee Baie-James
-Shellbrook No. 493
-Shawville
-Lambton
-Saint-Flavien
-Boissevain
-Sainte-Marcelline-de-Kildare
-Riviere-Blanche
-Bay Bulls
-Saint-Felix-de-Kingsey
-Upper Island Cove
-Sainte-Elisabeth
-Ashcroft
-Clarkes Beach
-Falmouth
-Uashat
-Saint-Bernard-de-Lacolle
-Saint-Joseph
-Belledune
-Saint-Guillaume
-Venise-en-Quebec
-Gambo
-Nauwigewauk
-Humbermouth
-Springbrook
-Saint-Paulin
-Glenelg
-Saint David
-Saint-Albert
-Matagami
-Grindrod
-Springfield
-Amherst
-Carlyle
-Notre-Dame-du-Laus
-Langham
-St. George
-Wembley
-Macdonald, Meredith and Aberdeen Additional
-Pinawa
-Windermere
-Saint-Tite-des-Caps
-Hudson Bay
-Brudenell, Lyndoch and Raglan
-Gold River
-Saint-Casimir
-Dunsmuir
-Frenchman Butte
-Gordon
-Saint-Malachie
-Southampton
-Salluit
-Pangnirtung
-Saint-Louis-de-Gonzague
-Moosonee
-Englehart
-Saint-Urbain
-Tring-Jonction
-Wilton No. 472
-Denmark
-Saint-Joachim
-Torch River No. 488
-Saint-Theodore-d'Acton
-L' Isle-Verte
-Palmarolle
-Bon Accord
-Sussex Corner
-Saint-Odilon-de-Cranbourne
-Pipestone
-La Dore
-Lac-au-Saumon
-Wotton
-Prairie Lakes
-Elk Point
-St. Francois Xavier
-Shellbrook
-Wemindji
-Cape Dorset
-Strong
-Nobleford
-Lappe
-Pointe-aux-Outardes
-Riviere-Heva
-Scott
-Godmanchester
-Macklin
-Armour
-Saint-Simon
-Tingwick
-Saint-Aubert
-Saint-Mathieu-du-Parc
-Saint-Ubalde
-Creighton
-Faraday
-Berthier-sur-Mer
-Bayfield
-Frampton
-Barriere
-Chute-aux-Outardes
-Lions Bay
-New Carlisle
-Laird No. 404
-Saint-Majorique-de-Grantham
-Petitcodiac
-Canwood No. 494
-Wentworth-Nord
-Bas Caraquet
-Two Hills
-Sainte-Ursule
+Dauphin
 Dawson
-Nantes
-Lac-aux-Sables
-Stewiacke
-Vaudreuil-sur-le-Lac
-Grahamdale
-Upham
-St.-Charles
-Cardwell
-Amulet
-L'Avenir
-Hillsborough
-Spiritwood No. 496
-Pointe-a-la-Croix
-Herouxville
-Weldford
-Reynolds
-St. Laurent
-L'Isle-aux-Allumettes
-Emo
-Sainte-Brigide-d'Iberville
-Les Eboulements
-Smooth Rock Falls
-Bruederheim
-Oxbow
-Telkwa
-Landmark
-Norton
-Gjoa Haven
-Sainte-Barbe
-Mayerthorpe
-Ootischenia
-Saint-Louis-du-Ha! Ha!
-Taylor
-Powerview-Pine Falls
-Ragueneau
-Baie Verte
-Chisholm
-Saint-Edouard
-Charlo
-Sorrento
-Burgeo
-Wadena
-St-Pierre-Jolys
-Richmond
-Youbou
-Swan Hills
-Wilkie
-Saint-Leonard
-Riviere-Bleue
-Noyan
-Notre-Dame-du-Portage
-Ile-a-la-Crosse
-Saint-Hugues
-Sainte-Anne-du-Sault
-La Conception
-Vauxhall
-Lameque
-Arborg
-Estevan No. 5
-Thessalon
-L'Isle-aux-Coudres
-Lanigan
-Elton
-Bowden
-South Qu'Appelle No. 157
-Conestogo
-Rosser
-Sainte-Lucie-des-Laurentides
-Saint-Alexis
-Roxton Falls
-Montcalm
-Irishtown-Summerside
-Clarendon
-Mervin No. 499
-Saint-Ludger
-Coldwell
-Musquash
-Racine
-Osler
-Saint-Zenon
-Saint-Armand
-Saint-Edouard-de-Lotbiniere
-Alonsa
-Saint-Arsene
-Listuguj
-St. Joseph
-Queensbury
-Saint-Hubert-de-Riviere-du-Loup
-Saint-Jude
-La Minerve
-Trecesson
-Legal
-Moonbeam
-Notre-Dame-des-Pins
-Saint-Alban
-Saint-Pierre-les-Becquets
-Beaver River
-Labrecque
-Claremont
-New Bandon
-Sainte-Henedine
-L'Anse-Saint-Jean
-Moose Jaw No. 161
-Bassano
-Parrsboro
-St. George's
-Fort Simpson
-Akwesasne
-Ignace
-Teulon
-Peel
-Miltonvale Park
-St. Lawrence
-Oxford
-Minto-Odanah
-Saint-Valere
-St. Alban's
-Kaleden
-Saint James
-Saint-Norbert-d'Arthabaska
-Manning
-Glenella-Lansdowne
-Saint-Hilarion
-Saint-Modeste
-Saint-Simeon
-Saint-Barnabe
-Irricana
-Saint Martins
-Two Borders
-Bury
-Lac-Bouchette
-Saint-Lazare-de-Bellechasse
-Saint-Michel-du-Squatec
-Saint-Joachim-de-Shefford
-Grand-Remous
-Saint-Gabriel-de-Rimouski
-Armstrong
-Rogersville
-Langenburg
-Sainte-Marie-Salome
-Saint-Cyprien
-Centreville
-Maidstone
-Tres-Saint-Sacrement
-Hillsburgh
-McAdam
-Newcastle
-Saints-Anges
-Saint-Urbain-Premier
-Centreville-Wareham-Trinity
-Alberton
-Winnipeg Beach
-Sainte-Agathe-de-Lotbiniere
-Salmo
-Kipling
-Sagamok
-Grande-Vallee
-Bertrand
-Mont-Carmel
-Victoria
-Saint-Eugene
-Notre-Dame-des-Neiges
-Saint-Andre
-Roland
-Saint-Leon-de-Standon
-Hensall
-Carnduff
-Greenwich
-Carling
-Eckville
-Nain
-Foam Lake
-Sayabec
-Laird
-Sainte-Sabine
-Tara
-Saint-Maxime-du-Mont-Louis
-Blanc-Sablon
-Cobalt
-South River
-Hudson Bay No. 394
-Waldheim
-McKellar
-Buffalo Narrows
-Ayer's Cliff
-Les Mechins
-Sainte-Marguerite
-Saint-Claude
-Air Ronge
-Chipman
-Weyburn No. 67
-Alberta Beach
-Sainte-Jeanne-d'Arc
-Sainte-Felicite
-Girardville
-Saint-Bruno-de-Guigues
-Grenfell
-South Algonquin
-Upton
-Saint-Narcisse-de-Beaurivage
-Plaisance
-Roxton-Sud
-St. Louis No. 431
-Noonan
-Duchess
-Saint-Frederic
-Saint-Narcisse-de-Rimouski
-Atholville
-Viking
-Sioux Narrows-Nestor Falls
-Repulse Bay
-Saint-Patrice-de-Beaurivage
-Bentley
-Durham
-Sainte-Marthe
-Notre-Dame-du-Nord
-Beachburg
-Pinehouse
-Saint-Aime-des-Lacs
-Wedgeport
-Lac-Drolet
-Preeceville
-Maple Creek No. 111
-Harbour Main-Chapel's Cove-Lakeview
-Coleraine
-Birch Hills
-Saint-Bonaventure
-Saint-Wenceslas
-Kerrobert
-Havelock
-Eston
-Sainte-Genevieve-de-Batiscan
-Saint-Justin
-Saint-Norbert
-Schreiber
-Trochu
-Botsford
-Riviere-Ouelle
-Stukely-Sud
-Saint-Georges-de-Clarenceville
-Plantagenet
-Sainte-Therese-de-Gaspe
-Sainte-Petronille
-Desbiens
-Clyde River
-La Macaza
+Dawson Creek
+Delta
+Digby
+Edmonton
+Elliot Lake
+Esquimalt
+Estevan
+Fort Erie
+Fort Frances
+Fort McMurray
+Fort Saint James
+Fort Saint John
+Fort Smith
+Flin Flon
+Fredericton
+Gander
+Gaspe
+Gatineau
+Glace Bay
+Grand Falls Windsor
+Grande Prairie
+Halifax
+Hamilton
+Happy Valley Goose Bay
+Harbour Grace
+Hay River
+Hope
+Hull
+Iqaluit
+Iroquois Falls
+Jasper
+Jonquiere
+Kamloops
+Kapuskasing
+Kawartha Lakes
+Kelowna
+Kenora
+Kingston
+Kirkland Lake
+Kitimat
+Kitchener
+La Salle
+La Tuque
+Labrador City
+Langley
+Laval
+Laurentian Hills
+Lethbridge
+Liverpool
+London
+Longueuil
+Louisbourg
+Lunenburg
+Magog
+Manitoba
+Matane
+Medicine Hat
+Miramichi
+Mississauga
+Moncton
+Montreal
+Montreal Nord
+Moosonee
+Moose Factory
+Moose Jaw
+Nanaimo
+Nelson
+New Brunswick
+Newfoundland and Labrador
+New Westminster
+Niagara Falls
+Niagara on the Lake
+Nunavut
+North Bay
+North Vancouver
+Northwest Territories
+North York
+Oak Bay
+Oakville
+Ontario
+Orillia
+Oshawa
+Ottawa
+Parry Sound
+Penticton
+Perce
+Perth
+Peterborough
+Picton
+Placentia
+Port Cartier
+Port Colborne
+Port Hawkesbury
+Powell River
+Prince Albert
+Prince Edward Island
+Prince George
+Prince Rupert
+Quebec
+Quesnel
+Red Deer
+Regina
+Revelstoke
+Rimouski
+Rocky Mountain House
+Rossland
+Rouyn Noranda
+Saguenay
+Saint Albert
+Saint Anthony
+Saint Boniface
+Saint Catharines
+Saint Eustache
+Saint Hubert
+Saint John
+Saint Thomas
+Sainte Anne de Beaupre
+Sainte Foy
+Sainte Therese
+Saskatchewan
+Saskatoon
+Sault Sainte Marie
+Scarborough
+Sherbrooke
+Simcoe
 Souris
-Kindersley No. 290
-Falher
-Saint-Vallier
-Melita
-Davidson
-Bristol
-Mahone Bay
-Saint-Sylvestre
-Taloyoak
-Onoway
-Saint-Stanislas
-Battle River No. 438
-Malpeque
-Longue-Rive
-Argyle
-Delisle
-Plaster Rock
-Wilmot
-Valemount
-Saint-Leonard-de-Portneuf
-Longlaketon No. 219
-Papineau-Cameron
-Assiginack
-Brebeuf
-Hudson Hope
-Baie-du-Febvre
-Durham-Sud
-Melbourne
-Nipawin No. 487
-Duck Lake No. 463
-Oyen
-Gravelbourg
-Lajord No. 128
-Hebertville
-Lorrainville
-Prince
-Athens
-Saint-Rene-de-Matane
-Eastman
-Kugluktuk
-Kedgwick
-Wemotaci
-Cookshire
-Dorchester
-Fortune
-Hamiota
-Gillam
-Grand View
-Dildo
-Laurierville
-Ripon
-Henryville
-Gracefield
-Chatsworth
-McCreary
-Yamaska-Est
-Rossburn
-Rothesay
-Ethelbert
-Frelighsburg
-Magnetawan
+Springhill
+Stratford
+Sudbury
+Summerside
+Swan River
+Sydney
+Temiskaming Shores
+Thompson
+Thorold
+Thunder Bay
+Timmins
+Toronto
+Trois Rivieres
+Tuktoyaktuk
+Uranium City
+ValdOr
+Vancouver
+Vernon
+Victoria
+Wabana
+Waskaganish
+Waterloo
+Watson Lake
+Welland
+West Nipissing
+West Vancouver
+Whitehorse
+White Rock
+Windsor
+Winnipeg
+Woodstock
+Yarmouth
+Yellowknife
+York
+York Factory
+Yukon

@@ -1,9 +1,9 @@
-Car Name: Ford Escape
+Car Name: Hyundai Kona
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $34
-Car Total Price: $44
-Vendor Name: Budget
+Car Size: Compact SUV
+Car Price per Day: $29
+Car Total Price: $37
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

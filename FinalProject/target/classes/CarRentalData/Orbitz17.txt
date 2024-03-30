@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $31
-Car Total Price: $35
+Max Passengers: 5
+Car Size: Premium Special
+Car Price per Day: $34
+Car Total Price: $39
 Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Ratings: 76%
 Available at: orbitz.com

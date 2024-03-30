@@ -1,9 +1,9 @@
-Car Name: Dodge Durango
+Car Name: Ford Edge
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Premium Crossover
-Car Price per Day: $34
-Car Total Price: $39
+Max Passengers: 5
+Car Size: Standard SUV
+Car Price per Day: $35
+Car Total Price: $45
 Vendor Name: Enterprise
-Ratings: 100%
+Ratings: No ratings
 Available at: expedia.com

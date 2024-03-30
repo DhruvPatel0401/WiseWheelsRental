@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Ford Edge
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Budget
+Car Size: Standard SUV
+Car Price per Day: $42
+Car Total Price: $55
+Vendor Name: Avis
 Ratings: No ratings
 Available at: expedia.com

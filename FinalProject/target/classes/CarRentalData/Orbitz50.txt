@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Budget Rental Company
-Ratings: 80%
-Available at: carrental.com
+Car Size: Premium Special
+Car Price per Day: $34
+Car Total Price: $43
+Vendor Name: Enterprise Rental Company
+Ratings: 89%
+Available at: orbitz.com

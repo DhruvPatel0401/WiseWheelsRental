@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Ford Escape
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $31
+Car Size: Midsize SUV
+Car Price per Day: $32
 Car Total Price: $41
-Vendor Name: Avis Rental Company
-Ratings: 95%
-Available at: carrental.com
+Vendor Name: Budget Rental Company
+Ratings: 80%
+Available at: orbitz.com

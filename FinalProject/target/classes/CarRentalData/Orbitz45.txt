@@ -1,9 +1,9 @@
-Car Name: Dodge Durango
+Car Name: Ford Escape
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Premium Crossover
-Car Price per Day: $34
-Car Total Price: $39
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
-Available at: carrental.com
+Max Passengers: 5
+Car Size: Midsize SUV
+Car Price per Day: $32
+Car Total Price: $42
+Vendor Name: Budget Rental Company
+Ratings: 80%
+Available at: orbitz.com
