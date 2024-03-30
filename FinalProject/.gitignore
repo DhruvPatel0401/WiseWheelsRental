@@ -1,0 +1,47 @@
+# Maven specific
+target/
+
+# IDE specific
+.idea/
+.vscode/
+
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# External dependencies
+/lib/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+
+# NetBeans project files
+nbproject/private/
+nbproject/build/
+nbproject/genfiles/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Javadoc
+/target/site/
+
+# macOS specific files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
