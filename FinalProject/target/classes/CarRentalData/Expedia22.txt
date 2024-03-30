@@ -1,9 +1,0 @@
-Car Name: Nissan Versa
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $115
-Car Total Price: $144
-Vendor Name: National Car Rental
-Ratings: No ratings
-Available at: expedia.com

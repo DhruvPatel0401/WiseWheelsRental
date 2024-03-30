@@ -1,9 +1,0 @@
-Car Name: Audi A4 or BMW 3 Series
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Luxury
-Car Price per Day: $172
-Car Total Price: $216
-Vendor Name: National Car Rental Rental Company
-Ratings: 100%
-Available at: orbitz.com

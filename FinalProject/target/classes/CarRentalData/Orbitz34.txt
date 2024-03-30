@@ -1,9 +1,0 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
-Car Type: Automatic
-Max Passengers: 4
-Car Size: Special
-Car Price per Day: $31
-Car Total Price: $40
-Vendor Name: Budget Rental Company
-Ratings: 80%
-Available at: orbitz.com

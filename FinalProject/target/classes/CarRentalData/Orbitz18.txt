@@ -1,9 +1,0 @@
-Car Name: Toyota Camry
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $31
-Car Total Price: $39
-Vendor Name: Enterprise Rental Company
-Ratings: 89%
-Available at: orbitz.com

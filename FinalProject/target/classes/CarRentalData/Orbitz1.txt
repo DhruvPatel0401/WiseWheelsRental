@@ -1,9 +1,0 @@
-Car Name: Hyundai Kona
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact SUV
-Car Price per Day: $29
-Car Total Price: $37
-Vendor Name: Enterprise Rental Company
-Ratings: 88%
-Available at: orbitz.com

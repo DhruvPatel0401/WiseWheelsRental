@@ -1,9 +1,0 @@
-Car Name: Kia Forte
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $31
-Car Total Price: $39
-Vendor Name: Enterprise Rental Company
-Ratings: 89%
-Available at: orbitz.com
