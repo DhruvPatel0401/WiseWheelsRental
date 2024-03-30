@@ -1,9 +1,9 @@
-Car Name: Dodge Grand Caravan
+Car Name: Volkswagen Polo
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $33
-Car Total Price: $37
-Vendor Name: Enterprise
-Ratings: 76%
+Max Passengers: 5
+Car Size: Economy
+Car Price per Day: $32
+Car Total Price: $42
+Vendor Name: Avis
+Ratings: No ratings
 Available at: expedia.com

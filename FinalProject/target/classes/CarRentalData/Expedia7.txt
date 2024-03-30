@@ -1,9 +1,0 @@
-Car Name: Ford Escape
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $33
-Car Total Price: $43
-Vendor Name: Avis
-Ratings: No ratings
-Available at: expedia.com

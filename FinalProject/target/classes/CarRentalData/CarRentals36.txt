@@ -1,9 +1,0 @@
-Car Name: Hyundai Kona
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact SUV AWD
-Car Price per Day: $33
-Car Total Price: $37
-Vendor Name: Enterprise
-Ratings: 100%
-Available at: expedia.com

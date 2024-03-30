@@ -1,9 +1,9 @@
-Car Name: Toyota Corolla, Hyundai Elantra
+Car Name: Hyundai Kona
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $29
-Car Total Price: $34
-Vendor Name: Hertz
+Car Size: Compact SUV AWD
+Car Price per Day: $30
+Car Total Price: $38
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com
