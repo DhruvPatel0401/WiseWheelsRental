@@ -1,41 +1,7 @@
 # Eclipse
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
 .settings/
-.loadpath
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# C/C++ development with gdb
-.csettings
-
-# Java-specific
 .classpath
 .project
-
-# PyDev (Python IDE for Eclipse)
-.pydevproject
-
-# JDT-specific (Eclipse Java Development Tools)
-.settings/org.eclipse.jdt.core.prefs
-
-# Gradle
-.gradle/
-
-# SonarLint
-.sonarlint/
 
 # Maven
 target/
