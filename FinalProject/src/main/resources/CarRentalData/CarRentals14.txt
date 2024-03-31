@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Chevy Spark
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $30
-Car Total Price: $40
-Vendor Name: Budget
+Max Passengers: 4
+Car Size: Economy
+Car Price per Day: $31
+Car Total Price: $35
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

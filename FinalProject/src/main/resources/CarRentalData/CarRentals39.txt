@@ -1,9 +1,9 @@
-Car Name: Volkswagen Polo
+Car Name: Kia Forte
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy
-Car Price per Day: $33
-Car Total Price: $42
-Vendor Name: Avis
+Car Size: Midsize
+Car Price per Day: $31
+Car Total Price: $39
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

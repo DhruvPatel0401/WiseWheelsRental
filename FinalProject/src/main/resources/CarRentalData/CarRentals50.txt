@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Dodge Grand Caravan
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $42
-Car Total Price: $55
-Vendor Name: Avis
+Max Passengers: 7
+Car Size: Mini Van
+Car Price per Day: $33
+Car Total Price: $41
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Volkswagen Polo
+Car Name: Nissan Maxima
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy
-Car Price per Day: $32
-Car Total Price: $42
-Vendor Name: Avis
+Car Size: Premium
+Car Price per Day: $33
+Car Total Price: $38
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

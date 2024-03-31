@@ -1,6 +1,8 @@
 package Uwindsor;
 
 import java.util.Scanner;
+import java.util.Set;
+import java.io.File;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
@@ -25,6 +27,12 @@ public class Main {
 	            case "3":
 	                searchForCar();
 	                break;
+	            case "4":
+	            	searchHistory();
+	                break;
+	            case "5":
+	            	invertedIndex();
+	                break;
 	            case "exit":
 	                System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
 	                return;
@@ -39,6 +47,8 @@ public class Main {
         System.out.println("1. Web Crawler");
         System.out.println("2. Find Top 10 Cheapest Deals");
         System.out.println("3. Search for Car in Location");
+        System.out.println("4. Add a keyWord into the History");
+        System.out.println("5. Search for keyWord into the Inverted Indexing");
         System.out.println("Type 'exit' to quit");
         System.out.print("Enter your choice: ");
     }
@@ -56,6 +66,7 @@ public class Main {
         // Call web crawler class to fetch data based on inputs
         WebCrawler crawler = new WebCrawler(location, startDate, endDate);
         crawler.startCrawling(location, startDate, endDate);
+        CreateInvertedIndexTable();
     }
 
     private static void performTop10CheapestDeals() {
@@ -63,7 +74,12 @@ public class Main {
 
     private static void searchForCar() {
         // Implement searching for car in location functionality
-        System.out.println("Searching for Car in Location...");
+        InvertedIndex invertedIndex = new InvertedIndex();
+	    System.out.print("\nEnter a Car name: ");
+	    String searchData = scanner.nextLine();
+	    String[] keywords = searchData.split("\\s+");
+	   
+	    invertedIndex.printBeforeSearchingData(keywords);
     }
     
     private static String getLocation() {
@@ -172,5 +188,48 @@ public class Main {
             }
         }
         return endDate;
+    }
+
+    private static void searchHistory() {
+        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap("src/main/resources/CarRentalData/SearchKeywordHistory.txt");
+        String keyword;
+
+        System.out.println("Enter a keyword (or type 'quit' to exit):");
+//        while (true) {
+//            keyword = scanner.nextLine();
+//            if (keyword.equalsIgnoreCase("quit")) {
+//                break;
+//            } else {
+//                searchFrequencyMap.updateSearchFrequency(keyword);
+//            }
+//        }
+        keyword = scanner.nextLine();
+        searchFrequencyMap.dataUpdateInTheFile(keyword);
+        
+        searchFrequencyMap.filedataDisplaying();
+    }
+    
+    private static void invertedIndex() {
+    	InvertedIndex invertedIndex = new InvertedIndex();
+        System.out.print("Enter keywords to search (separated by spaces): ");
+        String inputKeywords = scanner.nextLine();
+
+        String[] keywords = inputKeywords.split("\\s+");
+
+        Set<String> filesWithKeywords = invertedIndex.multipledatasearch(keywords);
+        if (!filesWithKeywords.isEmpty()) {
+            System.out.println("Files containing the keywords:");
+            for (String fileName : filesWithKeywords) {
+                System.out.println(fileName);
+            }
+        } else {
+            System.out.println("No files found containing the specified keywords.");
+        }
+    }
+    
+    private static void CreateInvertedIndexTable() {
+ 	   InvertedIndex invertedIndex = new InvertedIndex();
+ 	   File directory = new File("src/main/resources/CarRentalData");
+ 	   invertedIndex.DataIndexFile(directory);
     }
 }

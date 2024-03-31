@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Ford F-150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact SUV AWD
-Car Price per Day: $30
-Car Total Price: $38
-Vendor Name: Enterprise
+Max Passengers: 6
+Car Size: Standard Pickup Regular Cab
+Car Price per Day: $29
+Car Total Price: $34
+Vendor Name: Hertz
 Ratings: No ratings
 Available at: expedia.com

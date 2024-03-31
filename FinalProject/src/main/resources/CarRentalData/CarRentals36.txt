@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $33
-Car Total Price: $42
-Vendor Name: Avis
+Car Size: Premium Special
+Car Price per Day: $34
+Car Total Price: $39
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

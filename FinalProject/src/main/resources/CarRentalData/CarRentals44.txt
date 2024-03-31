@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Audi A4 or BMW 3 Series
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard SUV
+Car Size: Luxury
 Car Price per Day: $35
-Car Total Price: $45
+Car Total Price: $40
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

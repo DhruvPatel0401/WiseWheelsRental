@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Dodge Grand Caravan
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
+Max Passengers: 7
+Car Size: Mini Van
 Car Price per Day: $32
-Car Total Price: $41
+Car Total Price: $37
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com
