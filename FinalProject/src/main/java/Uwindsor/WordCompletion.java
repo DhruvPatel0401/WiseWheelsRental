@@ -8,120 +8,103 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class WordCompletion {
+class TrieNode {
+    private static final int ALPHABET_SIZE = 26;
+    private TrieNode[] children;
+    private boolean isEndOfWord;
 
-    public class TrieNode {
-        Map<Character, TrieNode> children;
-        char c;
-        boolean isWord;
+    public TrieNode() {
+        children = new TrieNode[ALPHABET_SIZE];
+        isEndOfWord = false;
+    }
 
-        public TrieNode(char c) {
-            this.c = c;
-            children = new HashMap<>();
-        }
-
-        public TrieNode() {
-            children = new HashMap<>();
-        }
-
-        public void insert(String word) {
-            if (word == null || word.isEmpty())
-                return;
-            char firstChar = word.charAt(0);
-            TrieNode child = children.get(firstChar);
-            if (child == null) {
-                child = new TrieNode(firstChar);
-                children.put(firstChar, child);
+    public void insert(String word) {
+        TrieNode current = this;
+        for (int i = 0; i < word.length(); i++) {
+            char ch = Character.toUpperCase(word.charAt(i)); // Convert to uppercase
+            int index = ch - 'A'; 
+            if (index < 0 || index >= ALPHABET_SIZE) {
+                // Handle non-alphabetic characters
+                continue;
             }
-
-            if (word.length() > 1)
-                child.insert(word.substring(1));
-            else
-                child.isWord = true;
+            if (current.children[index] == null) {
+                current.children[index] = new TrieNode();
+            }
+            current = current.children[index];
         }
-
+        current.isEndOfWord = true;
     }
 
-    TrieNode root;
-
-    public WordCompletion(List<String> words) {
-        root = new TrieNode();
-        for (String word : words)
-            root.insert(word);
-
+    public boolean search(String word) {
+        TrieNode current = this;
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            int index = ch - 'A';
+            if (current.children[index] == null) {
+                return false;
+            }
+            current = current.children[index];
+        }
+        return current != null && current.isEndOfWord;
     }
 
-    public WordCompletion(String filePath) {
-        root = new TrieNode();
-        List<String> words = readWordsFromFile(filePath);
-        for (String word : words)
-            root.insert(word);
+    public List<String> suggestCompletions(String prefix) {
+        List<String> suggestions = new ArrayList<>();
+        TrieNode prefixNode = findNode(prefix);
+        if (prefixNode != null) {
+            collectWords(prefixNode, prefix, suggestions);
+        }
+        return suggestions;
     }
 
-    public List<String> readWordsFromFile(String filePath) {
-        List<String> words = new ArrayList<>();
+    private TrieNode findNode(String prefix) {
+        TrieNode current = this;
+        for (int i = 0; i < prefix.length(); i++) {
+            char ch = prefix.charAt(i);
+            int index = Character.toUpperCase(ch) - 'A';
+            if (current.children[index] == null) {
+                return null;
+            }
+            current = current.children[index];
+        }
+        return current;
+    }
+
+    private void collectWords(TrieNode node, String prefix, List<String> suggestions) {
+        if (node.isEndOfWord) {
+            suggestions.add(prefix.toLowerCase());
+        }
+        for (char i = 0; i < ALPHABET_SIZE; i++) {
+            TrieNode child = node.children[i];
+            if (child != null) {
+                collectWords(child, prefix + (char) ('A' + i), suggestions);
+            }
+        }
+    }
+}
+
+
+public class WordCompletion {
+	
+    public static List<String> findNearestWords(String input) {
+    	String filePath = "src/main/resources/locations.txt"; // Provide the path to your text file
+        buildTrie(filePath);
+        
+        List<String> suggestions = root.suggestCompletions(input);
+        return suggestions;
+    }
+    
+    private static TrieNode root = new TrieNode();
+    
+    public static void buildTrie(String filePath) {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
-                words.add(line.trim());
+                line = line.trim().toUpperCase();
+                root.insert(line);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return words;
     }
-
-    public boolean find(String prefix, boolean exact) {
-        TrieNode lastNode = root;
-        for (char c : prefix.toCharArray()) {
-            lastNode = lastNode.children.get(c);
-            if (lastNode == null)
-                return false;
-        }
-        return !exact || lastNode.isWord;
-    }
-
-    public boolean find(String prefix) {
-        return find(prefix, false);
-    }
-
-    public void suggestHelper(TrieNode root, List<String> list, StringBuffer curr) {
-        if (root.isWord) {
-            list.add(curr.toString());
-        }
-
-        if (root.children == null || root.children.isEmpty())
-            return;
-
-        for (TrieNode child : root.children.values()) {
-            suggestHelper(child, list, curr.append(child.c));
-            curr.setLength(curr.length() - 1);
-        }
-    }
-
-    public List<String> suggest(String prefix) {
-        List<String> list = new ArrayList<>();
-        TrieNode lastNode = root;
-        StringBuffer curr = new StringBuffer();
-        for (char c : prefix.toCharArray()) {
-            lastNode = lastNode.children.get(c);
-            if (lastNode == null)
-                return list;
-            curr.append(c);
-        }
-        suggestHelper(lastNode, list, curr);
-        return list;
-    }
-
-    public static List<String> findNearestWords(String input) {
-    	WordCompletion trie = new WordCompletion("src/main/resources/locations.txt");
-        List<String> result = trie.suggest(input);
-        
-        if (result.size() == 1 && result.get(0).equals(input)) {
-            return new ArrayList<>();
-        }
-        
-        return result;
-    }
-
 }

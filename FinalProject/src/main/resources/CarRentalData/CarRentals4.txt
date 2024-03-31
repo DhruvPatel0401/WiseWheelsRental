@@ -1,9 +1,9 @@
-Car Name: Toyota Camry
+Car Name: Ford F-150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $31
-Car Total Price: $35
-Vendor Name: Enterprise
-Ratings: 100%
-Available at: carrental.com
+Max Passengers: 6
+Car Size: Standard Pickup Regular Cab
+Car Price per Day: $29
+Car Total Price: $34
+Vendor Name: Hertz
+Ratings: No ratings
+Available at: expedia.com

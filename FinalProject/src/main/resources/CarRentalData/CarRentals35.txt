@@ -1,0 +1,9 @@
+Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Special
+Car Price per Day: $30
+Car Total Price: $39
+Vendor Name: Enterprise
+Ratings: No ratings
+Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Toyota Camry
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
+Max Passengers: 5
+Car Size: Fullsize
 Car Price per Day: $31
 Car Total Price: $35
 Vendor Name: Enterprise
-Ratings: 76%
-Available at: carrental.com
+Ratings: No ratings
+Available at: expedia.com
