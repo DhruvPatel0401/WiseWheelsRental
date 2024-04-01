@@ -3,14 +3,16 @@ package Uwindsor;
 import java.util.Scanner;
 import java.util.Set;
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Welcome to Wise Wheels Rentals!");
         
         while (true) {
@@ -33,6 +35,10 @@ public class Main {
 	            case "5":
 	            	invertedIndex();
 	                break;
+                case "6":
+                Searchwordcount();
+	                break;    
+
 	            case "exit":
 	                System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
 	                return;
@@ -49,6 +55,7 @@ public class Main {
         System.out.println("3. Search for Car in Location");
         System.out.println("4. Add a keyWord into the History");
         System.out.println("5. Search for keyWord into the Inverted Indexing");
+        System.out.println("6. Search for frequency of the keyword");
         System.out.println("Type 'exit' to quit");
         System.out.print("Enter your choice: ");
     }
@@ -232,4 +239,13 @@ public class Main {
  	   File directory = new File("src/main/resources/CarRentalData");
  	   invertedIndex.DataIndexFile(directory);
     }
+
+    private static void Searchwordcount() throws IOException {
+        Searchwordcount countdata = new Searchwordcount();
+    
+        String[] searchWords = countdata.getInputWordsFromUser();
+        Map<String, Integer> fileWordCountMap = countdata.searchWordsInFiles(searchWords);
+        countdata.printMatchingFiles(fileWordCountMap);
+    }
 }
+
