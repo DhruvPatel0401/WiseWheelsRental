@@ -1,0 +1,9 @@
+Car Name: Chevrolet Malibu
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Fullsize
+Car Price per Day: $55
+Car Total Price: $75
+Vendor Name: Budget
+Ratings: No ratings
+Available at: expedia.com

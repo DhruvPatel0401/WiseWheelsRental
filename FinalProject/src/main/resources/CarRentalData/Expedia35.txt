@@ -1,0 +1,9 @@
+Car Name: Vw Jetta
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Standard
+Car Price per Day: $78
+Car Total Price: $90
+Vendor Name: Enterprise
+Ratings: No ratings
+Available at: expedia.com

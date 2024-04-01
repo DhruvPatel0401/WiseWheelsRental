@@ -1,0 +1,9 @@
+Car Name: Kia Forte
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Midsize
+Car Price per Day: $72
+Car Total Price: $84
+Vendor Name: Enterprise
+Ratings: No ratings
+Available at: expedia.com

@@ -121,7 +121,7 @@ public class Main {
                 return getLocation();
             }
         } else {
-        	String correctedLocation = SpellChecking.correctedWord(location);
+        	String correctedLocation = SpellChecker.correctedWord(location);
             if (!correctedLocation.equals(location)) {
                 System.out.println("Location corrected to: " + correctedLocation);
                 return correctedLocation;

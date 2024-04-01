@@ -1,0 +1,9 @@
+Car Name: Nissan Versa
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Compact
+Car Price per Day: $67
+Car Total Price: $80
+Vendor Name: Budget
+Ratings: No ratings
+Available at: expedia.com
