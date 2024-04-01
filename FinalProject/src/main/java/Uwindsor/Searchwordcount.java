@@ -8,36 +8,58 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Searchwordcount {
-     // Define the directory path where your crawled data files are stored
-    private static final String DIRECTORY_PATH = "C:\\Users\\Aditi\\Documents\\WiseWheelsRental\\FinalProject\\src\\main\\resources\\CarRentalData";
+    private static final String DIRECTORY_PATH = "src\\main\\resources\\CarRentalData";
 
-    public static void main(String[] args) throws IOException {
-        // Read the words to search from the user
+    public String[] getInputWordsFromUser() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter words to search (separated by spaces): ");
-        String wordsToSearch = scanner.nextLine();
-        String[] searchWords = wordsToSearch.split("\\s+");
+        return scanner.nextLine().split("\\s+");
+    }
 
-        // Map to store the count of matching words found in each file
+    public  Map<String, Integer> searchWordsInFiles(String[] searchWords) throws IOException {
         Map<String, Integer> fileWordCountMap = new HashMap<>();
-
-        // Read data from each crawled data file in the directory
-        for (int i = 1; ; i++) {
-            String filePath = DIRECTORY_PATH + "/CarRentals" + i + ".txt"; // Assume files are named CarRentals1.txt, CarRentals2.txt, etc.
+        InvertedIndex invertedIndex = new InvertedIndex();
+        
+        Set<String> fileNames = invertedIndex.multipledatasearch(searchWords); // Get the files from inverted index
+        for (String fileName : fileNames) {
+            String filePath = DIRECTORY_PATH + "/" + fileName;
             List<String> lines = readLinesFromFile(filePath);
-            if (lines.isEmpty()) {
-                // No more files found
-                break;
-            }
             int count = getCountOfMatchingWords(lines, searchWords);
-            if (count > 0) {
-                fileWordCountMap.put("CarRentals" + i + ".txt", count);
+                fileWordCountMap.put(fileName, count);
+            }
+        
+            return fileWordCountMap;
+    }
+
+    public static List<String> readLinesFromFile(String filePath) throws IOException {
+        List<String> lines = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
             }
         }
+        return lines;
+    }
 
-        // Print the crawled text files with matching data
+    public static int getCountOfMatchingWords(List<String> lines, String[] searchWords) {
+        int count = 0;
+        for (String word : searchWords) {
+            for (String line : lines) {
+                if (line.contains(word)) {
+                    count++;
+                    break;
+                }
+            }
+        }
+        return count;
+    }
+
+    public void printMatchingFiles(Map<String, Integer> fileWordCountMap) 
+    {
         if (fileWordCountMap.isEmpty()) {
             System.out.println("No crawled text files contain the provided data.");
         } else {
@@ -47,35 +69,4 @@ public class Searchwordcount {
             }
         }
     }
-
-    // Method to read lines from a file and return them as a list
-    private static List<String> readLinesFromFile(String filePath) {
-        List<String> lines = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                lines.add(line);
-            }
-        } catch (IOException e) {
-            // Print error if file cannot be read
-            e.printStackTrace();
-        }
-        return lines;
-    }
-
-    // Method to count matching words in the lines against the search words
-    private static int getCountOfMatchingWords(List<String> lines, String[] searchWords) {
-        int count = 0;
-        for (String word : searchWords) {
-            for (String line : lines) {
-                if (line.contains(word)) {
-                    count++;
-                    break; // Exit the inner loop once a match is found in the line
-                }
-            }
-        }
-        return count;
-    }
 }
-
-
