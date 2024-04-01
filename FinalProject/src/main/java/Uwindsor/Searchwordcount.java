@@ -11,9 +11,11 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Searchwordcount {
+    // path to the crawled data output files
     private static final String DIRECTORY_PATH = "src\\main\\resources\\CarRentalData";
 
     public String[] getInputWordsFromUser() {
+        //taking user input using scanner class
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter words to search (separated by spaces): ");
         return scanner.nextLine().split("\\s+");
@@ -21,7 +23,7 @@ public class Searchwordcount {
 
     public  Map<String, Integer> searchWordsInFiles(String[] searchWords) throws IOException {
         Map<String, Integer> fileWordCountMap = new HashMap<>();
-        InvertedIndex invertedIndex = new InvertedIndex();
+        InvertedIndex invertedIndex = new InvertedIndex(); // create object for inverted index class
         
         Set<String> fileNames = invertedIndex.multipledatasearch(searchWords); // Get the files from inverted index
         for (String fileName : fileNames) {

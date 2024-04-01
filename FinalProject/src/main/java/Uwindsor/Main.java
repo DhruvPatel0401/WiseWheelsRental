@@ -198,7 +198,7 @@ public class Main {
     }
 
     private static void searchHistory() {
-        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap("FinalProject/src/main/resources/CarRentalData/SearchKeywordHistory.txt");
+        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap("src/main/resources/CarRentalData/SearchKeywordHistory.txt");
         String keyword;
 
         System.out.println("Enter a keyword (or type 'quit' to exit):");
@@ -236,7 +236,7 @@ public class Main {
     
     private static void CreateInvertedIndexTable() {
  	   InvertedIndex invertedIndex = new InvertedIndex();
- 	   File directory = new File("FinalProject/src/main/resources/CarRentalData");
+ 	   File directory = new File("src/main/resources/CarRentalData");
  	   invertedIndex.DataIndexFile(directory);
     }
 
