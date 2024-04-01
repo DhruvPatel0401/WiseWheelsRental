@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class SpellChecker {
@@ -34,40 +36,41 @@ public class SpellChecker {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(dictionary);
     }
     
     // Compute Levenshtein distance between two strings
     private int levenshteinDistance(String word1, String word2) {
-        int m = word1.length();
-        int n = word2.length();
-        
-        // Check if distance is already computed and cached
-        if (distanceCache[m][n] != 0) {
-            return distanceCache[m][n];
-        }
-        
-        int[][] dp = new int[m + 1][n + 1];
-        
-        for (int i = 0; i <= m; i++) {
-            for (int j = 0; j <= n; j++) {
+    	int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+
+        for (int i = 0; i <= word1.length(); i++) {
+            for (int j = 0; j <= word2.length(); j++) {
                 if (i == 0) {
                     dp[i][j] = j;
-                } else if (j == 0) {
+                }
+                else if (j == 0) {
                     dp[i][j] = i;
-                } else if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
-                    dp[i][j] = dp[i - 1][j - 1];
-                } else {
-                    dp[i][j] = 1 + Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]);
+                }
+                else {
+                    dp[i][j] = minm_edits(dp[i - 1][j - 1] + NumOfReplacement(word1.charAt(i - 1), word2.charAt(j - 1)), dp[i - 1][j] + 1, dp[i][j - 1] + 1);
                 }
             }
         }
-        
-        // Cache the computed distance
-        distanceCache[m][n] = dp[m][n];
-        
-        return dp[m][n];
+
+        return dp[word1.length()][word2.length()];
     }
+    
+    static int NumOfReplacement(char c1, char c2)
+    {
+        return c1 == c2 ? 0 : 1;
+    }
+    
+    static int minm_edits(int... nums)
+    {
+ 
+        return Arrays.stream(nums).min().orElse(
+            Integer.MAX_VALUE);
+    }
+
     
     // Spell check a word and suggest corrections
     public PriorityQueue<String> suggestCorrections(String word) {
@@ -84,7 +87,7 @@ public class SpellChecker {
     }
     
     public static void main(String[] args) {
-    	String wordToCheck = "winds";
+    	String wordToCheck = "wendsar";
         String dictionaryFilePath = "src/main/resources/locations.txt";
         
         SpellChecker spellChecker = new SpellChecker(dictionaryFilePath);
@@ -100,7 +103,18 @@ public class SpellChecker {
         }
     }
     
-    public static String correctedWord(String input) {
-    	return "";
+    public static List<String> correctedWord(String input, String path) {
+    	SpellChecker spellChecker = new SpellChecker(path);
+        PriorityQueue<String> suggestions = spellChecker.suggestCorrections(input);
+        List<String> correctedWords = new ArrayList<>();
+        
+        if (suggestions.isEmpty()) {
+            return correctedWords;
+        } else {
+            while (!suggestions.isEmpty()) {
+            	correctedWords.add(suggestions.poll());
+            }
+            return correctedWords;
+        }
     }
 }

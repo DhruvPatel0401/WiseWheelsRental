@@ -128,10 +128,24 @@ public class Main {
                 return getLocation();
             }
         } else {
-        	String correctedLocation = SpellChecker.correctedWord(location);
+        	List<String> correctedLocation = SpellChecker.correctedWord(location, "src/main/resources/locations.txt");
             if (!correctedLocation.equals(location)) {
-                System.out.println("Location corrected to: " + correctedLocation);
-                return correctedLocation;
+            	System.out.println("\nDid you mean one of the following?");
+                for (String word : correctedLocation) {
+                    System.out.println("- " + word);
+                }
+
+                System.out.print("Type the correct word or 'no' to enter a new one: ");
+                String userResponse = scanner.nextLine();
+                
+                if (!userResponse.equalsIgnoreCase("no") && correctedLocation.contains(userResponse)) {
+                    System.out.println("Location set to: " + userResponse);
+                    return userResponse;
+                } else {
+                    System.out.println("Please enter the location.");
+                    return getLocation();
+                }
+                
             } else {
                 System.out.println("Incorrect location. Please try again.");
                 return getLocation();
