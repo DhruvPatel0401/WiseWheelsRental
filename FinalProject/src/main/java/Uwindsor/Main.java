@@ -104,7 +104,6 @@ public class Main {
         }
 
         List<String> nearestWords = WordCompletion.findNearestWords(location);
-
         if (!nearestWords.isEmpty()) {
         	nearestWords.remove(location.toLowerCase());
         	if (nearestWords.isEmpty()) {
@@ -158,24 +157,20 @@ public class Main {
         while (true) {
             startDate = LocalDate.now().plusDays(1); // Set default start date as tomorrow
 
-            System.out.print("\nEnter start date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
+            System.out.print("\nEnter pick-up date (yyyy-MM-dd) (Press Enter for default): ");
             String input = scanner.nextLine().trim();
-
+            
+            
             if (input.isEmpty()) {
-                System.out.println("Defaulting to tomorrow's date: " + startDate);
-                break;
+            	break;
             }
-
+            
             try {
-                startDate = LocalDate.parse(input);
-                if (startDate.isBefore(LocalDate.now().plusDays(1))) { // Ensure start date is not today or before
-                    System.out.println("Invalid date. Please enter a future date.");
-                } else {
-                    System.out.println("Valid date format. Proceeding...");
-                    break;
-                }
+                startDate = DateValidator.validateDateInput(input);
+                System.out.println("Valid pick-up date . Proceeding...");
+                break;
             } catch (DateTimeParseException e) {
-                System.out.println("Invalid date. Please enter a valid date.");
+                System.out.println(e.getMessage());
             }
         }
         return startDate;
@@ -186,26 +181,23 @@ public class Main {
         while (true) {
             endDate = startDate.plusDays(1); // Set default end date as day after tomorrow
 
-            System.out.print("\nEnter end date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
+            System.out.print("\nEnter drop-off date (yyyy-MM-dd) (Press enter for default): ");
             String input = scanner.nextLine().trim();
-
+            
             if (input.isEmpty()) {
-                System.out.println("Defaulting to day after tomorrow's date: " + endDate);
-                break;
+            	System.out.println("Drop-off Date set to: " + endDate);
+            	break;
             }
-
+            
             try {
-                endDate = LocalDate.parse(input);
-                if (endDate.isBefore(LocalDate.now().plusDays(2))) { // Ensure end date is not before day after tomorrow
-                    System.out.println("Invalid date. Please enter a future date.");
-                } else if (endDate.isBefore(startDate) || endDate.isEqual(startDate)) {
-                    System.out.println("End date should be greater than the start date. Please enter a valid end date.");
-                } else {
-                    System.out.println("Valid date format. Proceeding...");
-                    break;
+            	endDate = DateValidator.validateDateInput(input);
+            	if (endDate.isBefore(startDate) || endDate.isEqual(startDate)) {
+                    throw new DateTimeParseException("Drop-off date should be greater than the Pick-up date. Please enter a valid drop-off date.", input, 0);
                 }
+                System.out.println("Valid drop-off date. Proceeding...");
+                break;
             } catch (DateTimeParseException e) {
-                System.out.println("Invalid date. Please enter a valid date.");
+                System.out.println(e.getMessage());
             }
         }
         return endDate;
