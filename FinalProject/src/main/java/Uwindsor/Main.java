@@ -13,7 +13,8 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Welcome to Wise Wheels Rentals!");
+    	displayWiseWheelsRental();
+        System.out.println("Get ready to drive into your next adventure with Wise Wheels Rentals!");
         
         while (true) {
             displayMenu();
@@ -24,7 +25,7 @@ public class Main {
 	                performWebCrawler();
 	                break;
 	            case "2":
-	                performTop10CheapestDeals();
+	                performTop10Deals();
 	                break;
 	            case "3":
 	                searchForCar();
@@ -36,7 +37,7 @@ public class Main {
 	            	invertedIndex();
 	                break;
                 case "6":
-                Searchwordcount();
+                	Searchwordcount();
 	                break;    
 
 	            case "exit":
@@ -48,11 +49,19 @@ public class Main {
         }
     }
     
+    public static void displayWiseWheelsRental() {
+    	System.out.println("\r\n"
+    			+ "╦ ╦┬┌─┐┌─┐  ╦ ╦┬ ┬┌─┐┌─┐┬  ┌─┐  ╦═╗┌─┐┌┐┌┌┬┐┌─┐┬  \r\n"
+    			+ "║║║│└─┐├┤   ║║║├─┤├┤ ├┤ │  └─┐  ╠╦╝├┤ │││ │ ├─┤│  \r\n"
+    			+ "╚╩╝┴└─┘└─┘  ╚╩╝┴ ┴└─┘└─┘┴─┘└─┘  ╩╚═└─┘┘└┘ ┴ ┴ ┴┴─┘\r\n"
+    			+ "");
+    }
+    
     private static void displayMenu() {
         System.out.println("\nSelect an option:");
         System.out.println("1. Web Crawler");
         System.out.println("2. Find Top 10 Cheapest Deals");
-        System.out.println("3. Search for Car in Location");
+        System.out.println("3. Search for Car");
         System.out.println("4. Add a keyWord into the History");
         System.out.println("5. Search for keyWord into the Inverted Indexing");
         System.out.println("6. Search for frequency of the keyword");
@@ -76,7 +85,7 @@ public class Main {
         CreateInvertedIndexTable();
     }
 
-    private static void performTop10CheapestDeals() {
+    private static void performTop10Deals() {
     }
 
     private static void searchForCar() {
@@ -162,6 +171,7 @@ public class Main {
             
             
             if (input.isEmpty()) {
+            	System.out.println("Pick-up Date set to: " + startDate);
             	break;
             }
             
