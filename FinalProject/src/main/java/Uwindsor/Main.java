@@ -3,14 +3,16 @@ package Uwindsor;
 import java.util.Scanner;
 import java.util.Set;
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Welcome to Wise Wheels Rentals!");
         
         while (true) {
@@ -33,6 +35,10 @@ public class Main {
 	            case "5":
 	            	invertedIndex();
 	                break;
+                case "6":
+                Searchwordcount();
+	                break;    
+
 	            case "exit":
 	                System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
 	                return;
@@ -49,6 +55,7 @@ public class Main {
         System.out.println("3. Search for Car in Location");
         System.out.println("4. Add a keyWord into the History");
         System.out.println("5. Search for keyWord into the Inverted Indexing");
+        System.out.println("6. Search for frequency of the keyword");
         System.out.println("Type 'exit' to quit");
         System.out.print("Enter your choice: ");
     }
@@ -97,7 +104,6 @@ public class Main {
         }
 
         List<String> nearestWords = WordCompletion.findNearestWords(location);
-
         if (!nearestWords.isEmpty()) {
         	nearestWords.remove(location.toLowerCase());
         	if (nearestWords.isEmpty()) {
@@ -121,10 +127,24 @@ public class Main {
                 return getLocation();
             }
         } else {
-        	String correctedLocation = SpellChecking.correctedWord(location);
+        	List<String> correctedLocation = SpellChecker.correctedWord(location, "src/main/resources/locations.txt");
             if (!correctedLocation.equals(location)) {
-                System.out.println("Location corrected to: " + correctedLocation);
-                return correctedLocation;
+            	System.out.println("\nDid you mean one of the following?");
+                for (String word : correctedLocation) {
+                    System.out.println("- " + word);
+                }
+
+                System.out.print("Type the correct word or 'no' to enter a new one: ");
+                String userResponse = scanner.nextLine();
+                
+                if (!userResponse.equalsIgnoreCase("no") && correctedLocation.contains(userResponse)) {
+                    System.out.println("Location set to: " + userResponse);
+                    return userResponse;
+                } else {
+                    System.out.println("Please enter the location.");
+                    return getLocation();
+                }
+                
             } else {
                 System.out.println("Incorrect location. Please try again.");
                 return getLocation();
@@ -137,24 +157,20 @@ public class Main {
         while (true) {
             startDate = LocalDate.now().plusDays(1); // Set default start date as tomorrow
 
-            System.out.print("\nEnter start date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
+            System.out.print("\nEnter pick-up date (yyyy-MM-dd) (Press Enter for default): ");
             String input = scanner.nextLine().trim();
-
+            
+            
             if (input.isEmpty()) {
-                System.out.println("Defaulting to tomorrow's date: " + startDate);
-                break;
+            	break;
             }
-
+            
             try {
-                startDate = LocalDate.parse(input);
-                if (startDate.isBefore(LocalDate.now().plusDays(1))) { // Ensure start date is not today or before
-                    System.out.println("Invalid date. Please enter a future date.");
-                } else {
-                    System.out.println("Valid date format. Proceeding...");
-                    break;
-                }
+                startDate = DateValidator.validateDateInput(input);
+                System.out.println("Valid pick-up date . Proceeding...");
+                break;
             } catch (DateTimeParseException e) {
-                System.out.println("Invalid date. Please enter a valid date.");
+                System.out.println(e.getMessage());
             }
         }
         return startDate;
@@ -165,26 +181,23 @@ public class Main {
         while (true) {
             endDate = startDate.plusDays(1); // Set default end date as day after tomorrow
 
-            System.out.print("\nEnter end date (yyyy-MM-dd) for All Urls (Press Enter for default): ");
+            System.out.print("\nEnter drop-off date (yyyy-MM-dd) (Press enter for default): ");
             String input = scanner.nextLine().trim();
-
+            
             if (input.isEmpty()) {
-                System.out.println("Defaulting to day after tomorrow's date: " + endDate);
-                break;
+            	System.out.println("Drop-off Date set to: " + endDate);
+            	break;
             }
-
+            
             try {
-                endDate = LocalDate.parse(input);
-                if (endDate.isBefore(LocalDate.now().plusDays(2))) { // Ensure end date is not before day after tomorrow
-                    System.out.println("Invalid date. Please enter a future date.");
-                } else if (endDate.isBefore(startDate) || endDate.isEqual(startDate)) {
-                    System.out.println("End date should be greater than the start date. Please enter a valid end date.");
-                } else {
-                    System.out.println("Valid date format. Proceeding...");
-                    break;
+            	endDate = DateValidator.validateDateInput(input);
+            	if (endDate.isBefore(startDate) || endDate.isEqual(startDate)) {
+                    throw new DateTimeParseException("Drop-off date should be greater than the Pick-up date. Please enter a valid drop-off date.", input, 0);
                 }
+                System.out.println("Valid drop-off date. Proceeding...");
+                break;
             } catch (DateTimeParseException e) {
-                System.out.println("Invalid date. Please enter a valid date.");
+                System.out.println(e.getMessage());
             }
         }
         return endDate;
@@ -232,4 +245,13 @@ public class Main {
  	   File directory = new File("src/main/resources/CarRentalData");
  	   invertedIndex.DataIndexFile(directory);
     }
+
+    private static void Searchwordcount() throws IOException {
+        Searchwordcount countdata = new Searchwordcount();
+    
+        String[] searchWords = countdata.getInputWordsFromUser();
+        Map<String, Integer> fileWordCountMap = countdata.searchWordsInFiles(searchWords);
+        countdata.printMatchingFiles(fileWordCountMap);
+    }
 }
+
