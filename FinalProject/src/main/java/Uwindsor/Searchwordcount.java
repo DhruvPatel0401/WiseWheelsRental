@@ -54,7 +54,7 @@ public class Searchwordcount {
     }
 
     public static String getFilePath(String directoryPath, String fileName) 
-    // Get platform-independent file path
+    // Get platform-independent file path to work for all OS
     {
         Path filePath = Paths.get(directoryPath,fileName);
         return directoryPath;
