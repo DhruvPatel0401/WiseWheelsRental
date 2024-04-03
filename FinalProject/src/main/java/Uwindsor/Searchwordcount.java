@@ -56,8 +56,8 @@ public class Searchwordcount {
     public static String getFilePath(String directoryPath, String fileName) 
     // Get platform-independent file path
     {
-        Path filePath = Paths.get(directoryPath, fileName);
-        return filePath.toString();
+        Path filePath = Paths.get(directoryPath,fileName);
+        return directoryPath;
     }
     // below method is used to read lines from file and takes file path where inverted index files are stored
     // it will return list of lines
