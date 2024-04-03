@@ -4,14 +4,13 @@ import java.io.*;
 import java.util.*;
 
 public class InvertedIndex {
-	// a list of terms that won't be indexed
+    // a list of terms that won't be indexed
     private static final Set<String> EXCLUDED_WORDS = new HashSet<>(Arrays.asList(
-            "is", "an", "the", "Car", "Name", "Type", "Max", "Passengers", "Size", "Price", 
-            "per", "Day", "Total", "Vendor", "Rating", "No", "no", "ratings", "Available", "at"
-    ));
-    
+            "is", "an", "the", "Car", "Name", "Type", "Max", "Passengers", "Size", "Price",
+            "per", "Day", "Total", "Vendor", "Rating", "No", "no", "ratings", "Available", "at"));
+
     // Paths for the output files
-    private static final String outputFilePath = "src/main/resources/CarRentalData/InvertedIndexTable.txt";
+    private static final String outputFilePath = "src/main/resources/InvertedIndexTable.txt";
     private static final String outputFilePathData = "src/main/resources/CarRentalData";
 
     // Recursive data file indexing technique in a directory
@@ -56,7 +55,7 @@ public class InvertedIndex {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Error occurred while indexing file: " + e.getMessage());
         }
     }
 
@@ -78,9 +77,9 @@ public class InvertedIndex {
         Set<String> finaldataresultfile = new HashSet<>();
 
         for (String dataiteration : keywords) {
-            String datatolowercase = dataiteration.toLowerCase(Locale.ENGLISH); 
+            String datatolowercase = dataiteration.toLowerCase(Locale.ENGLISH);
             for (Map.Entry<String, Set<String>> entry : invtdata.entrySet()) {
-                if (entry.getKey().equalsIgnoreCase(datatolowercase)) { 
+                if (entry.getKey().equalsIgnoreCase(datatolowercase)) {
                     finaldataresultfile.addAll(entry.getValue()); // Add the files that match the entered keyword.
                     break;
                 }
@@ -89,7 +88,7 @@ public class InvertedIndex {
         return finaldataresultfile;
     }
 
-    //indexed data is written to a file
+    // indexed data is written to a file
     private void refenceindexfile(Map<String, Set<String>> invertedIndex, String filePath) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(filePath))) {
             for (Map.Entry<String, Set<String>> entry : invertedIndex.entrySet()) {
@@ -98,7 +97,7 @@ public class InvertedIndex {
                 writer.println(keyword + ":" + files); // Use a colon to divide the filename and the keyword.
             }
         } catch (IOException eu) {
-            eu.printStackTrace();
+            System.out.println("Error occurred while writing index file: " + eu.getMessage());
         }
     }
 
@@ -108,14 +107,14 @@ public class InvertedIndex {
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] eachDataInfile = line.split(":"); 
+                String[] eachDataInfile = line.split(":");
                 String eachWordInfile = eachDataInfile[0];
                 String[] allthefilesInfolder = eachDataInfile[1].split(","); // filenames with commas
                 Set<String> filesData = new HashSet<>(Arrays.asList(allthefilesInfolder));
                 invertedTableData.put(eachWordInfile, filesData);
             }
         } catch (IOException eb) {
-            eb.printStackTrace();
+            System.out.println("Error occurred while reading index file: " + eb.getMessage());
         }
         return invertedTableData;
     }
@@ -127,7 +126,7 @@ public class InvertedIndex {
         for (String keyword : keywords) {
             String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Lowercase the keyword
             for (Map.Entry<String, Set<String>> entry : invertedData.entrySet()) {
-                if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { //Comparison without regard to case
+                if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Comparison without regard to case
                     Set<String> filesData = entry.getValue();
                     for (String fileName : filesData) {
                         dataShowByPrinting(outputFilePathData + "/" + fileName); // Before printing, add the file path.
@@ -148,8 +147,7 @@ public class InvertedIndex {
             }
             System.out.println("----------------------------------");
         } catch (IOException ey) {
-            ey.printStackTrace();
+            System.out.println("Error occurred while reading file: " + ey.getMessage());
         }
     }
 }
-
