@@ -1,9 +1,0 @@
-Car Name: Hyundai Elantra
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Special
-Car Price per Day: $87
-Car Total Price: $101
-Vendor Name: Enterprise
-Ratings: No ratings
-Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Kia Rio
+Car Name: Compact or larger - Vehicle determined upon pick-up
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact
+Car Size: Special
 Car Price per Day: $29
-Car Total Price: $33
-Vendor Name: Hertz
+Car Total Price: $37
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

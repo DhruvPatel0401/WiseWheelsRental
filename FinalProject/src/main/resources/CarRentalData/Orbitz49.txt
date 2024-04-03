@@ -1,9 +1,9 @@
-Car Name: Kia Forte
+Car Name: Hyundai Elantra
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Midsize
-Car Price per Day: $30
+Car Price per Day: $29
 Car Total Price: $38
-Vendor Name: Enterprise Rental Company
-Ratings: 88%
+Vendor Name: Budget Rental Company
+Ratings: 80%
 Available at: orbitz.com

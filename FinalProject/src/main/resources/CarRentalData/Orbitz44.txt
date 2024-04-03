@@ -5,5 +5,5 @@ Car Size: Mini Van
 Car Price per Day: $32
 Car Total Price: $37
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Ratings: 100%
 Available at: orbitz.com

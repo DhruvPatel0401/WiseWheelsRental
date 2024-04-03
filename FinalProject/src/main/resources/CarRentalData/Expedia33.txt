@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Chevy Spark
 Car Type: Automatic
 Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $192
-Car Total Price: $242
+Car Size: Economy
+Car Price per Day: $31
+Car Total Price: $39
 Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

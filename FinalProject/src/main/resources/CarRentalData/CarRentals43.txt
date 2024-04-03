@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Compact or larger - Vehicle determined upon pick-up
 Car Type: Automatic
 Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $31
-Car Total Price: $39
-Vendor Name: Enterprise
+Car Size: Special
+Car Price per Day: $29
+Car Total Price: $38
+Vendor Name: Avis
 Ratings: No ratings
 Available at: expedia.com

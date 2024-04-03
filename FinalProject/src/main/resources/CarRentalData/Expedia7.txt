@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Kia Forte
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Midsize
 Car Price per Day: $29
-Car Total Price: $38
-Vendor Name: Budget
+Car Total Price: $37
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

@@ -2,8 +2,8 @@ Car Name: Kia Rio
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Compact
-Car Price per Day: $29
-Car Total Price: $33
+Car Price per Day: $28
+Car Total Price: $32
 Vendor Name: Hertz Rental Company
 Ratings: No ratings
 Available at: orbitz.com

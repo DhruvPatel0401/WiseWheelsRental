@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Chevrolet Colorado
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $35
-Car Total Price: $40
+Max Passengers: 4
+Car Size: Standard Pickup Regular Cab
+Car Price per Day: $31
+Car Total Price: $39
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

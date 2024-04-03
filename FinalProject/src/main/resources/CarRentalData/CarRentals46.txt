@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Toyota Camry
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $35
-Car Total Price: $40
+Car Size: Fullsize
+Car Price per Day: $31
+Car Total Price: $39
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

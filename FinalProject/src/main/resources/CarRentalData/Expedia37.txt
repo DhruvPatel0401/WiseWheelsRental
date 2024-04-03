@@ -1,9 +1,9 @@
-Car Name: Vw Jetta
+Car Name: Hyundai Sonata
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $78
-Car Total Price: $90
-Vendor Name: Enterprise
+Car Size: Fullsize
+Car Price per Day: $32
+Car Total Price: $37
+Vendor Name: Hertz
 Ratings: No ratings
 Available at: expedia.com

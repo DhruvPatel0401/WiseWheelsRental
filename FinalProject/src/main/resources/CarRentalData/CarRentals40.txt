@@ -1,9 +1,9 @@
-Car Name: Nissan Versa
+Car Name: Nissan Maxima
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $31
-Car Total Price: $39
+Car Size: Premium
+Car Price per Day: $33
+Car Total Price: $38
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

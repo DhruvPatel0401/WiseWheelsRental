@@ -1,9 +1,9 @@
-Car Name: NISSAN KICKS
+Car Name: Kia Forte
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV
-Car Price per Day: $82
-Car Total Price: $96
-Vendor Name: Hertz
+Car Size: Midsize
+Car Price per Day: $31
+Car Total Price: $39
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

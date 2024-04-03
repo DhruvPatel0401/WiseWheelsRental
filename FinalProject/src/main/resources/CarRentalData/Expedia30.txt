@@ -1,9 +1,9 @@
-Car Name: Tesla Model 3
+Car Name: Vw Jetta
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize Elite
-Car Price per Day: $74
-Car Total Price: $87
-Vendor Name: Hertz
+Car Size: Standard
+Car Price per Day: $31
+Car Total Price: $39
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

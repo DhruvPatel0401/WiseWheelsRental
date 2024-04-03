@@ -1,9 +1,9 @@
-Car Name: Dodge Grand Caravan
+Car Name: Hyundai Elantra
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $32
+Max Passengers: 5
+Car Size: Midsize
+Car Price per Day: $28
 Car Total Price: $37
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Vendor Name: Budget Rental Company
+Ratings: 80%
 Available at: orbitz.com
