@@ -60,7 +60,7 @@ public class Main {
     
     private static void displayMenu() {
     	System.out.println("\n*************************************");
-        System.out.println("*            𝕄𝕒𝕚𝕟 𝕄𝕖𝕟𝕦               *");
+        System.out.println("             𝕄𝕒𝕚𝕟 𝕄𝕖𝕟𝕦                ");
         System.out.println("*************************************");
         System.out.println("1. Get Latest Car Details");
         System.out.println("2. To simplify your experience, choose this option to effortlessly rank your data");
@@ -96,8 +96,8 @@ public class Main {
     private static void performPageRanking() {
     	while (true) {
 	    	System.out.println("\nReady to rank? Please choose your preferred criteria:");
-		    System.out.println("1. Vehicle Type");
-		    System.out.println("2. Vehicle Model");
+		    System.out.println("1. Car Type");
+		    System.out.println("2. Car Model");
 		    System.out.println("3. To go back to main menu");
 		    
 		    String keyword;
@@ -107,10 +107,10 @@ public class Main {
 		    // Handle user preference
 		    switch (preferenceInput) {
 			    case "1":
-	                keyword = "Vehicle Type";
+	                keyword = "Car Size";
 	                break;
 	            case "2":
-	                keyword = "Vehicle Model";
+	                keyword = "Car Name";
 	                break;
 	            case "3":
 	                return;
@@ -118,6 +118,14 @@ public class Main {
 	                System.out.println("Invalid input. Please enter either '1' for Vehicle Type, '2' for Vehicle Model, or '3' to go back to the main menu.");
 	                continue;
 		    }
+		    
+		    try {
+	            PageRanking.displayPageRanking("src/main/resources/CarRentalData", keyword);
+	        } catch (IOException e)
+	        {
+	            System.out.println(e.getMessage());
+	            System.out.println("There seems to be an error with the data files");
+	        }
 	    }
     }
 
