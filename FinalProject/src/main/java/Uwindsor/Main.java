@@ -2,7 +2,6 @@ package Uwindsor;
 
 import java.util.Scanner;
 import java.util.Set;
-import java.util.regex.Matcher;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -123,22 +122,25 @@ public class Main {
     private static void searchForCar() {
         // Implement searching for car in location functionality
         SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
-                "src/main/resources/CarRentalData/SearchKeywordHistory.txt");
+                "src/main/resources/SearchKeywordHistory.txt");
         InvertedIndex invertedIndex = new InvertedIndex();
         System.out.print("\nEnter a Car name: ");
         String searchData = scanner.nextLine();
         String[] keywords = searchData.split("\\s+");
         for (String keyword : keywords) {
-            Pattern pattern = Pattern.compile("[^a-zA-Z0-9\\s]");
-            Matcher matcher = pattern.matcher(searchData);
-            if (matcher.find()) {
-                System.out.println("Special character is not allowed.");
+            try {
+                Pattern pattern = Pattern.compile("[^a-zA-Z0-9\\s]");
+                Matcher matcher = pattern.matcher(keyword);
+                if (matcher.find()) {
+                    throw new IllegalArgumentException("Special character is not allowed.");
+                }
+
+                searchFrequencyMap.dataUpdateInTheFile(keyword);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
                 return;
             }
-
-            searchFrequencyMap.dataUpdateInTheFile(keyword);
         }
-
         invertedIndex.printBeforeSearchingData(keywords);
     }
 
@@ -270,7 +272,7 @@ public class Main {
 
     private static void searchHistory() {
         SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
-                "src/main/resources/CarRentalData/SearchKeywordHistory.txt");
+                "src/main/resources/SearchKeywordHistory.txt");
         searchFrequencyMap.filedataDisplaying();
     }
 
@@ -294,7 +296,7 @@ public class Main {
 
     private static void CreateInvertedIndexTable() {
         InvertedIndex invertedIndex = new InvertedIndex();
-        File directory = new File("src/main/resources/CarRentalData");
+        File directory = new File("src/main/resources/");
         invertedIndex.DataIndexFile(directory);
     }
 
