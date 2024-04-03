@@ -15,7 +15,7 @@ import java.util.TreeMap;
 
 public class Searchwordcount {
     // path to the crawled data output files
-    private static final String DIRECTORY_PATH = "src\\main\\resources\\CarRentalData";
+    private static final String DIRECTORY_PATH = "src\\main\\resources\\InvertedIndexTable.txt";
 
     // get user input words separated by spaces using scanner class.
     // Used getters below which will return an Array.
