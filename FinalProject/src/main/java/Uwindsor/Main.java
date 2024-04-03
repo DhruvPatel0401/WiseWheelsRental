@@ -296,7 +296,7 @@ public class Main {
 
     private static void CreateInvertedIndexTable() {
         InvertedIndex invertedIndex = new InvertedIndex();
-        File directory = new File("src/main/resources/");
+        File directory = new File("src/main/resources/CarRentalData");
         invertedIndex.DataIndexFile(directory);
     }
 
