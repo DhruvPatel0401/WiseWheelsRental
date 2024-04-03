@@ -1,7 +1,7 @@
-Car Name: Managers Special
+Car Name: Toyota Corolla, Hyundai Elantra
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy Special
+Car Size: Midsize
 Car Price per Day: $28
 Car Total Price: $33
 Vendor Name: Hertz

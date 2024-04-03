@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Mitsubishi Mirage
 Car Type: Automatic
 Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $32
-Car Total Price: $37
-Vendor Name: Enterprise
+Car Size: Economy
+Car Price per Day: $27
+Car Total Price: $36
+Vendor Name: Budget
 Ratings: No ratings
 Available at: expedia.com

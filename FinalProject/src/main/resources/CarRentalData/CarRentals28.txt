@@ -1,7 +1,7 @@
-Car Name: Toyota Rav4
+Car Name: Ford F150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize SUV
+Max Passengers: 4
+Car Size: Premium Pickup Regular Cab
 Car Price per Day: $32
 Car Total Price: $37
 Vendor Name: Enterprise

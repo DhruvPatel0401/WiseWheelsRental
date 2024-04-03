@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Kia Forte
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $32
+Max Passengers: 5
+Car Size: Midsize
+Car Price per Day: $29
 Car Total Price: $37
 Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Ratings: 88%
 Available at: orbitz.com

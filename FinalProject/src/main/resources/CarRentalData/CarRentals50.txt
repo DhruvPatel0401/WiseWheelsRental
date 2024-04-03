@@ -1,9 +1,9 @@
-Car Name: Dodge Grand Caravan
+Car Name: Chevrolet Malibu
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $33
-Car Total Price: $41
-Vendor Name: Enterprise
+Max Passengers: 5
+Car Size: Fullsize
+Car Price per Day: $30
+Car Total Price: $39
+Vendor Name: Avis
 Ratings: No ratings
 Available at: expedia.com

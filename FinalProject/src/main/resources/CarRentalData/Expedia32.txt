@@ -1,9 +1,9 @@
-Car Name: Telsa Model Y
+Car Name: Nissan Versa
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard Elite SUV
-Car Price per Day: $100
-Car Total Price: $114
-Vendor Name: Hertz
+Car Size: Compact
+Car Price per Day: $31
+Car Total Price: $39
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

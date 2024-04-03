@@ -1,9 +1,9 @@
-Car Name: Vw Jetta
+Car Name: Ford F150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $78
-Car Total Price: $90
+Max Passengers: 4
+Car Size: Premium Pickup Regular Cab
+Car Price per Day: $32
+Car Total Price: $40
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

@@ -2,7 +2,7 @@ Car Name: Compact or larger - Vehicle determined upon pick-up
 Car Type: Automatic
 Max Passengers: 4
 Car Size: Special
-Car Price per Day: $28
+Car Price per Day: $27
 Car Total Price: $36
 Vendor Name: Budget Rental Company
 Ratings: 80%

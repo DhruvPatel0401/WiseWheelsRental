@@ -1,9 +1,0 @@
-Car Name: Toyota Yaris
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Economy
-Car Price per Day: $68
-Car Total Price: $79
-Vendor Name: Thrifty Car Rental
-Ratings: No ratings
-Available at: expedia.com

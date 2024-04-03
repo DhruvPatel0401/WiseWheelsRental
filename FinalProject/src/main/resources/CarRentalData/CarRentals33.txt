@@ -1,9 +1,9 @@
-Car Name: Hyundai Sonata
+Car Name: Hyundai Kona
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $33
-Car Total Price: $38
-Vendor Name: Hertz
+Car Size: Compact SUV
+Car Price per Day: $32
+Car Total Price: $37
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

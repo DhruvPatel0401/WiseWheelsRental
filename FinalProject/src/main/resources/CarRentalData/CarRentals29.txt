@@ -1,7 +1,7 @@
-Car Name: Hyundai Kona
+Car Name: Dodge Grand Caravan
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact SUV AWD
+Max Passengers: 7
+Car Size: Mini Van
 Car Price per Day: $32
 Car Total Price: $37
 Vendor Name: Enterprise
