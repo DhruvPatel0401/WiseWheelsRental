@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Toyota Rav4
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV AWD
+Car Size: Midsize SUV
 Car Price per Day: $32
-Car Total Price: $37
+Car Total Price: $41
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Ratings: 88%
 Available at: orbitz.com

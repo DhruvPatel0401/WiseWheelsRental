@@ -1,9 +1,9 @@
-Car Name: Hyundai Sonata
+Car Name: Nissan Versa
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $32
-Car Total Price: $37
-Vendor Name: Hertz Rental Company
-Ratings: No ratings
+Car Size: Compact
+Car Price per Day: $30
+Car Total Price: $40
+Vendor Name: Avis Rental Company
+Ratings: 95%
 Available at: orbitz.com

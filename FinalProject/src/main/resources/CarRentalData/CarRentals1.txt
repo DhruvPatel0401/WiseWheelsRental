@@ -1,9 +1,9 @@
-Car Name: Managers Special
+Car Name: Compact or larger - Vehicle determined upon pick-up
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy Special
-Car Price per Day: $27
-Car Total Price: $32
-Vendor Name: Hertz
-Ratings: No ratings
+Car Size: Special
+Car Price per Day: $30
+Car Total Price: $35
+Vendor Name: Enterprise
+Ratings: 76%
 Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $31
+Max Passengers: 5
+Car Size: Premium Special
+Car Price per Day: $34
 Car Total Price: $39
-Vendor Name: National Car Rental
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

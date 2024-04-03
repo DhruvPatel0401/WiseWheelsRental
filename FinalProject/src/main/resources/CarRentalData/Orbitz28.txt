@@ -1,9 +1,9 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Name: Hyundai Kona
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Special
-Car Price per Day: $27
-Car Total Price: $36
-Vendor Name: Budget Rental Company
-Ratings: 80%
+Max Passengers: 5
+Car Size: Compact SUV AWD
+Car Price per Day: $31
+Car Total Price: $39
+Vendor Name: Enterprise Rental Company
+Ratings: 88%
 Available at: orbitz.com

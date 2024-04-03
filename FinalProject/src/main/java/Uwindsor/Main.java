@@ -8,7 +8,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.*;
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
@@ -20,30 +19,33 @@ public class Main {
         while (true) {
             displayMenu();
             String choice = scanner.nextLine().toLowerCase();
-
+            
             switch (choice) {
-                case "1":
-                    performWebCrawler();
-                    break;
-                case "2":
-                    performPageRanking();
-                    break;
-                case "3":
-                    searchForCar();
-                    break;
-                case "4":
-                    searchHistory();
-                    break;
-                case "5":
-                    Searchwordcount();
-                    break;
+	            case "1":
+	                performWebCrawler();
+	                break;
+	            case "2":
+	                performPageRanking();
+	                break;
+	            case "3":
+	                searchForCar();
+	                break;
+	            case "4":
+	            	searchHistory();
+	                break;
+	            case "5":
+	            	invertedIndex();
+	                break;
+                case "6":
+                	Searchwordcount();
+	                break;    
 
-                case "exit":
-                    System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
-                    displayWiseWheelsRental();
-                    return;
-                default:
-                    System.out.println("Invalid choice. Please select a valid option or type 'exit' to quit.");
+	            case "exit":
+	                System.out.println("Exiting program. Thank you for using Wise Wheels Rentals!");
+	                displayWiseWheelsRental();
+	                return;
+	            default:
+	                System.out.println("Invalid choice. Please select a valid option or type 'exit' to quit.");
             }
         }
     }
@@ -63,8 +65,9 @@ public class Main {
         System.out.println("1. Get Latest Car Details");
         System.out.println("2. To simplify your experience, choose this option to effortlessly rank your data");
         System.out.println("3. Search for Car");
-        System.out.println("4. Display the History");
-        System.out.println("5. Search for frequency of the keyword");
+        System.out.println("4. Add a keyWord into the History");
+        System.out.println("5. Search for keyWord into the Inverted Indexing");
+        System.out.println("6. Search for frequency of the keyword");
         System.out.println("Type 'exit' to quit");
         System.out.print("What would you like to do next? Enter your choice: ");
     }
@@ -128,26 +131,12 @@ public class Main {
 
     private static void searchForCar() {
         // Implement searching for car in location functionality
-        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap("src/main/resources/SearchKeywordHistory.txt");
         InvertedIndex invertedIndex = new InvertedIndex();
-        System.out.print("\nEnter a Car name: ");
-        String searchData = scanner.nextLine();
-        String[] keywords = searchData.split("\\s+");
-        for (String keyword : keywords) {
-            try {
-                Pattern pattern = Pattern.compile("[^a-zA-Z0-9\\s]");
-                Matcher matcher = pattern.matcher(keyword);
-                if (matcher.find()) {
-                    throw new IllegalArgumentException("Special character is not allowed.");
-                }
-
-                searchFrequencyMap.dataUpdateInTheFile(keyword);
-            } catch (IllegalArgumentException e) {
-                System.out.println("Error: " + e.getMessage());
-                return;
-            }
-        }
-        invertedIndex.printBeforeSearchingData(keywords);
+	    System.out.print("\nEnter a Car name: ");
+	    String searchData = scanner.nextLine();
+	    String[] keywords = searchData.split("\\s+");
+	   
+	    invertedIndex.printBeforeSearchingData(keywords);
     }
     
     private static String getLocation() {
@@ -227,7 +216,8 @@ public class Main {
 
             System.out.print("\nEnter pick-up date (yyyy-MM-dd) (Press Enter for default): ");
             String input = scanner.nextLine().trim();
-
+            
+            
             if (input.isEmpty()) {
             	System.out.println("Pick-up Date set to: " + startDate);
             	break;
@@ -272,13 +262,26 @@ public class Main {
     }
 
     private static void searchHistory() {
-        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
-                "src/main/resources/SearchKeywordHistory.txt");
+        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap("src/main/resources/CarRentalData/SearchKeywordHistory.txt");
+        String keyword;
+
+        System.out.println("Enter a keyword (or type 'quit' to exit):");
+//        while (true) {
+//            keyword = scanner.nextLine();
+//            if (keyword.equalsIgnoreCase("quit")) {
+//                break;
+//            } else {
+//                searchFrequencyMap.updateSearchFrequency(keyword);
+//            }
+//        }
+        keyword = scanner.nextLine();
+        searchFrequencyMap.dataUpdateInTheFile(keyword);
+        
         searchFrequencyMap.filedataDisplaying();
     }
-
+    
     private static void invertedIndex() {
-        InvertedIndex invertedIndex = new InvertedIndex();
+    	InvertedIndex invertedIndex = new InvertedIndex();
         System.out.print("Enter keywords to search (separated by spaces): ");
         String inputKeywords = scanner.nextLine();
 
@@ -294,18 +297,19 @@ public class Main {
             System.out.println("No files found containing the specified keywords.");
         }
     }
-
+    
     private static void CreateInvertedIndexTable() {
-        InvertedIndex invertedIndex = new InvertedIndex();
-        File directory = new File("src/main/resources/");
-        invertedIndex.DataIndexFile(directory);
+ 	   InvertedIndex invertedIndex = new InvertedIndex();
+ 	   File directory = new File("src/main/resources/CarRentalData");
+ 	   invertedIndex.DataIndexFile(directory);
     }
 
     private static void Searchwordcount() throws IOException {
         Searchwordcount countdata = new Searchwordcount();
-
+    
         String[] searchWords = countdata.getInputWordsFromUser();
         Map<String, Integer> fileWordCountMap = countdata.searchWordsInFiles(searchWords);
         countdata.printMatchingFiles(fileWordCountMap);
     }
 }
+

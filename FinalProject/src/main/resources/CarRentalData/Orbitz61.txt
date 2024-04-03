@@ -1,0 +1,9 @@
+Car Name: Nissan Versa
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Compact
+Car Price per Day: $115
+Car Total Price: $145
+Vendor Name: National Car Rental Rental Company
+Ratings: 87%
+Available at: orbitz.com
