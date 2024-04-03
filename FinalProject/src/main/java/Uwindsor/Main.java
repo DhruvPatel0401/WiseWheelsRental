@@ -124,7 +124,6 @@ public class Main {
         SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
                 "src/main/resources/SearchKeywordHistory.txt");
         InvertedIndex invertedIndex = new InvertedIndex();
-        CreateInvertedIndexTable();
         System.out.print("\nEnter a Car name: ");
         String searchData = scanner.nextLine();
         String[] keywords = searchData.split("\\s+");
