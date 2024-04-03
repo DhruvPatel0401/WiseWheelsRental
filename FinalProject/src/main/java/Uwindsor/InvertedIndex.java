@@ -20,9 +20,7 @@ public class InvertedIndex {
         if (!directory.isDirectory()) {
             return;
         }
-
         Map<String, Set<String>> invertedTableData = new HashMap<>();
-
         for (File infoData : directory.listFiles()) {
             if (infoData.isDirectory()) {
                 DataIndexFile(infoData);
@@ -52,7 +50,7 @@ public class InvertedIndex {
                 String[] words = line.split("\\s+");
                 for (String word : words) {
                     word = removeSpecialCharacters(word);
-                    if (!EXCLUDED_WORDS.contains(word)) {
+                    if (!word.isEmpty() && !isNumeric(word) && !EXCLUDED_WORDS.contains(word)) {
                         invertedIndex.computeIfAbsent(word, k -> new HashSet<>()).add(file.getName());
                     }
                 }
@@ -60,6 +58,10 @@ public class InvertedIndex {
         } catch (IOException e) {
             System.out.println("Error occurred while indexing file: " + e.getMessage());
         }
+    }
+
+    private boolean isNumeric(String str) {
+        return str.matches("-?\\d+(\\.\\d+)?"); // This pattern allows negative and decimal numbers
     }
 
     private String removeSpecialCharacters(String word) {
@@ -139,11 +141,12 @@ public class InvertedIndex {
             for (Map.Entry<String, Set<String>> entry : invertedData.entrySet()) {
                 if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Comparison without regard to case
                     Set<String> filesData = entry.getValue();
-                    int count = 0;
+                    int count = 1;
+
                     for (String fileName : filesData) {
                         dataShowByPrinting(outputFilePathData + "/" + fileName, count); // Before printing, add the file
-                                                                                        // path.
                         count = count + 1;
+
                     }
                     break;
                 }
@@ -155,14 +158,14 @@ public class InvertedIndex {
     public static void dataShowByPrinting(String filePath, int count) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            System.out.println("Car Data : " + count);
+            System.out.println("Car Data - Entry #" + count);
+            System.out.println("-----------------------------");
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
-            count += 1;
-            System.out.println("----------------------------------");
-        } catch (IOException ey) {
-            System.out.println("Error occurred while reading file: " + ey.getMessage());
+            System.out.println("-----------------------------\n");
+        } catch (IOException ex) {
+            System.out.println("Error occurred while reading the file: " + ex.getMessage());
         }
     }
 }

@@ -124,6 +124,7 @@ public class Main {
         SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
                 "src/main/resources/SearchKeywordHistory.txt");
         InvertedIndex invertedIndex = new InvertedIndex();
+        CreateInvertedIndexTable();
         System.out.print("\nEnter a Car name: ");
         String searchData = scanner.nextLine();
         String[] keywords = searchData.split("\\s+");
@@ -296,7 +297,7 @@ public class Main {
 
     private static void CreateInvertedIndexTable() {
         InvertedIndex invertedIndex = new InvertedIndex();
-        File directory = new File("src/main/resources/");
+        File directory = new File("src/main/resources/CarRentalData");
         invertedIndex.DataIndexFile(directory);
     }
 
