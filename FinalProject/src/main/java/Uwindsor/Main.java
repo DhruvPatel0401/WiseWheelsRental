@@ -65,7 +65,7 @@ public class Main {
         System.out.println("2. To simplify your experience, choose this option to effortlessly rank your data");
         System.out.println("3. Search for Car");
         System.out.println("4. Display the History");
-        System.out.println("5. Search for the car to verify see its frequency count");
+        System.out.println("5. Search for the car to verify its frequency count");
         System.out.println("Type 'exit' to quit");
         System.out.print("What would you like to do next? Enter your choice: ");
     }
@@ -80,13 +80,13 @@ public class Main {
         // Get end date from user
         LocalDate endDate = getEndDate(startDate);
 
-        System.out.println("Hang tight! We’re fetching the most recent data for you.");
+        System.out.println("Hang tight! We’re fetching the most recent data for you.\n");
 
         // Call web crawler class to fetch data based on inputs
         WebCrawler crawler = new WebCrawler(location.toLowerCase(), startDate, endDate);
         crawler.startCrawling(location, startDate, endDate);
 
-        System.out.println("Appreciate your patience! The most up-to-date data is now ready for you.");
+        System.out.println("\nAppreciate your patience! The most up-to-date data is now ready for you.");
 
         CreateInvertedIndexTable();
     }
@@ -162,10 +162,9 @@ public class Main {
             System.out.print("\nEnter a pick-up location: ");
             location = scanner.nextLine();
 
-            // Check if the location contains only alphabetic characters, spaces, and
-            // hyphens
-            if (!location.matches("^[a-zA-Z\\s-]+$")) {
-                System.out.println("Special characters and numbers are not allowed. Please enter a valid location.");
+            // Check if the location contains only alphabetic characters, spaces, and hyphens
+            if (!location.matches("^[a-zA-Z\\s]+$")) {
+                System.out.println("Oops! Only alphabetic characters and spaces are allowed in location. Please enter again.");
             } else {
                 break;
             }
