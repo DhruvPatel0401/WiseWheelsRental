@@ -67,10 +67,18 @@ class TrieNode {
     }
 
     private void collectWords(TrieNode node, String prefix, List<String> suggestions) {
+    	if (suggestions.size() >= 4) {
+            return; // Stop collecting suggestions if the limit is reached
+        }
+    	
         if (node.isEndOfWord) {
             suggestions.add(prefix.toLowerCase());
         }
         for (char i = 0; i < ALPHABET_SIZE; i++) {
+        	if (suggestions.size() >= 4) {
+                return; // Stop collecting suggestions if the limit is reached
+            }
+        	
             TrieNode child = node.children[i];
             if (child != null) {
                 char ch = getChar(i);
