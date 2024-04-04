@@ -1,9 +1,9 @@
-Car Name: Nissan Versa
+Car Name: Dodge Grand Caravan
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $28
-Car Total Price: $37
-Vendor Name: Budget Rental Company
-Ratings: 80%
+Max Passengers: 7
+Car Size: Mini Van
+Car Price per Day: $27
+Car Total Price: $31
+Vendor Name: Enterprise Rental Company
+Ratings: 100%
 Available at: orbitz.com

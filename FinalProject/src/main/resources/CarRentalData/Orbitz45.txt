@@ -1,9 +1,9 @@
-Car Name: Ford Escape
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $33
-Car Total Price: $43
-Vendor Name: Avis Rental Company
-Ratings: 95%
+Car Size: Premium Special
+Car Price per Day: $34
+Car Total Price: $39
+Vendor Name: Enterprise Rental Company
+Ratings: 76%
 Available at: orbitz.com

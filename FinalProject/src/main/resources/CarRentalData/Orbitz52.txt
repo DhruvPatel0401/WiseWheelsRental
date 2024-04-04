@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Chevrolet Malibu
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Special
-Car Price per Day: $44
-Car Total Price: $50
-Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Car Size: Fullsize
+Car Price per Day: $30
+Car Total Price: $39
+Vendor Name: Avis Rental Company
+Ratings: 95%
 Available at: orbitz.com

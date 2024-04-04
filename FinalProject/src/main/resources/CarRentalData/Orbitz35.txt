@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Ford F150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $30
-Car Total Price: $40
-Vendor Name: Avis Rental Company
-Ratings: 95%
+Max Passengers: 4
+Car Size: Premium Pickup Regular Cab
+Car Price per Day: $32
+Car Total Price: $37
+Vendor Name: Enterprise Rental Company
+Ratings: 76%
 Available at: orbitz.com

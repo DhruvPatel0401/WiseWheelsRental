@@ -1,9 +1,9 @@
-Car Name: Nissan Maxima
+Car Name: Jeep Wrangler Unlimited
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $153
-Car Total Price: $193
+Car Size: Fullsize Open Air All-Terrain
+Car Price per Day: $211
+Car Total Price: $266
 Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

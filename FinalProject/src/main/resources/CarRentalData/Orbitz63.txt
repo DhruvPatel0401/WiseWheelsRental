@@ -1,9 +1,9 @@
-Car Name: Kia Forte
+Car Name: Nissan Versa
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $125
-Car Total Price: $157
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
+Car Size: Compact
+Car Price per Day: $30
+Car Total Price: $40
+Vendor Name: Avis Rental Company
+Ratings: 95%
 Available at: orbitz.com

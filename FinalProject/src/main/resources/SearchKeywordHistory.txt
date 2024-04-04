@@ -1,2 +1,9 @@
-Forte:1
-Kia:4
+124:1
+Forte:2
+Jetta:1
+Kia:7
+Nano:1
+Rav4:1
+Rio:1
+Toyota:1
+kia23:1

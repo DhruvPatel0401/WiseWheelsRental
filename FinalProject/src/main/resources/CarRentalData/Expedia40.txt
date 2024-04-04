@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Audi A3 or BMW 2 Series Gran Coupe
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Special
-Car Price per Day: $44
-Car Total Price: $50
-Vendor Name: Enterprise
+Car Size: Premium Special
+Car Price per Day: $173
+Car Total Price: $218
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

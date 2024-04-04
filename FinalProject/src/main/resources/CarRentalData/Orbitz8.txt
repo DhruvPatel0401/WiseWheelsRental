@@ -1,9 +1,9 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Name: Ford F150
 Car Type: Automatic
 Max Passengers: 4
-Car Size: Special
+Car Size: Premium Pickup Regular Cab
 Car Price per Day: $27
-Car Total Price: $36
-Vendor Name: Budget Rental Company
-Ratings: 80%
+Car Total Price: $31
+Vendor Name: Enterprise Rental Company
+Ratings: 100%
 Available at: orbitz.com

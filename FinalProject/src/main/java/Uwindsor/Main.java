@@ -2,6 +2,8 @@ package Uwindsor;
 
 import java.util.Scanner;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -33,10 +35,7 @@ public class Main {
 	            case "4":
 	            	searchHistory();
 	                break;
-	            case "5":
-	            	invertedIndex();
-	                break;
-                case "6":
+                case "5":
                 	Searchwordcount();
 	                break;    
 
@@ -130,12 +129,27 @@ public class Main {
 
     private static void searchForCar() {
         // Implement searching for car in location functionality
+        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
+                "src/main/resources/SearchKeywordHistory.txt");
         InvertedIndex invertedIndex = new InvertedIndex();
-	    System.out.print("\nEnter a Car name: ");
-	    String searchData = scanner.nextLine();
-	    String[] keywords = searchData.split("\\s+");
-	   
-	    invertedIndex.printBeforeSearchingData(keywords);
+        System.out.print("\nEnter a Car name: ");
+        String searchData = scanner.nextLine();
+        String[] keywords = searchData.split("\\s+");
+        for (String keyword : keywords) {
+            try {
+                Pattern pattern = Pattern.compile("[^a-zA-Z0-9\\s]");
+                Matcher matcher = pattern.matcher(keyword);
+                if (matcher.find()) {
+                    throw new IllegalArgumentException("Special character is not allowed.");
+                }
+ 
+                searchFrequencyMap.dataUpdateInTheFile(keyword);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+                return;
+            }
+        }
+        invertedIndex.printBeforeSearchingData(keywords);
     }
     
     private static String getLocation() {
@@ -261,21 +275,8 @@ public class Main {
     }
 
     private static void searchHistory() {
-        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap("src/main/resources/CarRentalData/SearchKeywordHistory.txt");
-        String keyword;
-
-        System.out.println("Enter a keyword (or type 'quit' to exit):");
-//        while (true) {
-//            keyword = scanner.nextLine();
-//            if (keyword.equalsIgnoreCase("quit")) {
-//                break;
-//            } else {
-//                searchFrequencyMap.updateSearchFrequency(keyword);
-//            }
-//        }
-        keyword = scanner.nextLine();
-        searchFrequencyMap.dataUpdateInTheFile(keyword);
-        
+        SearchFrequencyMap searchFrequencyMap = new SearchFrequencyMap(
+                "src/main/resources/SearchKeywordHistory.txt");
         searchFrequencyMap.filedataDisplaying();
     }
     

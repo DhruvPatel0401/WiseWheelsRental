@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Ford Escape
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $201
-Car Total Price: $253
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
+Car Size: Midsize SUV
+Car Price per Day: $31
+Car Total Price: $41
+Vendor Name: Budget Rental Company
+Ratings: 80%
 Available at: orbitz.com

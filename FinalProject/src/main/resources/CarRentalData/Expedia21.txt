@@ -1,9 +1,9 @@
-Car Name: Dodge Grand Caravan
+Car Name: Audi A4 or BMW 3 Series
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $32
-Car Total Price: $37
+Max Passengers: 5
+Car Size: Luxury
+Car Price per Day: $35
+Car Total Price: $40
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

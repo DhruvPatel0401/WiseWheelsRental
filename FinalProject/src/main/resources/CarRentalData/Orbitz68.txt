@@ -1,9 +1,9 @@
-Car Name: Audi A3 or BMW 2 Series Gran Coupe
+Car Name: Chevrolet Malibu
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium Special
-Car Price per Day: $173
-Car Total Price: $217
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
+Car Size: Fullsize
+Car Price per Day: $30
+Car Total Price: $40
+Vendor Name: Avis Rental Company
+Ratings: 95%
 Available at: orbitz.com

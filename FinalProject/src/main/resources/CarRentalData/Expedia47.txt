@@ -1,9 +1,9 @@
-Car Name: Toyota Camry
+Car Name: Dodge Durango
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $144
-Car Total Price: $181
+Max Passengers: 7
+Car Size: Premium Crossover
+Car Price per Day: $211
+Car Total Price: $266
 Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

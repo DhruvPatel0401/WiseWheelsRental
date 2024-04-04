@@ -86,22 +86,22 @@ public class SpellChecker {
         return suggestions;
     }
     
-    public static void main(String[] args) {
-    	String wordToCheck = "wendsar";
-        String dictionaryFilePath = "src/main/resources/locations.txt";
-        
-        SpellChecker spellChecker = new SpellChecker(dictionaryFilePath);
-        PriorityQueue<String> suggestions = spellChecker.suggestCorrections(wordToCheck);
-        
-        if (suggestions.isEmpty()) {
-            System.out.println("No suggestions found for \"" + wordToCheck + "\"");
-        } else {
-            System.out.println("Suggestions for \"" + wordToCheck + "\":");
-            while (!suggestions.isEmpty()) {
-                System.out.println("- " + suggestions.poll());
-            }
-        }
-    }
+//    public static void main(String[] args) {
+//    	String wordToCheck = "wendsar";
+//        String dictionaryFilePath = "src/main/resources/locations.txt";
+//        
+//        SpellChecker spellChecker = new SpellChecker(dictionaryFilePath);
+//        PriorityQueue<String> suggestions = spellChecker.suggestCorrections(wordToCheck);
+//        
+//        if (suggestions.isEmpty()) {
+//            System.out.println("No suggestions found for \"" + wordToCheck + "\"");
+//        } else {
+//            System.out.println("Suggestions for \"" + wordToCheck + "\":");
+//            while (!suggestions.isEmpty()) {
+//                System.out.println("- " + suggestions.poll());
+//            }
+//        }
+//    }
     
     public static List<String> correctedWord(String input, String path) {
     	SpellChecker spellChecker = new SpellChecker(path);

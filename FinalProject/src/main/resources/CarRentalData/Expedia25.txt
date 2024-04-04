@@ -1,9 +1,9 @@
-Car Name: Nissan Maxima
+Car Name: Dodge Durango
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $33
-Car Total Price: $38
+Max Passengers: 7
+Car Size: Premium Crossover
+Car Price per Day: $41
+Car Total Price: $46
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

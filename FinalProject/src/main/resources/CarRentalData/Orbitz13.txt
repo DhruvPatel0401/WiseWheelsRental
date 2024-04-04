@@ -1,9 +1,9 @@
-Car Name: Dodge Grand Caravan
+Car Name: Toyota Rav4
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $32
-Car Total Price: $37
+Max Passengers: 5
+Car Size: Midsize SUV
+Car Price per Day: $28
+Car Total Price: $32
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Ratings: 100%
 Available at: orbitz.com

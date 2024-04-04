@@ -1,0 +1,9 @@
+Car Name: Jeep Wrangler Unlimited
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Fullsize Open Air All-Terrain
+Car Price per Day: $211
+Car Total Price: $265
+Vendor Name: National Car Rental Rental Company
+Ratings: 87%
+Available at: orbitz.com

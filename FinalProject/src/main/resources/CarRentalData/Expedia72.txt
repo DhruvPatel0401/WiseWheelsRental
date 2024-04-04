@@ -1,9 +1,0 @@
-Car Name: Toyota Camry
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $144
-Car Total Price: $181
-Vendor Name: National Car Rental
-Ratings: No ratings
-Available at: expedia.com

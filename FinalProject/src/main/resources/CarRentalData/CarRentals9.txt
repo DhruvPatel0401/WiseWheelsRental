@@ -1,9 +1,9 @@
-Car Name: Nissan Versa
+Car Name: Ford F150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact
+Max Passengers: 4
+Car Size: Premium Pickup Regular Cab
 Car Price per Day: $27
-Car Total Price: $36
-Vendor Name: Budget
-Ratings: 80%
+Car Total Price: $31
+Vendor Name: Enterprise
+Ratings: 100%
 Available at: expedia.com

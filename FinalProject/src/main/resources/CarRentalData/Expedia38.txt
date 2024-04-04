@@ -1,9 +1,9 @@
-Car Name: Ford Expedition
+Car Name: Nissan Maxima
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Fullsize SUV
-Car Price per Day: $43
-Car Total Price: $54
-Vendor Name: Enterprise
+Max Passengers: 5
+Car Size: Premium
+Car Price per Day: $154
+Car Total Price: $194
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

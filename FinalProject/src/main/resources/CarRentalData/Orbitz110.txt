@@ -1,0 +1,9 @@
+Car Name: Tesla Model 3
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Midsize Elite
+Car Price per Day: $74
+Car Total Price: $86
+Vendor Name: Hertz Rental Company
+Ratings: No ratings
+Available at: orbitz.com

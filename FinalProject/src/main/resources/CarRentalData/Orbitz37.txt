@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Chevy Spark
 Car Type: Automatic
 Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $32
-Car Total Price: $40
+Car Size: Economy
+Car Price per Day: $29
+Car Total Price: $37
 Vendor Name: Enterprise Rental Company
 Ratings: 88%
 Available at: orbitz.com

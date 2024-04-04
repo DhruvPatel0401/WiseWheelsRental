@@ -1,0 +1,9 @@
+Car Name: Hyundai Elantra
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Special
+Car Price per Day: $39
+Car Total Price: $45
+Vendor Name: Enterprise Rental Company
+Ratings: 100%
+Available at: orbitz.com

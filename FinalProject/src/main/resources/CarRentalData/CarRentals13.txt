@@ -1,9 +1,9 @@
-Car Name: Nissan Versa
+Car Name: Toyota Rav4
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact
+Car Size: Midsize SUV
 Car Price per Day: $28
-Car Total Price: $37
-Vendor Name: Budget
-Ratings: 80%
+Car Total Price: $32
+Vendor Name: Enterprise
+Ratings: 100%
 Available at: expedia.com

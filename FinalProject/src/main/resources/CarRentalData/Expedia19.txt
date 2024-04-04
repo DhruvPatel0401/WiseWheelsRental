@@ -1,9 +1,9 @@
-Car Name: Nissan Maxima
+Car Name: Ford F-150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $32
-Car Total Price: $41
-Vendor Name: Enterprise
+Max Passengers: 6
+Car Size: Standard Pickup Regular Cab
+Car Price per Day: $34
+Car Total Price: $39
+Vendor Name: Hertz
 Ratings: No ratings
 Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Dodge Grand Caravan
+Car Name: Kia Forte
 Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $41
-Car Total Price: $51
-Vendor Name: Enterprise
+Max Passengers: 5
+Car Size: Midsize
+Car Price per Day: $125
+Car Total Price: $157
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

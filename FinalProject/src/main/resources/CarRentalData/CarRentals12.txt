@@ -1,9 +1,9 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Name: Nissan Maxima
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Special
-Car Price per Day: $29
-Car Total Price: $37
+Car Size: Premium
+Car Price per Day: $28
+Car Total Price: $32
 Vendor Name: Enterprise
-Ratings: 88%
+Ratings: 100%
 Available at: expedia.com
