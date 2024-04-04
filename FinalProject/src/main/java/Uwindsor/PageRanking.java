@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class PageRanking {
     static void displayPageRanking(String filePath, String keyword) throws IOException {
@@ -41,7 +43,7 @@ public class PageRanking {
                         String line;
                         while ((line = reader.readLine()) != null) {
                             if (line.startsWith(targetTextFile)) {
-                                String carType = line.substring(line.indexOf(":") + 2);
+                            	String carType = extractCarType(line);
                                 countMap.put(carType, countMap.getOrDefault(carType, 0) + 1);
                             }
                         }
@@ -58,6 +60,16 @@ public class PageRanking {
         }
 
         return maxHeap;
+    }
+    
+    private static String extractCarType(String line) {
+        String regex = ":(.*)";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(line);
+        if (matcher.find()) {
+            return matcher.group(1).trim();
+        }
+        return null; // Or throw an exception if no match found
     }
 
     public static class CarTypeCount {
