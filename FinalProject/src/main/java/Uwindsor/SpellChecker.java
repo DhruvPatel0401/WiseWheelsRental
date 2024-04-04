@@ -10,12 +10,9 @@ import java.util.PriorityQueue;
 
 public class SpellChecker {
     
-    private ArrayList<ArrayList<String>> dictionary;
-    private int[][] distanceCache;
-    
+    private ArrayList<ArrayList<String>> dictionary;
     public SpellChecker(String dictionaryFilePath) {
         dictionary = new ArrayList<>();
-        distanceCache = new int[100][100]; // Assuming maximum word length is 100
         for (int i = 0; i < 26; i++) {
             dictionary.add(new ArrayList<>());
         }
@@ -79,29 +76,12 @@ public class SpellChecker {
         if (index >= 0 && index < 26) {
             for (String dictWord : dictionary.get(index)) {
                 if (levenshteinDistance(word, dictWord) <= 2) { // Adjust threshold as needed
-                    suggestions.offer(dictWord);
+                    suggestions.offer(dictWord.toLowerCase());
                 }
             }
         }
         return suggestions;
     }
-    
-//    public static void main(String[] args) {
-//    	String wordToCheck = "wendsar";
-//        String dictionaryFilePath = "src/main/resources/locations.txt";
-//        
-//        SpellChecker spellChecker = new SpellChecker(dictionaryFilePath);
-//        PriorityQueue<String> suggestions = spellChecker.suggestCorrections(wordToCheck);
-//        
-//        if (suggestions.isEmpty()) {
-//            System.out.println("No suggestions found for \"" + wordToCheck + "\"");
-//        } else {
-//            System.out.println("Suggestions for \"" + wordToCheck + "\":");
-//            while (!suggestions.isEmpty()) {
-//                System.out.println("- " + suggestions.poll());
-//            }
-//        }
-//    }
     
     public static List<String> correctedWord(String input, String path) {
     	SpellChecker spellChecker = new SpellChecker(path);
