@@ -65,9 +65,8 @@ public class Main {
         System.out.println("1. Get Latest Car Details");
         System.out.println("2. To simplify your experience, choose this option to effortlessly rank your data");
         System.out.println("3. Search for Car");
-        System.out.println("4. Add a keyWord into the History");
-        System.out.println("5. Search for keyWord into the Inverted Indexing");
-        System.out.println("6. Search for frequency of the keyword");
+        System.out.println("4. Display the History");
+        System.out.println("5. Search for the car to verify see its frequency count");
         System.out.println("Type 'exit' to quit");
         System.out.print("What would you like to do next? Enter your choice: ");
     }
