@@ -1,9 +1,9 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Name: Dodge Grand Caravan
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Special
-Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Avis
+Max Passengers: 7
+Car Size: Mini Van
+Car Price per Day: $33
+Car Total Price: $37
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

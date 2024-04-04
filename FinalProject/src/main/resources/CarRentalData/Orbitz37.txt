@@ -1,9 +1,9 @@
-Car Name: Toyota Rav4
+Car Name: Chevy Spark
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $32
+Max Passengers: 4
+Car Size: Economy
+Car Price per Day: $29
 Car Total Price: $37
 Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Ratings: 88%
 Available at: orbitz.com

@@ -1,0 +1,9 @@
+Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Type: Automatic
+Max Passengers: 4
+Car Size: Special
+Car Price per Day: $30
+Car Total Price: $39
+Vendor Name: Avis Rental Company
+Ratings: 95%
+Available at: orbitz.com

@@ -1,9 +1,9 @@
-Car Name: Nissan Maxima
+Car Name: Hyundai Kona
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $33
-Car Total Price: $38
+Car Size: Compact SUV
+Car Price per Day: $31
+Car Total Price: $39
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

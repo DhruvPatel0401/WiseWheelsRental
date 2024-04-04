@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Vw Jetta
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV
-Car Price per Day: $32
-Car Total Price: $37
+Car Size: Standard
+Car Price per Day: $31
+Car Total Price: $39
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

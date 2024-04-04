@@ -1,9 +1,9 @@
-Car Name: Toyota Corolla, Hyundai Elantra
+Car Name: Nissan Versa
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $29
-Car Total Price: $34
-Vendor Name: Hertz Rental Company
-Ratings: No ratings
+Car Size: Compact
+Car Price per Day: $26
+Car Total Price: $30
+Vendor Name: Enterprise Rental Company
+Ratings: 100%
 Available at: orbitz.com

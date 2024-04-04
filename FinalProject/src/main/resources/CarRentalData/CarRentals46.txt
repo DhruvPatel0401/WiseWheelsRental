@@ -1,9 +1,9 @@
-Car Name: Ford Edge
+Car Name: Toyota Rav4, Nissan Rogue, Ford Escape
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $35
-Car Total Price: $40
-Vendor Name: Enterprise
+Car Size: Midsize SUV
+Car Price per Day: $36
+Car Total Price: $42
+Vendor Name: Hertz
 Ratings: No ratings
 Available at: expedia.com

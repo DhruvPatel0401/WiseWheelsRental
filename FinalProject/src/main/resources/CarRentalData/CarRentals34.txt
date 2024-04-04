@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Chevrolet Malibu
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV AWD
+Car Size: Fullsize
 Car Price per Day: $30
-Car Total Price: $38
-Vendor Name: Enterprise
+Car Total Price: $40
+Vendor Name: Avis
 Ratings: No ratings
 Available at: expedia.com

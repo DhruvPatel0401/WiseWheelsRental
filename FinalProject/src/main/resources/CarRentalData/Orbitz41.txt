@@ -1,9 +1,9 @@
-Car Name: Hyundai Kona
+Car Name: Managers Special
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV
-Car Price per Day: $32
-Car Total Price: $37
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Car Size: Economy Special
+Car Price per Day: $33
+Car Total Price: $38
+Vendor Name: Hertz Rental Company
+Ratings: No ratings
 Available at: orbitz.com

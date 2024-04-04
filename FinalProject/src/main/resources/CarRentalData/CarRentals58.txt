@@ -1,9 +1,9 @@
-Car Name: Chevy Spark
+Car Name: Cadillac Xt5
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Economy
-Car Price per Day: $66
-Car Total Price: $77
+Max Passengers: 5
+Car Size: Premium Elite SUV
+Car Price per Day: $44
+Car Total Price: $50
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Toyota Corolla, Hyundai Elantra
+Car Name: Chevrolet Colorado
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $29
-Car Total Price: $34
-Vendor Name: Hertz
-Ratings: No ratings
+Max Passengers: 4
+Car Size: Standard Pickup Regular Cab
+Car Price per Day: $26
+Car Total Price: $30
+Vendor Name: Enterprise
+Ratings: 100%
 Available at: expedia.com

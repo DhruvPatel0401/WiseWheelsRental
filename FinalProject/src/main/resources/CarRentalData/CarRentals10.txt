@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Hyundai Kona
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $31
-Car Total Price: $35
+Max Passengers: 5
+Car Size: Compact SUV AWD
+Car Price per Day: $27
+Car Total Price: $31
 Vendor Name: Enterprise
-Ratings: No ratings
+Ratings: 100%
 Available at: expedia.com

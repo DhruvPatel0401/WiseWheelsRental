@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Ford Expedition
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $55
-Car Total Price: $75
-Vendor Name: Budget
+Max Passengers: 7
+Car Size: Fullsize SUV
+Car Price per Day: $43
+Car Total Price: $49
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

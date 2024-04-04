@@ -1,9 +1,9 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Name: Ford Edge
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Special
-Car Price per Day: $66
-Car Total Price: $78
-Vendor Name: Budget
+Max Passengers: 5
+Car Size: Standard SUV
+Car Price per Day: $42
+Car Total Price: $55
+Vendor Name: Avis
 Ratings: No ratings
 Available at: expedia.com

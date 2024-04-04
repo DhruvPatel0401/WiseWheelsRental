@@ -1,0 +1,9 @@
+Car Name: Toyota Corolla, Hyundai Elantra
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Midsize
+Car Price per Day: $34
+Car Total Price: $39
+Vendor Name: Hertz Rental Company
+Ratings: No ratings
+Available at: orbitz.com

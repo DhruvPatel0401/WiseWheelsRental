@@ -1,9 +1,9 @@
-Car Name: Vw Jetta
+Car Name: Kia Forte
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $78
-Car Total Price: $90
-Vendor Name: Enterprise
+Car Size: Midsize
+Car Price per Day: $125
+Car Total Price: $157
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

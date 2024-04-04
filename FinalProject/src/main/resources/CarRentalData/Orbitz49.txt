@@ -1,9 +1,9 @@
-Car Name: Kia Forte
+Car Name: Chevrolet Colorado
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $30
-Car Total Price: $38
+Max Passengers: 4
+Car Size: Standard Pickup Regular Cab
+Car Price per Day: $31
+Car Total Price: $39
 Vendor Name: Enterprise Rental Company
 Ratings: 88%
 Available at: orbitz.com

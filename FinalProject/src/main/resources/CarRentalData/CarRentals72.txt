@@ -1,9 +1,0 @@
-Car Name: Ford Edge
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $59
-Car Total Price: $79
-Vendor Name: Enterprise
-Ratings: No ratings
-Available at: expedia.com

@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Hyundai Kona
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $30
-Car Total Price: $40
-Vendor Name: Avis
+Car Size: Compact SUV
+Car Price per Day: $33
+Car Total Price: $37
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

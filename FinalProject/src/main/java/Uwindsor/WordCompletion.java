@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 class TrieNode {
-    private static final int ALPHABET_SIZE = 26;
+    private static final int ALPHABET_SIZE = 28;
     private TrieNode[] children;
     private boolean isEndOfWord;
 
@@ -22,11 +22,7 @@ class TrieNode {
         TrieNode current = this;
         for (int i = 0; i < word.length(); i++) {
             char ch = Character.toUpperCase(word.charAt(i)); // Convert to uppercase
-            int index = ch - 'A'; 
-            if (index < 0 || index >= ALPHABET_SIZE) {
-                // Handle non-alphabetic characters
-                continue;
-            }
+            int index = getIndex(ch);
             if (current.children[index] == null) {
                 current.children[index] = new TrieNode();
             }
@@ -39,8 +35,8 @@ class TrieNode {
         TrieNode current = this;
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            int index = ch - 'A';
-            if (current.children[index] == null) {
+            int index = getIndex(ch);
+            if (index < 0 || index >= ALPHABET_SIZE || current.children[index] == null) {
                 return false;
             }
             current = current.children[index];
@@ -61,8 +57,8 @@ class TrieNode {
         TrieNode current = this;
         for (int i = 0; i < prefix.length(); i++) {
             char ch = prefix.charAt(i);
-            int index = Character.toUpperCase(ch) - 'A';
-            if (current.children[index] == null) {
+            int index = getIndex(ch);
+            if (index < 0 || index >= ALPHABET_SIZE || current.children[index] == null) {
                 return null;
             }
             current = current.children[index];
@@ -77,26 +73,51 @@ class TrieNode {
         for (char i = 0; i < ALPHABET_SIZE; i++) {
             TrieNode child = node.children[i];
             if (child != null) {
-                collectWords(child, prefix + (char) ('A' + i), suggestions);
+                char ch = getChar(i);
+                collectWords(child, prefix + ch, suggestions);
             }
+        }
+    }
+
+    private char getChar(int index) {
+        if (index == 26) {
+            return ' '; // Map last index to space
+        } else if (index == 27) {
+            return '-'; // Map second last index to '-'
+        } else {
+            return (char) ('A' + index);
+        }
+    }
+    
+    private int getIndex(char ch) {
+        if (ch == ' ') {
+            return 26; // Map space to the last index
+        } else if (ch == '-') {
+            return 27; // Map "-" to the last index (same as space)
+        } else {
+            return Character.toUpperCase(ch) - 'A';
         }
     }
 }
 
 
 public class WordCompletion {
-	
-    public static List<String> findNearestWords(String input) {
-    	String filePath = "src/main/resources/locations.txt"; // Provide the path to your text file
-        buildTrie(filePath);
-        
-        List<String> suggestions = root.suggestCompletions(input);
-        return suggestions;
-    }
-    
     private static TrieNode root = new TrieNode();
-    
-    public static void buildTrie(String filePath) {
+
+    public static List<String> findNearestWords(String input) {
+        String filePath = "src/main/resources/locations.txt"; // Provide the path to your text file
+        try {
+            buildTrie(filePath);
+            List<String> suggestions = root.suggestCompletions(input);
+            return suggestions;
+        } catch (IOException e) {
+            System.err.println("Error: File not found or could not be read.");
+            e.printStackTrace();
+            return new ArrayList<>(); // Return an empty list in case of error
+        }
+    }
+
+    public static void buildTrie(String filePath) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -104,7 +125,7 @@ public class WordCompletion {
                 root.insert(line);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new IOException("Error reading file: " + filePath, e);
         }
     }
 }

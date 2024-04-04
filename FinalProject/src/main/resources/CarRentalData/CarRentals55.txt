@@ -1,9 +1,9 @@
-Car Name: Chevrolet Malibu
+Car Name: Audi Q3
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $55
-Car Total Price: $75
-Vendor Name: Budget
+Car Size: Standard Elite SUV
+Car Price per Day: $42
+Car Total Price: $48
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

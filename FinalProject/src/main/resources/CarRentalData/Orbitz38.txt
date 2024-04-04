@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Hyundai Elantra
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $32
-Car Total Price: $37
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Max Passengers: 5
+Car Size: Midsize
+Car Price per Day: $29
+Car Total Price: $38
+Vendor Name: Budget Rental Company
+Ratings: 80%
 Available at: orbitz.com

@@ -1,9 +1,9 @@
-Car Name: Kia Rio
+Car Name: NISSAN KICKS
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $68
-Car Total Price: $79
-Vendor Name: Dollar Rent A Car
+Car Size: Compact SUV
+Car Price per Day: $82
+Car Total Price: $96
+Vendor Name: Hertz
 Ratings: No ratings
 Available at: expedia.com

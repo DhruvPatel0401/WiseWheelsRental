@@ -1,9 +1,9 @@
-Car Name: Hyundai Elantra
+Car Name: Cadillac Xt5
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Special
-Car Price per Day: $87
-Car Total Price: $101
-Vendor Name: Enterprise
+Car Size: Premium Elite SUV
+Car Price per Day: $259
+Car Total Price: $325
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

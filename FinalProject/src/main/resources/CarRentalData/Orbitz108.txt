@@ -1,0 +1,9 @@
+Car Name: Jeep Wrangler Unlimited
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Fullsize Open Air All-Terrain
+Car Price per Day: $49
+Car Total Price: $55
+Vendor Name: Enterprise Rental Company
+Ratings: 76%
+Available at: orbitz.com

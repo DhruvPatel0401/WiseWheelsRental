@@ -1,9 +1,9 @@
-Car Name: Managers Special
+Car Name: Vw Jetta
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy Special
-Car Price per Day: $28
-Car Total Price: $33
-Vendor Name: Hertz
+Car Size: Standard
+Car Price per Day: $31
+Car Total Price: $35
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

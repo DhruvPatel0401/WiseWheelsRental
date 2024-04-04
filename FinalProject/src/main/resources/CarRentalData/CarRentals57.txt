@@ -1,9 +1,9 @@
-Car Name: Ford Escape
+Car Name: Audi Q3
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $55
-Car Total Price: $76
-Vendor Name: Budget
+Car Size: Standard Elite SUV
+Car Price per Day: $39
+Car Total Price: $50
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

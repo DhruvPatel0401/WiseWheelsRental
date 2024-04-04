@@ -1,0 +1,9 @@
+Car Name: Chrysler 300
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Premium
+Car Price per Day: $35
+Car Total Price: $46
+Vendor Name: Budget Rental Company
+Ratings: 80%
+Available at: orbitz.com

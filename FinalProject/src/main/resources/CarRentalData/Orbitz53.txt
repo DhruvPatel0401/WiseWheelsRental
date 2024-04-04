@@ -1,0 +1,9 @@
+Car Name: Chevrolet Malibu
+Car Type: Automatic
+Max Passengers: 5
+Car Size: Standard
+Car Price per Day: $30
+Car Total Price: $39
+Vendor Name: Avis Rental Company
+Ratings: 95%
+Available at: orbitz.com

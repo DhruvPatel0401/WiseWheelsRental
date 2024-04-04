@@ -1,9 +1,9 @@
-Car Name: Ford Escape
+Car Name: Dodge Durango
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $54
-Car Total Price: $74
-Vendor Name: Budget
+Max Passengers: 7
+Car Size: Premium Crossover
+Car Price per Day: $41
+Car Total Price: $46
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

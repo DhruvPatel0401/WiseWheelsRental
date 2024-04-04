@@ -1,7 +1,7 @@
-Car Name: Mitsubishi Mirage
+Car Name: Hyundai Elantra
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Economy
+Max Passengers: 5
+Car Size: Midsize
 Car Price per Day: $28
 Car Total Price: $37
 Vendor Name: Budget Rental Company

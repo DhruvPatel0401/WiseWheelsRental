@@ -1,9 +1,9 @@
-Car Name: Toyota Camry
+Car Name: Hyundai Sonata
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Fullsize
-Car Price per Day: $56
-Car Total Price: $74
-Vendor Name: National Car Rental
+Car Price per Day: $38
+Car Total Price: $44
+Vendor Name: Hertz
 Ratings: No ratings
 Available at: expedia.com

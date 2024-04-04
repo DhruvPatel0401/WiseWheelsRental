@@ -1,9 +1,9 @@
-Car Name: Compact or larger - Vehicle determined upon pick-up
+Car Name: Chevrolet Malibu
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Special
+Car Size: Standard
 Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Enterprise
+Car Total Price: $40
+Vendor Name: Avis
 Ratings: No ratings
 Available at: expedia.com

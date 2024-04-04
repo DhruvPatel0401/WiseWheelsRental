@@ -1,0 +1,9 @@
+Car Name: Ford Expedition
+Car Type: Automatic
+Max Passengers: 7
+Car Size: Fullsize SUV
+Car Price per Day: $43
+Car Total Price: $49
+Vendor Name: Enterprise Rental Company
+Ratings: 76%
+Available at: orbitz.com

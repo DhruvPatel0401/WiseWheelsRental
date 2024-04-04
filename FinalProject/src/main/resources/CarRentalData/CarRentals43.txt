@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Toyota Rav4
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $31
-Car Total Price: $39
+Max Passengers: 5
+Car Size: Midsize SUV
+Car Price per Day: $32
+Car Total Price: $41
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

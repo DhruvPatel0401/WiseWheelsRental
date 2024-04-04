@@ -1,9 +1,9 @@
-Car Name: Chevrolet Colorado
+Car Name: Nissan Versa
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $192
-Car Total Price: $242
+Max Passengers: 5
+Car Size: Compact
+Car Price per Day: $115
+Car Total Price: $145
 Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com

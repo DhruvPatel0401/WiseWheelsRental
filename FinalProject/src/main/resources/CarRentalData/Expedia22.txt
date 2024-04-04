@@ -1,9 +1,9 @@
-Car Name: Ford F150
+Car Name: Ford Edge
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $32
-Car Total Price: $40
+Max Passengers: 5
+Car Size: Standard SUV
+Car Price per Day: $35
+Car Total Price: $41
 Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

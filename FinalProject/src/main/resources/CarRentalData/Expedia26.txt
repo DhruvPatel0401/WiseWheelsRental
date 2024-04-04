@@ -1,9 +1,9 @@
-Car Name: Chrysler 300
+Car Name: Audi Q3
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $36
-Car Total Price: $47
-Vendor Name: Avis
+Car Size: Standard Elite SUV
+Car Price per Day: $42
+Car Total Price: $48
+Vendor Name: Enterprise
 Ratings: No ratings
 Available at: expedia.com

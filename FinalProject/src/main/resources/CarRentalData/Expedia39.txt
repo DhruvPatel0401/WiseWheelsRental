@@ -1,9 +1,9 @@
-Car Name: Toyota Camry
+Car Name: Audi A4 or BMW 3 Series
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $83
-Car Total Price: $96
-Vendor Name: Enterprise
+Car Size: Luxury
+Car Price per Day: $173
+Car Total Price: $218
+Vendor Name: National Car Rental
 Ratings: No ratings
 Available at: expedia.com
