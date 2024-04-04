@@ -175,7 +175,7 @@ public class Main {
             if (!nearestWords.isEmpty()) {
                 nearestWords.remove(location.toLowerCase());
                 if (nearestWords.isEmpty()) {
-                    System.out.println("Location set to: " + location);
+                    System.out.println("Location set to: " + location.substring(0, 1).toUpperCase() + location.substring(1).toLowerCase());
                     return location;
                 }
 
@@ -189,8 +189,8 @@ public class Main {
                 String userResponse = scanner.nextLine();
 
                 if (!userResponse.equalsIgnoreCase("no") && nearestWords.contains(userResponse.toLowerCase())) {
-                    System.out.println("Location set to: " + userResponse);
-                    return userResponse;
+                    System.out.println("Location set to: " + userResponse.substring(0, 1).toUpperCase() + userResponse.substring(1).toLowerCase());
+                    return userResponse.toLowerCase();
                 } else if (userResponse.equalsIgnoreCase("no")) {
                     return getLocation();
                 } else {
@@ -198,30 +198,28 @@ public class Main {
                     return getLocation();
                 }
             } else {
-                List<String> correctedLocation = SpellChecker.correctedWord(location,
-                        "src/main/resources/locations.txt");
-                if (!correctedLocation.equals(location)) {
-                    System.out.println("\nDid you mean one of the following?");
+                List<String> correctedLocation = SpellChecker.correctedWord(location.toLowerCase(), "src/main/resources/locations.txt");
+                if (!correctedLocation.isEmpty()) {
+                	System.out.println("\nDid you mean one of the following?");
                     for (String word : correctedLocation) {
                         System.out.println("\u001B[1m" + "- " + word);
                     }
                     System.out.print("\u001B[0m");
-
-                    System.out.print("Type the correct word or 'no' to enter a new one: ");
+                    
+                    System.out.print("If your location is present, enter it; otherwise, type 'no' to enter a new location: ");
                     String userResponse = scanner.nextLine();
-
-                    if (!userResponse.equalsIgnoreCase("no")
-                            && correctedLocation.contains(userResponse.toLowerCase())) {
-                        System.out.println("Location set to: " + userResponse);
-                        return userResponse;
+                    if (!userResponse.equalsIgnoreCase("no") && correctedLocation.contains(userResponse.toLowerCase())) {
+                        System.out.println("Location set to: " + userResponse.substring(0, 1).toUpperCase() + userResponse.substring(1).toLowerCase());
+                        return userResponse.toLowerCase();
+                    } else if (userResponse.equalsIgnoreCase("no")) {
+                        return getLocation();
                     } else {
-                        System.out.println("Incorrect location. Please enter the location again.");
+                        System.out.println("You have not entered one of the recommended locations. Please enter the location again");
                         return getLocation();
                     }
-
                 } else {
-                    System.out.println("Incorrect location. Please try again.");
-                    return getLocation();
+                	System.out.println("You have entered an incorrect location please try again.");
+                	return getLocation();
                 }
             }
         } catch (Exception e) {
