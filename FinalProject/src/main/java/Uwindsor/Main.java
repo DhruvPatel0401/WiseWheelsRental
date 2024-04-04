@@ -185,14 +185,16 @@ public class Main {
                 }
                 System.out.print("\u001B[0m");
 
-                System.out.print("Type the correct word or 'no' to enter a new one: ");
+                System.out.print("If your location is present, enter it; otherwise, type 'no' to enter a new location: ");
                 String userResponse = scanner.nextLine();
 
                 if (!userResponse.equalsIgnoreCase("no") && nearestWords.contains(userResponse.toLowerCase())) {
                     System.out.println("Location set to: " + userResponse);
                     return userResponse;
+                } else if (userResponse.equalsIgnoreCase("no")) {
+                    return getLocation();
                 } else {
-                    System.out.println("Incorrect location. Please enter the location again.");
+                    System.out.println("You have not entered one of the recommended locations. Please enter the location again");
                     return getLocation();
                 }
             } else {
