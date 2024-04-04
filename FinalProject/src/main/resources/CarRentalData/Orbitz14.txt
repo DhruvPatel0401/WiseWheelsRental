@@ -1,9 +1,9 @@
-Car Name: Nissan Versa
+Car Name: Ford F150
 Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $31
-Car Total Price: $35
+Max Passengers: 4
+Car Size: Premium Pickup Regular Cab
+Car Price per Day: $32
+Car Total Price: $37
 Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Ratings: 76%
 Available at: orbitz.com

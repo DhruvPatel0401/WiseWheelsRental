@@ -2,8 +2,8 @@ Car Name: Hyundai Elantra
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Midsize
-Car Price per Day: $28
-Car Total Price: $37
-Vendor Name: Budget Rental Company
-Ratings: 80%
+Car Price per Day: $30
+Car Total Price: $40
+Vendor Name: Avis Rental Company
+Ratings: 95%
 Available at: orbitz.com

@@ -177,7 +177,6 @@ public class WebCrawler {
 	            carCount++;
             }
         }
-        System.out.println("Successfully wrote car details to file: CarRentals");
     }
     
     private void extractCarDetailsExpedia() {
@@ -255,7 +254,6 @@ public class WebCrawler {
 	            carCount++;
             }
         }
-        System.out.println("Successfully wrote car details to file: Expedia");
     }
 
     private void extractCarDetailsOrbitz() {
@@ -333,7 +331,6 @@ public class WebCrawler {
 	            carCount++;
             }
         }
-        System.out.println("Successfully wrote car details to file: Orbitz");
     }
     
 }

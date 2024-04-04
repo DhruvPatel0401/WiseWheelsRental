@@ -2,6 +2,8 @@ package Uwindsor;
 
 import java.io.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class InvertedIndex {
     // a list of terms that won't be indexed
@@ -18,9 +20,7 @@ public class InvertedIndex {
         if (!directory.isDirectory()) {
             return;
         }
-
         Map<String, Set<String>> invertedTableData = new HashMap<>();
-
         for (File infoData : directory.listFiles()) {
             if (infoData.isDirectory()) {
                 DataIndexFile(infoData);
@@ -49,7 +49,8 @@ public class InvertedIndex {
             while ((line = reader.readLine()) != null) {
                 String[] words = line.split("\\s+");
                 for (String word : words) {
-                    if (!EXCLUDED_WORDS.contains(word)) {
+                    word = removeSpecialCharacters(word);
+                    if (!word.isEmpty() && !isNumeric(word) && !EXCLUDED_WORDS.contains(word)) {
                         invertedIndex.computeIfAbsent(word, k -> new HashSet<>()).add(file.getName());
                     }
                 }
@@ -57,6 +58,18 @@ public class InvertedIndex {
         } catch (IOException e) {
             System.out.println("Error occurred while indexing file: " + e.getMessage());
         }
+    }
+
+    private boolean isNumeric(String str) {
+        return str.matches("-?\\d+(\\.\\d+)?"); // This pattern allows negative and decimal numbers
+    }
+
+    private String removeSpecialCharacters(String word) {
+        // Define the pattern for identifying special characters
+        Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
+        Matcher matcher = pattern.matcher(word);
+        // Replace all special characters with an empty string
+        return matcher.replaceAll("");
     }
 
     // Technique for doing a keyword-based information search
@@ -128,8 +141,12 @@ public class InvertedIndex {
             for (Map.Entry<String, Set<String>> entry : invertedData.entrySet()) {
                 if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Comparison without regard to case
                     Set<String> filesData = entry.getValue();
+                    int count = 1;
+
                     for (String fileName : filesData) {
-                        dataShowByPrinting(outputFilePathData + "/" + fileName); // Before printing, add the file path.
+                        dataShowByPrinting(outputFilePathData + "/" + fileName, count); // Before printing, add the file
+                        count = count + 1;
+
                     }
                     break;
                 }
@@ -138,16 +155,17 @@ public class InvertedIndex {
     }
 
     // read data from a file and print it
-    public static void dataShowByPrinting(String filePath) {
+    public static void dataShowByPrinting(String filePath, int count) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            System.out.println("Content of file: " + filePath);
+            System.out.println("Car Data - Entry #" + count);
+            System.out.println("-----------------------------");
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
-            System.out.println("----------------------------------");
-        } catch (IOException ey) {
-            System.out.println("Error occurred while reading file: " + ey.getMessage());
+            System.out.println("-----------------------------\n");
+        } catch (IOException ex) {
+            System.out.println("Error occurred while reading the file: " + ex.getMessage());
         }
     }
 }

@@ -1,9 +1,9 @@
-Car Name: Kia Rio
+Car Name: Toyota Camry
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $28
-Car Total Price: $32
-Vendor Name: Hertz
-Ratings: No ratings
+Car Size: Fullsize
+Car Price per Day: $31
+Car Total Price: $35
+Vendor Name: Enterprise
+Ratings: 76%
 Available at: expedia.com

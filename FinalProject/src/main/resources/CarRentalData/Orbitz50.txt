@@ -1,9 +1,9 @@
-Car Name: Nissan Maxima
+Car Name: Audi Q3
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $33
-Car Total Price: $38
+Car Size: Standard Elite SUV
+Car Price per Day: $39
+Car Total Price: $50
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Ratings: 88%
 Available at: orbitz.com
