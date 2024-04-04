@@ -299,9 +299,9 @@ public class Main {
     }
     
     private static void CreateInvertedIndexTable() {
- 	   InvertedIndex invertedIndex = new InvertedIndex();
- 	   File directory = new File("src/main/resources/CarRentalData");
- 	   invertedIndex.DataIndexFile(directory);
+        InvertedIndex invertedIndex = new InvertedIndex();
+        File directory = new File("src/main/resources/CarRentalData");
+        invertedIndex.DataIndexFile(directory);
     }
 
     private static void Searchwordcount() throws IOException {
