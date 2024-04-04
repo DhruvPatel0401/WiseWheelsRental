@@ -157,6 +157,9 @@ public class WebCrawler {
 	                } catch (NoSuchElementException e) {
 	                    ratingText = "No ratings";
 	                }
+	                
+	                WebElement linkElement = carOfferCard.findElement(By.cssSelector("a[data-stid='default-link']"));
+		            String link = linkElement.getAttribute("href");
 	            
 		            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/CarRentals" + carCount + ".txt")) {
 		            	// Write car details to the file
@@ -168,6 +171,7 @@ public class WebCrawler {
 		                file.write("Car Total Price: " + carTotalPrice + "\n");
 		                file.write("Vendor Name: " + vendor + "\n");
 		                file.write("Ratings: " + ratingText + "\n");
+		                file.write("Link: " + link + "\n");
 		                file.write("Available at: expedia.com" + "\n");
 	
 		            } catch (IOException e) {
@@ -238,6 +242,9 @@ public class WebCrawler {
 	                } catch (NoSuchElementException e) {
 	                    ratingText = "No ratings";
 	                }
+	                
+	                WebElement linkElement = carOfferCard.findElement(By.cssSelector("a[data-stid='default-link']"));
+		            String link = linkElement.getAttribute("href");
 	            
 		            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/Expedia" + carCount + ".txt")) {
 		            	// Write car details to the file
@@ -249,6 +256,7 @@ public class WebCrawler {
 		                file.write("Car Total Price: " + carTotalPrice + "\n");
 		                file.write("Vendor Name: " + vendor + "\n");
 		                file.write("Ratings: " + ratingText + "\n");
+		                file.write("Link: " + link + "\n");
 		                file.write("Available at: expedia.com" + "\n");
 	
 		            } catch (IOException e) {
@@ -333,6 +341,7 @@ public class WebCrawler {
 		                file.write("Car Total Price: " + carTotalPrice + "\n");
 		                file.write("Vendor Name: " + vendor + "\n");
 		                file.write("Ratings: " + ratingText + "\n");
+		                file.write("Link: " + link + "\n");
 		                file.write("Available at: orbitz.com" + "\n");
 	
 		            } catch (IOException e) {
