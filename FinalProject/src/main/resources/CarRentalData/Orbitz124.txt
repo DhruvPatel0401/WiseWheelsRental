@@ -1,9 +1,0 @@
-Car Name: Dodge Grand Caravan
-Car Type: Automatic
-Max Passengers: 7
-Car Size: Mini Van
-Car Price per Day: $192
-Car Total Price: $241
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
-Available at: orbitz.com

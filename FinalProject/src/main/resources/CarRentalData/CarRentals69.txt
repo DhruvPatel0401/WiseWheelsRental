@@ -1,9 +1,0 @@
-Car Name: Tesla Model 3
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize Elite
-Car Price per Day: $74
-Car Total Price: $87
-Vendor Name: Hertz
-Ratings: No ratings
-Available at: expedia.com

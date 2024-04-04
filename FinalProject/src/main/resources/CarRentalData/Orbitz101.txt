@@ -1,9 +1,0 @@
-Car Name: Ford Edge
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $40
-Car Total Price: $52
-Vendor Name: Budget Rental Company
-Ratings: 80%
-Available at: orbitz.com

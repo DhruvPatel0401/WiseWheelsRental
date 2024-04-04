@@ -1,9 +1,10 @@
-Car Name: Toyota Camry
+Car Name: Toyota Corolla, Hyundai Elantra
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $31
-Car Total Price: $35
-Vendor Name: Enterprise
+Car Size: Midsize
+Car Price per Day: $41
+Car Total Price: $49
+Vendor Name: Hertz
 Ratings: No ratings
+Link: https://www.expedia.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQh3XDzUb4Yaw4cMGaeYnjj7avjCnI7in9MF41jMKsvonqHP0qI2etDpbUz2071RInld0W76i1rCiFLpsy8H0-0ziX15R2n7ppY4ohdLlgcag&dailyPriceShown=41.47&totalPriceShown=48.56&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&period=daily&isOffAirport=true&isTravelApiSearch=true&avgCatPR=70.74&offerQualifiers=GreatDeal
 Available at: expedia.com

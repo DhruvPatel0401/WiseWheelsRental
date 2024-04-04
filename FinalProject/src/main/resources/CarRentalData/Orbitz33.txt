@@ -1,9 +1,10 @@
-Car Name: Hyundai Kona
+Car Name: Ford Edge
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact SUV AWD
-Car Price per Day: $32
-Car Total Price: $37
+Car Size: Standard SUV
+Car Price per Day: $49
+Car Total Price: $56
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Ratings: 87%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQ35IQC1RHrWvLA7Lplfpru7avjCnI7in9MF41jMKsvonM7TQ8fNX_nmFIf85iKYvTpcDw1u9rrpREOWiGf8Ly-78DEv9k3rh3IRwM4x0bN0g&dailyPriceShown=49.01&totalPriceShown=55.8&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&avgCatPR=76.5&period=daily
 Available at: orbitz.com

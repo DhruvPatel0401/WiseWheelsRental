@@ -1,9 +1,10 @@
-Car Name: Managers Special
+Car Name: Ford Edge
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy Special
-Car Price per Day: $33
-Car Total Price: $38
-Vendor Name: Hertz Rental Company
-Ratings: No ratings
+Car Size: Standard SUV
+Car Price per Day: $52
+Car Total Price: $60
+Vendor Name: Avis Rental Company
+Ratings: 75%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQSEbVrrk-f8OrNn64wh4-0DY4SskLNvsmcaQGuLWHsMYMBDBDonKJ4U_Mqyh74BZexaTVetNlwOqxuxowOtYRWURnYWnjsD4-ZwYBcbg1cpo&dailyPriceShown=51.75&totalPriceShown=60.01&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&avgCatPR=76.5&period=daily
 Available at: orbitz.com

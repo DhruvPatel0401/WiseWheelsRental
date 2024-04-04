@@ -1,9 +1,10 @@
-Car Name: Chevy Spark
+Car Name: Dodge Ram 1500
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Economy
-Car Price per Day: $26
-Car Total Price: $30
-Vendor Name: Enterprise
-Ratings: 100%
+Max Passengers: 5
+Car Size: Fullsize Pickup Regular Cab
+Car Price per Day: $38
+Car Total Price: $45
+Vendor Name: Avis
+Ratings: No ratings
+Link: https://www.carrentals.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQH6ErJ9XL3akGV1vvV2n0l0-DM5Z_ZcBF2imiUa297Zhn3oPdkC6IcoTXzzd-TTGFq6fbO-wGCXEfs5KcdOeRru03X_mqdNg-4X0yF7EyGi0&referenceTotalShown=53.0&dailyPriceShown=38.47&totalPriceShown=45.0&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&period=daily&isOffAirport=true&isTravelApiSearch=true&avgCatPR=62.3
 Available at: expedia.com

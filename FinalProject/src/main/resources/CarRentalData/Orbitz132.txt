@@ -1,9 +1,0 @@
-Car Name: Ford F150
-Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $265
-Car Total Price: $334
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
-Available at: orbitz.com

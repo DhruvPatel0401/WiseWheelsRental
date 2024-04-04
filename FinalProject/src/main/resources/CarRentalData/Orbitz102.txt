@@ -1,9 +1,0 @@
-Car Name: Ford Edge
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $46
-Car Total Price: $52
-Vendor Name: Hertz Rental Company
-Ratings: No ratings
-Available at: orbitz.com

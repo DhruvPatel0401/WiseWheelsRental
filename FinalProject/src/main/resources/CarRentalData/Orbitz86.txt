@@ -1,9 +1,0 @@
-Car Name: Cadillac Xt5
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Premium Elite SUV
-Car Price per Day: $38
-Car Total Price: $44
-Vendor Name: Enterprise Rental Company
-Ratings: 100%
-Available at: orbitz.com

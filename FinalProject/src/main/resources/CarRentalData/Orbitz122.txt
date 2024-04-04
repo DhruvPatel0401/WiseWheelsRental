@@ -1,9 +1,0 @@
-Car Name: Toyota Rav4
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $192
-Car Total Price: $241
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
-Available at: orbitz.com

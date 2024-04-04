@@ -1,9 +1,10 @@
-Car Name: Chevrolet Colorado
+Car Name: Chevrolet Siverado 1500 Crew Cab
 Car Type: Automatic
 Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $26
-Car Total Price: $30
+Car Size: Premium Pickup Regular Cab
+Car Price per Day: $38
+Car Total Price: $44
 Vendor Name: Enterprise Rental Company
-Ratings: 100%
+Ratings: 87%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQ35IQC1RHrWvLA7Lplfpru7avjCnI7in9MF41jMKsvonM7TQ8fNX_nmFIf85iKYvTGNQozWXM26IEXvtFHyT6KL8DEv9k3rh3IRwM4x0bN0g&dailyPriceShown=38.25&totalPriceShown=43.64&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&offerQualifiers=GreatDeal%2CGreatDeal&avgCatPR=44.0&period=daily
 Available at: orbitz.com

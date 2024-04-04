@@ -1,9 +1,10 @@
-Car Name: Chevrolet Colorado
+Car Name: Volkswagen Polo
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Standard Pickup Regular Cab
-Car Price per Day: $31
-Car Total Price: $35
-Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Max Passengers: 5
+Car Size: Economy
+Car Price per Day: $42
+Car Total Price: $49
+Vendor Name: Avis Rental Company
+Ratings: 75%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQ35IQC1RHrWvLA7Lplfpru7avjCnI7in9MF41jMKsvolHVL7HoY95hNw7BMmzGHo-UvpRXiVMu5l3Gcnmft8vaaGJEQWVl3_bFNkw7jrhup8&dailyPriceShown=42.14&totalPriceShown=49.15&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&avgCatPR=61.75&period=daily
 Available at: orbitz.com

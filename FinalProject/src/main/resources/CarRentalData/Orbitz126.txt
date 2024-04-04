@@ -1,9 +1,0 @@
-Car Name: Ford Edge
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $201
-Car Total Price: $253
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
-Available at: orbitz.com

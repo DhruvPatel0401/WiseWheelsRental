@@ -1,9 +1,0 @@
-Car Name: Audi A3 or BMW 2 Series Gran Coupe
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Premium Special
-Car Price per Day: $173
-Car Total Price: $218
-Vendor Name: National Car Rental
-Ratings: No ratings
-Available at: expedia.com

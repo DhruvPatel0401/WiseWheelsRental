@@ -1,9 +1,0 @@
-Car Name: Audi Q3
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard Elite SUV
-Car Price per Day: $258
-Car Total Price: $324
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
-Available at: orbitz.com

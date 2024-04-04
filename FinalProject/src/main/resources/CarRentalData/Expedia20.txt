@@ -1,9 +1,0 @@
-Car Name: Toyota Corolla, Hyundai Elantra
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $34
-Car Total Price: $39
-Vendor Name: Hertz
-Ratings: No ratings
-Available at: expedia.com

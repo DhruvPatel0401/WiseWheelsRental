@@ -1,9 +1,0 @@
-Car Name: Nissan Versa
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $30
-Car Total Price: $40
-Vendor Name: Avis Rental Company
-Ratings: 95%
-Available at: orbitz.com

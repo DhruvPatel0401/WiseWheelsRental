@@ -1,9 +1,0 @@
-Car Name: Chevrolet Malibu
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Fullsize
-Car Price per Day: $30
-Car Total Price: $39
-Vendor Name: Budget Rental Company
-Ratings: 80%
-Available at: orbitz.com

@@ -1,9 +1,0 @@
-Car Name: Cadillac Xt5
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Premium Elite SUV
-Car Price per Day: $259
-Car Total Price: $325
-Vendor Name: National Car Rental
-Ratings: No ratings
-Available at: expedia.com

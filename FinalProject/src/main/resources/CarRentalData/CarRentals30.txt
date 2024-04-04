@@ -1,9 +1,10 @@
-Car Name: Toyota Corolla, Hyundai Elantra
+Car Name: Chevrolet Malibu
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Midsize
-Car Price per Day: $34
-Car Total Price: $39
-Vendor Name: Hertz
+Car Size: Fullsize
+Car Price per Day: $47
+Car Total Price: $54
+Vendor Name: Avis
 Ratings: No ratings
+Link: https://www.carrentals.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQpJoP8-pKlZqilSbi05Xti7avjCnI7in9MF41jMKsvomoDjCeewqaAZpaA8_M0RQcgu2w-J6WS-YPIq7iVwE_7Xwd2shL5zA3DXWo5FzVqOY&dailyPriceShown=46.57&totalPriceShown=54.16&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&period=daily&isOffAirport=true&isTravelApiSearch=true&avgCatPR=62.3
 Available at: expedia.com

@@ -1,9 +1,0 @@
-Car Name: Ford Edge
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard SUV
-Car Price per Day: $202
-Car Total Price: $254
-Vendor Name: National Car Rental
-Ratings: No ratings
-Available at: expedia.com

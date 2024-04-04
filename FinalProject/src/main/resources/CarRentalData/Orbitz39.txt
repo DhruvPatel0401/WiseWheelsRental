@@ -1,9 +1,10 @@
-Car Name: Nissan Maxima
+Car Name: Ford Edge
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Premium
-Car Price per Day: $33
-Car Total Price: $38
-Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Car Size: Standard SUV
+Car Price per Day: $51
+Car Total Price: $59
+Vendor Name: Avis Rental Company
+Ratings: 75%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQSEbVrrk-f8OrNn64wh4-0LcFzseHXQ86iskOYFRQcAcMBDBDonKJ4U_Mqyh74BZeq6fbO-wGCXEfs5KcdOeRru03X_mqdNg-4X0yF7EyGi0&referenceTotalShown=60.0&dailyPriceShown=50.71&totalPriceShown=58.84&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&avgCatPR=76.5&period=daily
 Available at: orbitz.com

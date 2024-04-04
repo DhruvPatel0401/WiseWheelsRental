@@ -1,9 +1,0 @@
-Car Name: Telsa Model Y
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard Elite SUV
-Car Price per Day: $100
-Car Total Price: $114
-Vendor Name: Hertz
-Ratings: No ratings
-Available at: expedia.com

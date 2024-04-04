@@ -1,9 +1,0 @@
-Car Name: Toyota Rav4, Nissan Rogue, Ford Escape
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Midsize SUV
-Car Price per Day: $36
-Car Total Price: $42
-Vendor Name: Hertz Rental Company
-Ratings: No ratings
-Available at: orbitz.com

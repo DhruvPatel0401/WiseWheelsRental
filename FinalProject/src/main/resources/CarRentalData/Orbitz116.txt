@@ -1,9 +1,0 @@
-Car Name: Vw Jetta
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard
-Car Price per Day: $134
-Car Total Price: $169
-Vendor Name: National Car Rental Rental Company
-Ratings: 87%
-Available at: orbitz.com

@@ -2,8 +2,9 @@ Car Name: Vw Jetta
 Car Type: Automatic
 Max Passengers: 5
 Car Size: Standard
-Car Price per Day: $31
-Car Total Price: $35
+Car Price per Day: $44
+Car Total Price: $50
 Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Ratings: 87%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQ35IQC1RHrWvLA7Lplfpru7avjCnI7in9MF41jMKsvonM7TQ8fNX_nmFIf85iKYvTRnLcp0doPX5XH-9MMtW7xb8DEv9k3rh3IRwM4x0bN0g&dailyPriceShown=43.62&totalPriceShown=49.71&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&offerQualifiers=GreatDeal%2CGreatDeal&avgCatPR=76.5&period=daily
 Available at: orbitz.com

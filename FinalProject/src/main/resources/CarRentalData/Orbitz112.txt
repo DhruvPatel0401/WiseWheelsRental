@@ -1,9 +1,0 @@
-Car Name: Telsa Model Y
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard Elite SUV
-Car Price per Day: $100
-Car Total Price: $113
-Vendor Name: Hertz Rental Company
-Ratings: No ratings
-Available at: orbitz.com

@@ -1,9 +1,0 @@
-Car Name: Audi Q3
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Standard Elite SUV
-Car Price per Day: $39
-Car Total Price: $50
-Vendor Name: Enterprise Rental Company
-Ratings: 88%
-Available at: orbitz.com

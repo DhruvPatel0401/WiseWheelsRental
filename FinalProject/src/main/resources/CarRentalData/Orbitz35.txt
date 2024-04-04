@@ -1,9 +1,10 @@
-Car Name: Ford F150
+Car Name: Ford Escape
 Car Type: Automatic
-Max Passengers: 4
-Car Size: Premium Pickup Regular Cab
-Car Price per Day: $32
-Car Total Price: $37
-Vendor Name: Enterprise Rental Company
-Ratings: 76%
+Max Passengers: 5
+Car Size: Midsize SUV
+Car Price per Day: $49
+Car Total Price: $56
+Vendor Name: Avis Rental Company
+Ratings: 75%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQ35IQC1RHrWvLA7Lplfpru7avjCnI7in9MF41jMKsvomB1TGvvmXC7dZfB3bAlMt_6FQJmCBzooTX3C9Dtu-2BC6wvO3iVnLa31lGDNuixBI&referenceTotalShown=58.0&dailyPriceShown=48.54&totalPriceShown=56.38&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&avgCatPR=66.38&period=daily
 Available at: orbitz.com

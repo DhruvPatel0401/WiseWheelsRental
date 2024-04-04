@@ -1,9 +1,10 @@
-Car Name: Nissan Versa
+Car Name: Chevrolet Malibu
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Compact
-Car Price per Day: $28
-Car Total Price: $37
-Vendor Name: Budget Rental Company
-Ratings: 80%
+Car Size: Fullsize
+Car Price per Day: $47
+Car Total Price: $54
+Vendor Name: Avis Rental Company
+Ratings: 75%
+Link: https://www.orbitz.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQ35IQC1RHrWvLA7Lplfpru7avjCnI7in9MF41jMKsvolHVL7HoY95hNw7BMmzGHo-gu2w-J6WS-YPIq7iVwE_7Xwd2shL5zA3DXWo5FzVqOY&dailyPriceShown=46.57&totalPriceShown=54.16&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&isOffAirport=true&isTravelApiSearch=false&avgCatPR=62.21&period=daily
 Available at: orbitz.com

@@ -1,9 +1,0 @@
-Car Name: Audi A4 or BMW 3 Series
-Car Type: Automatic
-Max Passengers: 5
-Car Size: Luxury
-Car Price per Day: $34
-Car Total Price: $43
-Vendor Name: Enterprise
-Ratings: No ratings
-Available at: expedia.com

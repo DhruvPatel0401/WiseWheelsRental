@@ -1,9 +1,10 @@
-Car Name: Volkswagen Polo
+Car Name: Ford Edge
 Car Type: Automatic
 Max Passengers: 5
-Car Size: Economy
-Car Price per Day: $30
-Car Total Price: $40
-Vendor Name: Avis
+Car Size: Standard SUV
+Car Price per Day: $50
+Car Total Price: $58
+Vendor Name: Budget
 Ratings: No ratings
+Link: https://www.carrentals.com/carsearch/details?date1=4%2F5%2F2024&date2=4%2F6%2F2024&time1=1030AM&time2=1030AM&dpln=6127346&locn=sudbury&piid=AQH6ErJ9XL3akGV1vvV2n0l8s8cxrWAVGdHF_j3L4CU_4MBDBDonKJ4U_Mqyh74BZe0QVp5rKsGJgCthIttxJuz2bDwHV7AFKu0_BNI5biWkA&dailyPriceShown=50.27&totalPriceShown=58.34&searchUrl=%2Fcarsearch%3Fdate1%3D4%252F5%252F2024%26date2%3D4%252F6%252F2024%26time1%3D1030AM%26time2%3D1030AM%26dpln%3D6127346%26locn%3Dsudbury&period=daily&isOffAirport=true&isTravelApiSearch=true&avgCatPR=76.57
 Available at: expedia.com
