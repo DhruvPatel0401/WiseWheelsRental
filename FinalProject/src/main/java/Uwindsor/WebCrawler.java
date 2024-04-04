@@ -121,60 +121,64 @@ public class WebCrawler {
         } else {
 
             for (WebElement carOfferCard : carOfferCards) {
-
-                WebElement carTypeElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three[aria-hidden='false']"));
-                String carType = carTypeElement.getText().trim();
-
-                WebElement carCapacityElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three"));
-                String carCapacity = carCapacityElement.getText().trim();
-                
-                WebElement carPriceElement = carOfferCard.findElement(By.cssSelector("span.per-day-price"));
-                String carPrice = carPriceElement.getText().trim();
-                
-                WebElement carTotalPriceElement = carOfferCard.findElement(By.cssSelector("span.total-price"));
-                String carTotalPrice = carTotalPriceElement.getText().trim();
-
-                WebElement carSizeElement = carOfferCard.findElement(By.xpath(".//h3[@aria-label]"));
-                String carSize = carSizeElement.getText().trim();
-
-                WebElement carNameElement = carOfferCard.findElement(By.cssSelector("div.uitk-text.uitk-type-300.uitk-text-default-theme.uitk-spacing.uitk-spacing-margin-blockend-one"));
-                String carName = carNameElement.getText().trim();
-                carName = carName.replace(" or similar", "");
-
-                WebElement carPickUpElement = carOfferCard.findElement(By.cssSelector("div#location-sub-info"));
-                String carPickUp = carPickUpElement.getText().trim();
-                carPickUp = carPickUp.replace("\n", ", ");
-                
-                WebElement vendorElement = carOfferCard.findElement(By.cssSelector("img.vendor-logo"));
-                String vendor = vendorElement.getAttribute("alt");
-                
-                WebElement ratingElement;
-                String ratingText;
-
-                try {
-                    ratingElement = carOfferCard.findElement(By.cssSelector("div.uitk-spacing.vendor-logo-container span.uitk-text.text-attribute"));
-                    ratingText = ratingElement.getText().trim().split(" ")[0];
-                } catch (NoSuchElementException e) {
-                    ratingText = "No ratings";
-                }
-            
-	            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/CarRentals" + carCount + ".txt")) {
-	            	// Write car details to the file
-	                file.write("Car Name: " + carName + "\n");
-	                file.write("Car Type: " + carType + "\n");
-	                file.write("Max Passengers: " + carCapacity + "\n");
-	                file.write("Car Size: " + carSize + "\n");
-	                file.write("Car Price per Day: " + carPrice + "\n");
-	                file.write("Car Total Price: " + carTotalPrice + "\n");
-	                file.write("Vendor Name: " + vendor + "\n");
-	                file.write("Ratings: " + ratingText + "\n");
-	                file.write("Available at: expedia.com" + "\n");
-
-	            } catch (IOException e) {
-	                e.printStackTrace();
-	            }
+            	try {
+	                WebElement carTypeElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three[aria-hidden='false']"));
+	                String carType = carTypeElement.getText().trim();
 	
-	            carCount++;
+	                WebElement carCapacityElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three"));
+	                String carCapacity = carCapacityElement.getText().trim();
+	                
+	                WebElement carPriceElement = carOfferCard.findElement(By.cssSelector("span.per-day-price"));
+	                String carPrice = carPriceElement.getText().trim();
+	                
+	                WebElement carTotalPriceElement = carOfferCard.findElement(By.cssSelector("span.total-price"));
+	                String carTotalPrice = carTotalPriceElement.getText().trim();
+	
+	                WebElement carSizeElement = carOfferCard.findElement(By.xpath(".//h3[@aria-label]"));
+	                String carSize = carSizeElement.getText().trim();
+	
+	                WebElement carNameElement = carOfferCard.findElement(By.cssSelector("div.uitk-text.uitk-type-300.uitk-text-default-theme.uitk-spacing.uitk-spacing-margin-blockend-one"));
+	                String carName = carNameElement.getText().trim();
+	                carName = carName.replace(" or similar", "");
+	
+	                WebElement carPickUpElement = carOfferCard.findElement(By.cssSelector("div#location-sub-info"));
+	                String carPickUp = carPickUpElement.getText().trim();
+	                carPickUp = carPickUp.replace("\n", ", ");
+	                
+	                WebElement vendorElement = carOfferCard.findElement(By.cssSelector("img.vendor-logo"));
+	                String vendor = vendorElement.getAttribute("alt");
+	                
+	                WebElement ratingElement;
+	                String ratingText;
+	
+	                try {
+	                    ratingElement = carOfferCard.findElement(By.cssSelector("div.uitk-spacing.vendor-logo-container span.uitk-text.text-attribute"));
+	                    ratingText = ratingElement.getText().trim().split(" ")[0];
+	                } catch (NoSuchElementException e) {
+	                    ratingText = "No ratings";
+	                }
+	            
+		            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/CarRentals" + carCount + ".txt")) {
+		            	// Write car details to the file
+		                file.write("Car Name: " + carName + "\n");
+		                file.write("Car Type: " + carType + "\n");
+		                file.write("Max Passengers: " + carCapacity + "\n");
+		                file.write("Car Size: " + carSize + "\n");
+		                file.write("Car Price per Day: " + carPrice + "\n");
+		                file.write("Car Total Price: " + carTotalPrice + "\n");
+		                file.write("Vendor Name: " + vendor + "\n");
+		                file.write("Ratings: " + ratingText + "\n");
+		                file.write("Available at: expedia.com" + "\n");
+	
+		            } catch (IOException e) {
+		                e.printStackTrace();
+		            }
+		
+		            carCount++;
+            	} catch (NoSuchElementException e) {
+                    // Handle the case when any required element is not found
+                    System.err.println("Required element not found for carOfferCard: " + e.getMessage());
+                }
             }
         }
     }
@@ -198,60 +202,64 @@ public class WebCrawler {
         } else {
 
             for (WebElement carOfferCard : carOfferCards) {
-
-                WebElement carTypeElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three[aria-hidden='false']"));
-                String carType = carTypeElement.getText().trim();
-
-                WebElement carCapacityElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three"));
-                String carCapacity = carCapacityElement.getText().trim();
-                
-                WebElement carPriceElement = carOfferCard.findElement(By.cssSelector("span.per-day-price"));
-                String carPrice = carPriceElement.getText().trim();
-                
-                WebElement carTotalPriceElement = carOfferCard.findElement(By.cssSelector("span.total-price"));
-                String carTotalPrice = carTotalPriceElement.getText().trim();
-
-                WebElement carSizeElement = carOfferCard.findElement(By.xpath(".//h3[@aria-label]"));
-                String carSize = carSizeElement.getText().trim();
-
-                WebElement carNameElement = carOfferCard.findElement(By.cssSelector("div.uitk-text.uitk-type-300.uitk-text-default-theme.uitk-spacing.uitk-spacing-margin-blockend-one"));
-                String carName = carNameElement.getText().trim();
-                carName = carName.replace(" or similar", "");
-
-                WebElement carPickUpElement = carOfferCard.findElement(By.cssSelector("div#location-sub-info"));
-                String carPickUp = carPickUpElement.getText().trim();
-                carPickUp = carPickUp.replace("\n", ", ");
-                
-                WebElement vendorElement = carOfferCard.findElement(By.cssSelector("img.vendor-logo"));
-                String vendor = vendorElement.getAttribute("alt");
-                
-                WebElement ratingElement;
-                String ratingText;
-
-                try {
-                    ratingElement = carOfferCard.findElement(By.cssSelector("div.uitk-spacing.vendor-logo-container span.uitk-text.text-attribute"));
-                    ratingText = ratingElement.getText().trim().split(" ")[0];
-                } catch (NoSuchElementException e) {
-                    ratingText = "No ratings";
-                }
-            
-	            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/Expedia" + carCount + ".txt")) {
-	            	// Write car details to the file
-	                file.write("Car Name: " + carName + "\n");
-	                file.write("Car Type: " + carType + "\n");
-	                file.write("Max Passengers: " + carCapacity + "\n");
-	                file.write("Car Size: " + carSize + "\n");
-	                file.write("Car Price per Day: " + carPrice + "\n");
-	                file.write("Car Total Price: " + carTotalPrice + "\n");
-	                file.write("Vendor Name: " + vendor + "\n");
-	                file.write("Ratings: " + ratingText + "\n");
-	                file.write("Available at: expedia.com" + "\n");
-
-	            } catch (IOException e) {
-	                e.printStackTrace();
-	            }
+            	try {
+	                WebElement carTypeElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three[aria-hidden='false']"));
+	                String carType = carTypeElement.getText().trim();
 	
-	            carCount++;
+	                WebElement carCapacityElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three"));
+	                String carCapacity = carCapacityElement.getText().trim();
+	                
+	                WebElement carPriceElement = carOfferCard.findElement(By.cssSelector("span.per-day-price"));
+	                String carPrice = carPriceElement.getText().trim();
+	                
+	                WebElement carTotalPriceElement = carOfferCard.findElement(By.cssSelector("span.total-price"));
+	                String carTotalPrice = carTotalPriceElement.getText().trim();
+	
+	                WebElement carSizeElement = carOfferCard.findElement(By.xpath(".//h3[@aria-label]"));
+	                String carSize = carSizeElement.getText().trim();
+	
+	                WebElement carNameElement = carOfferCard.findElement(By.cssSelector("div.uitk-text.uitk-type-300.uitk-text-default-theme.uitk-spacing.uitk-spacing-margin-blockend-one"));
+	                String carName = carNameElement.getText().trim();
+	                carName = carName.replace(" or similar", "");
+	
+	                WebElement carPickUpElement = carOfferCard.findElement(By.cssSelector("div#location-sub-info"));
+	                String carPickUp = carPickUpElement.getText().trim();
+	                carPickUp = carPickUp.replace("\n", ", ");
+	                
+	                WebElement vendorElement = carOfferCard.findElement(By.cssSelector("img.vendor-logo"));
+	                String vendor = vendorElement.getAttribute("alt");
+	                
+	                WebElement ratingElement;
+	                String ratingText;
+	
+	                try {
+	                    ratingElement = carOfferCard.findElement(By.cssSelector("div.uitk-spacing.vendor-logo-container span.uitk-text.text-attribute"));
+	                    ratingText = ratingElement.getText().trim().split(" ")[0];
+	                } catch (NoSuchElementException e) {
+	                    ratingText = "No ratings";
+	                }
+	            
+		            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/Expedia" + carCount + ".txt")) {
+		            	// Write car details to the file
+		                file.write("Car Name: " + carName + "\n");
+		                file.write("Car Type: " + carType + "\n");
+		                file.write("Max Passengers: " + carCapacity + "\n");
+		                file.write("Car Size: " + carSize + "\n");
+		                file.write("Car Price per Day: " + carPrice + "\n");
+		                file.write("Car Total Price: " + carTotalPrice + "\n");
+		                file.write("Vendor Name: " + vendor + "\n");
+		                file.write("Ratings: " + ratingText + "\n");
+		                file.write("Available at: expedia.com" + "\n");
+	
+		            } catch (IOException e) {
+		                e.printStackTrace();
+		            }
+		
+		            carCount++;
+            	} catch (NoSuchElementException e) {
+                    // Handle the case when any required element is not found
+                    System.err.println("Required element not found for carOfferCard: " + e.getMessage());
+                }
             }
         }
     }
@@ -275,60 +283,67 @@ public class WebCrawler {
         } else {
 
             for (WebElement carOfferCard : carOfferCards) {
-
-                WebElement carTypeElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three[aria-hidden='false']"));
-                String carType = carTypeElement.getText().trim();
-
-                WebElement carCapacityElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three"));
-                String carCapacity = carCapacityElement.getText().trim();
-                
-                WebElement carPriceElement = carOfferCard.findElement(By.cssSelector("span.per-day-price"));
-                String carPrice = carPriceElement.getText().trim();
-                
-                WebElement carTotalPriceElement = carOfferCard.findElement(By.cssSelector("span.total-price"));
-                String carTotalPrice = carTotalPriceElement.getText().trim();
-
-                WebElement carSizeElement = carOfferCard.findElement(By.xpath(".//h3[@aria-label]"));
-                String carSize = carSizeElement.getText().trim();
-
-                WebElement carNameElement = carOfferCard.findElement(By.cssSelector("div.uitk-text.uitk-type-300.uitk-text-default-theme.uitk-spacing.uitk-spacing-margin-blockend-one"));
-                String carName = carNameElement.getText().trim();
-                carName = carName.replace(" or similar", "");
-
-                WebElement carPickUpElement = carOfferCard.findElement(By.cssSelector("div#location-sub-info"));
-                String carPickUp = carPickUpElement.getText().trim();
-                carPickUp = carPickUp.replace("\n", ", ");
-                
-                WebElement vendorElement = carOfferCard.findElement(By.cssSelector("img.vendor-logo"));
-                String vendor = vendorElement.getAttribute("alt");
-                
-                WebElement ratingElement;
-                String ratingText;
-
-                try {
-                    ratingElement = carOfferCard.findElement(By.cssSelector("div.uitk-spacing.vendor-logo-container span.uitk-text.text-attribute"));
-                    ratingText = ratingElement.getText().trim().split(" ")[0];
-                } catch (NoSuchElementException e) {
-                    ratingText = "No ratings";
-                }
-            
-	            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/Orbitz" + carCount + ".txt")) {
-	            	// Write car details to the file
-	                file.write("Car Name: " + carName + "\n");
-	                file.write("Car Type: " + carType + "\n");
-	                file.write("Max Passengers: " + carCapacity + "\n");
-	                file.write("Car Size: " + carSize + "\n");
-	                file.write("Car Price per Day: " + carPrice + "\n");
-	                file.write("Car Total Price: " + carTotalPrice + "\n");
-	                file.write("Vendor Name: " + vendor + "\n");
-	                file.write("Ratings: " + ratingText + "\n");
-	                file.write("Available at: orbitz.com" + "\n");
-
-	            } catch (IOException e) {
-	                e.printStackTrace();
-	            }
+            	try {
+	                WebElement carTypeElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three[aria-hidden='false']"));
+	                String carType = carTypeElement.getText().trim();
 	
-	            carCount++;
+	                WebElement carCapacityElement = carOfferCard.findElement(By.cssSelector("span.uitk-spacing.text-attribute.uitk-spacing-padding-inlinestart-two.uitk-spacing-padding-inlineend-three"));
+	                String carCapacity = carCapacityElement.getText().trim();
+	                
+	                WebElement carPriceElement = carOfferCard.findElement(By.cssSelector("span.per-day-price"));
+	                String carPrice = carPriceElement.getText().trim();
+	                
+	                WebElement carTotalPriceElement = carOfferCard.findElement(By.cssSelector("span.total-price"));
+	                String carTotalPrice = carTotalPriceElement.getText().trim();
+	
+	                WebElement carSizeElement = carOfferCard.findElement(By.xpath(".//h3[@aria-label]"));
+	                String carSize = carSizeElement.getText().trim();
+	
+	                WebElement carNameElement = carOfferCard.findElement(By.cssSelector("div.uitk-text.uitk-type-300.uitk-text-default-theme.uitk-spacing.uitk-spacing-margin-blockend-one"));
+	                String carName = carNameElement.getText().trim();
+	                carName = carName.replace(" or similar", "");
+	
+	                WebElement carPickUpElement = carOfferCard.findElement(By.cssSelector("div#location-sub-info"));
+	                String carPickUp = carPickUpElement.getText().trim();
+	                carPickUp = carPickUp.replace("\n", ", ");
+	                
+	                WebElement vendorElement = carOfferCard.findElement(By.cssSelector("img.vendor-logo"));
+	                String vendor = vendorElement.getAttribute("alt");
+	                
+	                WebElement ratingElement;
+	                String ratingText;
+	
+	                try {
+	                    ratingElement = carOfferCard.findElement(By.cssSelector("div.uitk-spacing.vendor-logo-container span.uitk-text.text-attribute"));
+	                    ratingText = ratingElement.getText().trim().split(" ")[0];
+	                } catch (NoSuchElementException e) {
+	                    ratingText = "No ratings";
+	                }
+	                
+	                WebElement linkElement = carOfferCard.findElement(By.cssSelector("a[data-stid='default-link']"));
+		            String link = linkElement.getAttribute("href");
+	            
+		            try (FileWriter file = new FileWriter("src/main/resources/CarRentalData/Orbitz" + carCount + ".txt")) {
+		            	// Write car details to the file
+		                file.write("Car Name: " + carName + "\n");
+		                file.write("Car Type: " + carType + "\n");
+		                file.write("Max Passengers: " + carCapacity + "\n");
+		                file.write("Car Size: " + carSize + "\n");
+		                file.write("Car Price per Day: " + carPrice + "\n");
+		                file.write("Car Total Price: " + carTotalPrice + "\n");
+		                file.write("Vendor Name: " + vendor + "\n");
+		                file.write("Ratings: " + ratingText + "\n");
+		                file.write("Available at: orbitz.com" + "\n");
+	
+		            } catch (IOException e) {
+		                e.printStackTrace();
+		            }
+		
+		            carCount++;
+            	} catch (NoSuchElementException e) {
+                    // Handle the case when any required element is not found
+                    System.err.println("Required element not found for carOfferCard: " + e.getMessage());
+                }
             }
         }
     }
