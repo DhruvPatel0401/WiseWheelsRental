@@ -135,22 +135,25 @@ public class InvertedIndex {
     // print content before conducting a search
     public static void printBeforeSearchingData(String[] keywords) {
         Map<String, Set<String>> invertedData = datareadfromFileData(outputFilePath);
-
+        int count = 1;
+        boolean found = false;
         for (String keyword : keywords) {
             String lowercaseKeyword = keyword.toLowerCase(Locale.ENGLISH); // Lowercase the keyword
             for (Map.Entry<String, Set<String>> entry : invertedData.entrySet()) {
                 if (entry.getKey().equalsIgnoreCase(lowercaseKeyword)) { // Comparison without regard to case
                     Set<String> filesData = entry.getValue();
-                    int count = 1;
 
                     for (String fileName : filesData) {
                         dataShowByPrinting(outputFilePathData + "/" + fileName, count); // Before printing, add the file
                         count = count + 1;
-
+                        found = true;
                     }
                     break;
                 }
             }
+        }
+        if (!found) {
+            System.out.println("No result found");
         }
     }
 
