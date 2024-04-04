@@ -1,0 +1,7 @@
+Audi:3
+BMW:3
+Corolla:2
+Forte:5
+Kia:20
+Swift:1
+forte:2
